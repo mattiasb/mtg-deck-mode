@@ -54,12 +54,103 @@
   :type 'hook
   :group 'mtg-deck-mode)
 
+(defcustom mtg-deck-format 'all
+  "Default `mtg-deck-mode' format."
+  :group 'mtg-deck-mode
+  :type '(choice (const :tag "All"      all)
+                 (const :tag "Standard" standard)
+                 (const :tag "Modern"   modern)
+                 (const :tag "Legacy"   legacy)
+                 (const :tag "Vintage"  vintage)))
+
+(defvar mtg-deck--formats-directory
+  (when load-file-name
+    (concat (file-name-directory load-file-name) "formats")))
+
+(defun mtg-deck--format-filename-prefix (format)
+  "Get the path prefix to the card files of FORMAT."
+  (expand-file-name (symbol-name format)
+                    mtg-deck--formats-directory))
+
+(defun mtg-deck--file-to-list (fname sep)
+  "Return a list of the contents in FNAME, split by SEP."
+  (when (file-exists-p fname)
+    (split-string
+     (with-temp-buffer
+       (insert-file-contents-literally fname)
+       (buffer-string))
+     sep)))
+
+(defun mtg-deck--card-names-in-format (format)
+  "Return a list of all card names in FORMAT."
+  (mtg-deck--file-to-list (format "%s.names"
+                                  (mtg-deck--format-filename-prefix format))
+                          "\n"))
+
+(defun mtg-deck--cards-in-format (format)
+  "Return a list of all cards in FORMAT."
+  (mtg-deck--file-to-list (format "%s.cards"
+                                  (mtg-deck--format-filename-prefix format))
+                          "\n\n"))
+
+(defun mtg-deck--name-of-card (card)
+  "Get the card name out of a CARD definition."
+  (car (split-string card "\n")))
+
+(defvar mtg-deck--cards-table nil "A hash-table of all MTG cards.")
+
+(defun mtg-deck--make-cards-table ()
+  "Make a hash-table of all cards."
+  (let ((card-table (make-hash-table :size 16000 :test 'equal))
+        (card-list  (mtg-deck--cards-in-format 'all)))
+    (dolist (card card-list card-table)
+      (puthash (mtg-deck--name-of-card card) card card-table))))
+
+(defun mtg-deck--get-card-by-name (name)
+  "Get card doc info by NAME."
+  (unless mtg-deck--cards-table
+    (setq mtg-deck--cards-table (mtg-deck--make-cards-table)))
+  (gethash name mtg-deck--cards-table))
+
+(defun mtg-deck--company-doc-buffer (card-name)
+  "Produce a `company-doc-buffer' for CARD-NAME in FORMAT."
+  (company-doc-buffer (mtg-deck--get-card-by-name card-name)))
+
+(defun mtg-deck--skip-charsets-from (point charsets)
+  "Go to POINT and skip all character-sets in CHARSETS.
+Return sum of all skipped chars."
+  (save-excursion
+    (goto-char point)
+    (apply '+ (mapcar #'skip-chars-forward charsets))))
+
+(defun mtg-deck--start-of-card-point ()
+  "Get the `point' where the card name of the current line start."
+  (let ((line-bounds (bounds-of-thing-at-point 'line)))
+    (when line-bounds
+      (let* ((line-start (car line-bounds))
+             (charsets   (list "[:space:]" "[:digit:]" "[:space:]"))
+             (offset     (mtg-deck--skip-charsets-from line-start charsets))
+             (start      (+ offset line-start)))
+        start))))
+
+(defun mtg-deck--card-complete-at-point ()
+  "`completion-at-point-functions' function for MTG cards."
+  (let ((start (mtg-deck--start-of-card-point)))
+    (when start
+      (list start (point) (mtg-deck--card-names-in-format mtg-deck-format)
+            :exclusive 'yes
+            :company-docsig #'identity
+            :company-doc-buffer #'mtg-deck--company-doc-buffer))))
+
 ;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
   "Major mode to edit MTG decks."
   (setq-local comment-start "// ")
   (setq-local font-lock-defaults '(mtg-deck--font-lock-defaults))
-  (setq-local mode-name "MTG Deck"))
+  (setq-local mode-name "MTG Deck")
+  (setq-local completion-ignore-case t)
+  (setq-local completion-at-point-functions
+              '(mtg-deck--card-complete-at-point)))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.(mw)?dec\\'" . mtg-deck-mode))
