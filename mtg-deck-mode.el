@@ -41,6 +41,19 @@
     )
   "Keyword highlighting specification for `mtg-deck-mode'.")
 
+(defgroup mtg-deck-mode nil
+  "Major mode to edit MTG decks."
+  :prefix "mtg-deck-"
+  :group 'wp
+  :link '(url-link "https://github.com/mattiasb/mtg-deck-mode"))
+
+(defvar mtg-deck-mode-map (make-sparse-keymap))
+
+(defcustom mtg-deck-mode-hook nil
+  "Hook called by `mtg-deck-mode'."
+  :type 'hook
+  :group 'mtg-deck-mode)
+
 ;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
   "Major mode to edit MTG decks."
