@@ -33,7 +33,7 @@
 (defvar mtg-deck--font-lock-defaults
   '(
     ("^[[:blank:]]*SB:"
-     (0 font-lock-function-name-face))
+     (0 font-lock-keyword-face))
     ("^[[:blank:]]*\\(SB:\\)?[[:blank:]]*\\([[:digit:]]*\\)"
      (2 font-lock-constant-face))
     ("//.*$"
