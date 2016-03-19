@@ -36,7 +36,7 @@
      (0 font-lock-keyword-face))
     ("^[[:blank:]]*\\(SB:\\)?[[:blank:]]*\\([[:digit:]]*\\)"
      (2 font-lock-constant-face))
-    ("//.*$"
+    ("^[[:blank:]]*//.*$"
      (0 font-lock-comment-face))
     )
   "Keyword highlighting specification for `mtg-deck-mode'.")
