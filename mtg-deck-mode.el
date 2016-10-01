@@ -30,6 +30,8 @@
 
 ;;; Code:
 
+(declare-function company-doc-buffer "company")
+
 (defvar mtg-deck--font-lock-defaults
   '(
     ("^[[:blank:]]*SB:"
