@@ -156,5 +156,5 @@ Return sum of all skipped chars."
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.(mw)?dec\\'" . mtg-deck-mode))
 
-(provide 'mtg-deck)
+(provide 'mtg-deck-mode)
 ;;; mtg-deck-mode.el ends here
