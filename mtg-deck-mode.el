@@ -145,9 +145,8 @@ Return sum of all skipped chars."
 ;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
   "Major mode to edit MTG decks."
+  (setq font-lock-defaults '(mtg-deck--font-lock-defaults))
   (setq-local comment-start "// ")
-  (setq-local font-lock-defaults '(mtg-deck--font-lock-defaults))
-  (setq-local mode-name "MTG Deck")
   (setq-local completion-ignore-case t)
   (setq-local completion-at-point-functions
               '(mtg-deck--card-complete-at-point)))
