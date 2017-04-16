@@ -17,7 +17,7 @@
 ;;
 ;; Author: Mattias Bengtsson <mattias.jc.bengtsson@gmail.com>
 
-;; Version: 0.1
+;; Version: 0.2
 ;; Keywords: data MTG Magic
 ;; Package-Requires: ((emacs "24.4"))
 ;; URL: https://github.com/mattiasb/mtg-deck-mode
