@@ -98,10 +98,12 @@
   (car (split-string card "\n")))
 
 (defvar mtg-deck--cards-table nil "A hash-table of all MTG cards.")
+(defvar mtg-deck--num-cards 20000 "The number of available Magic Cards.")
 
 (defun mtg-deck--make-cards-table ()
   "Make a hash-table of all cards."
-  (let ((card-table (make-hash-table :size 16000 :test 'equal))
+  (let ((card-table (make-hash-table :size mtg-deck--num-cards
+                                     :test 'equal))
         (card-list  (mtg-deck--cards-in-format 'all)))
     (dolist (card card-list card-table)
       (puthash (mtg-deck--name-of-card card) card card-table))))
