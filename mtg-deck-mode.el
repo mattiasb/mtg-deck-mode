@@ -116,22 +116,20 @@
   "Produce a `company-doc-buffer' for CARD-NAME in FORMAT."
   (company-doc-buffer (mtg-deck--get-card-by-name card-name)))
 
-(defun mtg-deck--skip-charsets-from (point charsets)
-  "Go to POINT and skip all character-sets in CHARSETS.
-Return sum of all skipped chars."
-  (save-excursion
-    (goto-char point)
-    (apply '+ (mapcar #'skip-chars-forward charsets))))
+(defvar mtg-deck--line-prefix-rx
+  (rx bol
+      (zero-or-more blank)
+      (optional (sequence "SB:"
+                          (zero-or-more blank)))
+      (one-or-more digit)
+      (zero-or-more blank)))
 
 (defun mtg-deck--start-of-card-point ()
   "Get the `point' where the card name of the current line start."
-  (let ((line-bounds (bounds-of-thing-at-point 'line)))
-    (when line-bounds
-      (let* ((line-start (car line-bounds))
-             (charsets   (list "[:space:]" "[:digit:]" "[:space:]"))
-             (offset     (mtg-deck--skip-charsets-from line-start charsets))
-             (start      (+ offset line-start)))
-        start))))
+  (save-excursion
+    (beginning-of-line)
+    (when (looking-at mtg-deck--line-prefix-rx)
+      (goto-char (match-end 0)))))
 
 (defun mtg-deck--card-complete-at-point ()
   "`completion-at-point-functions' function for MTG cards."
