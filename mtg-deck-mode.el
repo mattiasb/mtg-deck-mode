@@ -30,6 +30,8 @@
 
 ;;; Code:
 
+(require 'subr-x)
+
 (declare-function company-doc-buffer "company")
 
 (defvar mtg-deck--font-lock-defaults
@@ -141,6 +143,38 @@
             :exclusive 'yes
             :company-docsig #'identity
             :company-doc-buffer #'mtg-deck--company-doc-buffer))))
+
+(defun mtg-deck-card-at-point ()
+  "The card at point."
+  (save-excursion
+    (beginning-of-line)
+    (when (looking-at mtg-deck--line-prefix-rx)
+      (goto-char (match-end 0))
+      (string-trim (buffer-substring-no-properties (point)
+                                                   (line-end-position))))))
+
+(defun mtg-deck--card-buffer (card)
+  "Show a CARD in a new buffer."
+  (let ((buf-name (format "*MTG: %s*" card)))
+    (with-current-buffer (get-buffer-create buf-name)
+      (insert (mtg-deck--get-card-by-name card))
+      (view-mode)
+      (switch-to-buffer-other-window (current-buffer)))))
+
+;;;###autoload
+(defun mtg-deck-show-card-at-point ()
+  "Show card at point in a new buffer."
+  (interactive)
+  (let ((card (mtg-deck-card-at-point)))
+    (when card
+      (mtg-deck--card-buffer card))))
+
+;;;###autoload
+(defun mtg-deck-show-card ()
+  "Choose and show a card in a new buffer."
+  (interactive)
+  (let ((cards (mtg-deck--card-names-in-format mtg-deck-format)))
+    (mtg-deck--card-buffer (completing-read "Card: " cards))))
 
 ;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
