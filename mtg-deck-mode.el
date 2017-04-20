@@ -110,15 +110,36 @@
     (dolist (card card-list card-table)
       (puthash (mtg-deck--name-of-card card) card card-table))))
 
-(defun mtg-deck--get-card-by-name (name)
-  "Get card doc info by NAME."
+(defun mtg-deck--replace-all (from to)
+  "Replace string FROM with TO in current buffer."
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward from nil t)
+      (replace-match to nil nil))))
+
+(defun mtg-deck--fill-card-string (card column)
+  "Fill a CARD by COLUMN."
+  (with-temp-buffer
+    (insert card)
+    (mtg-deck--replace-all "\n" "\n\n")
+    (let ((fill-column column))
+      (fill-region (point-min) (point-max)))
+    (mtg-deck--replace-all "\n\n" "\n")
+    (buffer-string)))
+
+(defun mtg-deck--get-card-by-name (name &optional fill-col)
+  "Get card doc info by NAME.
+Optionally if FILL-COL is non-nil fill the card-string by that column."
   (unless mtg-deck--cards-table
     (setq mtg-deck--cards-table (mtg-deck--make-cards-table)))
-  (gethash name mtg-deck--cards-table))
+  (let ((card (gethash name mtg-deck--cards-table)))
+    (if fill-col
+        (mtg-deck--fill-card-string card fill-col)
+      card)))
 
 (defun mtg-deck--company-doc-buffer (card-name)
   "Produce a `company-doc-buffer' for CARD-NAME in FORMAT."
-  (company-doc-buffer (mtg-deck--get-card-by-name card-name)))
+  (company-doc-buffer (mtg-deck--get-card-by-name card-name 72)))
 
 (defvar mtg-deck--line-prefix-rx
   (rx bol
@@ -158,7 +179,7 @@
   (let ((buf-name (format "*MTG Card: %s*" card)))
     (with-current-buffer (get-buffer-create buf-name)
       (erase-buffer)
-      (insert (mtg-deck--get-card-by-name card))
+      (insert (mtg-deck--get-card-by-name card 72))
       (view-mode)
       (switch-to-buffer-other-window (current-buffer)))))
 
