@@ -38,6 +38,9 @@ function add-formats {
             > "${FORMAT/cards/names}"
     done
 
+    fmt -s -w 72 ./all.cards > all.cards.filled &&
+        mv ./all.cards.filled ./all.cards
+
     cd -
 }
 
