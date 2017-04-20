@@ -155,7 +155,7 @@
 
 (defun mtg-deck--card-buffer (card)
   "Show a CARD in a new buffer."
-  (let ((buf-name (format "*MTG: %s*" card)))
+  (let ((buf-name (format "*MTG Card: %s*" card)))
     (with-current-buffer (get-buffer-create buf-name)
       (insert (mtg-deck--get-card-by-name card))
       (view-mode)
