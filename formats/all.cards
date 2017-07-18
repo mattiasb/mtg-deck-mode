@@ -14,6 +14,13 @@ a player taps a land for mana, that player adds one mana to his or
 her mana pool of any type that land produced.
 ARC-C
 
+A Reckoning Approaches
+Scheme
+When you set this scheme in motion, look at the top six cards of
+your library. You may put a creature card from among them onto the
+battlefield. Put the rest on the bottom of your library in any order.
+E01-C
+
 AWOL
 2W
 Instant
@@ -46,6 +53,14 @@ Abandoned Outpost enters the battlefield tapped.
 {T}, Sacrifice Abandoned Outpost: Add one mana of any color to your
 mana pool.
 OD-C
+
+Abandoned Sarcophagus
+3
+Artifact
+You may cast nonland cards with cycling from your graveyard.
+If a card with cycling would be put into your graveyard from anywhere
+and it wasn't cycled, exile it instead.
+HOU-R
 
 Abattoir Ghoul
 3B
@@ -202,6 +217,14 @@ R
 Instant
 Switch target creature's power and toughness until end of turn.
 UL-C
+
+Abrade
+1R
+Instant
+Choose one --
+� Abrade deals 3 damage to target creature.
+� Destroy target artifact.
+HOU-U
 
 Abrupt Decay
 BG
@@ -578,6 +601,15 @@ Creature -- Zombie Centaur
 When Accursed Centaur enters the battlefield, sacrifice a creature.
 ONS-C
 
+Accursed Horde
+3B
+Creature -- Zombie
+3/3
+{1}{B}: Target attacking Zombie gains indestructible until end of
+turn. (Damage and effects that say "destroy" don't destroy it. If
+its toughness is 0 or less, it's still put into its owner's graveyard.)
+HOU-U
+
 Accursed Spirit
 3B
 Creature -- Spirit
@@ -641,7 +673,7 @@ Deathtouch (Any amount of damage this deals to a creature is enough
 to destroy it.)
 When Acidic Slime enters the battlefield, destroy target artifact,
 enchantment, or land.
-M10-U, M11-U, CMD-U, M12-U, M13-U, C13-U, C15-U, DDM-U
+M10-U, M11-U, CMD-U, M12-U, M13-U, C13-U, C15-U, CMA-U, DDM-U
 
 Acidic Sliver
 BR
@@ -743,6 +775,13 @@ At the beginning of your upkeep, you may exile target artifact
 or enchantment. If you do, its controller gains control of Act of
 Authority.
 C13-R
+
+Act of Heroism
+1W
+Instant
+Untap target creature. It gets +2/+2 until end of turn and can block
+an additional creature this turn.
+HOU-C
 
 Act of Treason
 2R
@@ -873,6 +912,16 @@ When Admonition Angel leaves the battlefield, return all cards exiled
 with it to the battlefield under their owners' control.
 WWK-M
 
+Adorned Pouncer
+1W
+Creature -- Cat
+1/1
+Double strike
+Eternalize {3}{W}{W} ({3}{W}{W}, Exile this card from your graveyard:
+Create a token that's a copy of it, except it's a 4/4 black Zombie
+Cat with no mana cost. Eternalize only as a sorcery.)
+HOU-R
+
 Adriana's Valor
 Conspiracy
 Hidden agenda (Start the game with this conspiracy face down in
@@ -999,7 +1048,7 @@ When Aegis Angel enters the battlefield, another target permanent
 gains indestructible for as long as you control Aegis Angel. (Effects
 that say "destroy" don't destroy it. A creature with indestructible
 can't be destroyed by damage.)
-M12-R, M15-R, ORI-R, W16-R
+M12-R, M15-R, ORI-R, W16-R, E01-R
 
 Aegis Automaton
 2
@@ -1076,6 +1125,15 @@ Any number of target creatures each get +1/+1 and gain flying until
 end of turn.
 JOU-C
 
+Aerial Guide
+2U
+Creature -- Drake
+2/2
+Flying
+Whenever Aerial Guide attacks, another target attacking creature
+gains flying until end of turn.
+HOU-C
+
 Aerial Maneuver
 1W
 Instant
@@ -1103,7 +1161,7 @@ Aerial Responder
 Creature -- Dwarf Soldier
 2/3
 Flying, vigilance, lifelink
-KLD-U
+KLD-U, E01-U
 
 Aerial Volley
 G
@@ -1129,7 +1187,7 @@ Creature -- Bird Wizard
 Flying
 {1}{G}{U}: Creatures you control gain shroud until end of turn. (They
 can't be the targets of spells or abilities.)
-CON-U, C13-U
+CON-U, C13-U, CMA-U
 
 Aerie Ouphes
 4G
@@ -1492,7 +1550,7 @@ from among them onto the battlefield. It gains "At the beginning of
 your end step, return this creature to its owner's hand." Then put
 the rest of the cards revealed this way on the bottom of your library
 in any order.
-DIS-R, C13-R, MM3-R
+DIS-R, C13-R, MM3-R, CMA-R
 
 Aetherplasm
 2UU
@@ -2284,7 +2342,7 @@ Land
 Akoum Refuge enters the battlefield tapped.
 When Akoum Refuge enters the battlefield, you gain 1 life.
 {T}: Add {B} or {R} to your mana pool.
-ZEN-U, CMD-U, C13-U, DDK-U, DDP-U
+ZEN-U, CMD-U, C13-U, CMA-U, DDK-U, DDP-U
 
 Akoum Stonewaker
 1R
@@ -2418,7 +2476,7 @@ Akroma's Vengeance
 Sorcery
 Destroy all artifacts, creatures, and enchantments.
 Cycling {3} ({3}, Discard this card: Draw a card.)
-ONS-R, HOP-R, CMD-R, V13-M
+ONS-R, HOP-R, CMD-R, CMA-R, V13-M
 
 Akroma, Angel of Fury
 5RRR
@@ -2429,7 +2487,7 @@ Flying, trample, protection from white and from blue
 {R}: Akroma, Angel of Fury gets +1/+0 until end of turn.
 Morph {3}{R}{R}{R} (You may cast this card face down as a 2/2 creature
 for {3}. Turn it face up any time for its morph cost.)
-PLC-R, CMD-R, V15-M
+PLC-R, CMD-R, CMA-R, V15-M
 
 Akroma, Angel of Wrath
 5WWW
@@ -3055,7 +3113,7 @@ Altar's Reap
 Instant
 As an additional cost to cast Altar's Reap, sacrifice a creature.
 Draw two cards.
-ISD-C, M14-C, CNS-C, BFZ-C, C15-C, CN2-C, DDR-C
+ISD-C, M14-C, CNS-C, BFZ-C, C15-C, CN2-C, CMA-C, DDR-C
 
 Alter Reality
 1U
@@ -3134,7 +3192,7 @@ Ambition's Cost
 3B
 Sorcery
 You draw three cards and you lose 3 life.
-P3K-R, 8ED-U, C15-U, DDR-U
+P3K-R, 8ED-U, C15-U, CMA-U, DDR-U
 
 Ambitious Aetherborn
 4B
@@ -3143,6 +3201,13 @@ Creature -- Aetherborn Artificer
 Fabricate 1 (When this creature enters the battlefield, put a +1/+1
 counter on it or create a 1/1 colorless Servo artifact creature token.)
 KLD-C
+
+Ambuscade
+2G
+Instant
+Target creature you control gets +1/+0 until end of turn. It deals
+damage equal to its power to target creature an opponent controls.
+HOU-C
 
 Ambuscade Shaman
 2B
@@ -3193,6 +3258,18 @@ Flash (You may cast this spell any time you could cast an instant.)
 Deathtouch (Any amount of damage this deals to a creature is enough
 to destroy it.)
 ISD-C
+
+Ammit Eternal
+2B
+Creature -- Zombie Crocodile Demon
+5/5
+Afflict 3 (Whenever this creature becomes blocked, defending player
+loses 3 life.)
+Whenever an opponent casts a spell, put a -1/-1 counter on Ammit
+Eternal.
+Whenever Ammit Eternal deals combat damage to a player, remove all
+-1/-1 counters from it.
+HOU-R
 
 Amnesia
 3UUU
@@ -3716,6 +3793,19 @@ Black spells you cast cost {B} more to cast.
 {B}: Andradite Leech gets +1/+1 until end of turn.
 IN-R
 
+Angel of Condemnation
+2WW
+Creature -- Angel
+3/3
+Flying, vigilance
+{2}{W}, {T}: Exile another target creature. Return that card to the
+battlefield under its owner's control at the beginning of the next
+end step.
+{2}{W}, {T}, Exert Angel of Condemnation: Exile another target
+creature until Angel of Condemnation leaves the battlefield. (An
+exerted creature won't untap during your next untap step.)
+HOU-R
+
 Angel of Deliverance
 6WW
 Creature -- Angel
@@ -3732,7 +3822,7 @@ Creature -- Angel
 5/5
 Flying
 When Angel of Despair enters the battlefield, destroy target permanent.
-GPT-R, CMD-R
+GPT-R, CMD-R, CMA-R
 
 Angel of Finality
 3W
@@ -3741,7 +3831,7 @@ Creature -- Angel
 Flying
 When Angel of Finality enters the battlefield, exile all cards from
 target player's graveyard.
-C13-R
+C13-R, CMA-R
 
 Angel of Flight Alabaster
 4W
@@ -3870,6 +3960,14 @@ When Angel of the Dire Hour enters the battlefield, if you cast it
 from your hand, exile all attacking creatures.
 C14-R
 
+Angel of the God-Pharaoh
+4WW
+Creature -- Angel
+4/4
+Flying
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-U
+
 Angel's Feather
 2
 Artifact
@@ -3949,7 +4047,7 @@ Creature -- Angel
 Flying
 Each opponent who cast a spell this turn can't attack with creatures.
 Each opponent who attacked with a creature this turn can't cast spells.
-M11-R, CMD-R
+M11-R, CMD-R, CMA-R
 
 Angelic Armaments
 3
@@ -4128,7 +4226,7 @@ Creature -- Incarnation
 Haste
 As long as Anger is in your graveyard and you control a Mountain,
 creatures you control have haste.
-JUD-U, CMD-U, DDI-U
+JUD-U, CMD-U, CMA-U, DDI-U
 
 Anger of the Gods
 1RR
@@ -4349,7 +4447,7 @@ W
 Creature -- Human Cleric
 1/1
 {T}: Target attacking creature gets +1/+1 until end of turn.
-ORI-U
+ORI-U, E01-U
 
 Anowon, the Ruin Sage
 3BB
@@ -4594,6 +4692,17 @@ with a name originally printed in the Homelands expansion. They can't
 be regenerated.
 HL-R
 
+Apocalypse Demon
+4BB
+Creature -- Demon
+*/*
+Flying
+Apocalypse Demon's power and toughness are each equal to the number
+of cards in your graveyard.
+At the beginning of your upkeep, tap Apocalypse Demon unless you
+sacrifice another creature.
+HOU-R
+
 Apocalypse Hydra
 XRG
 Creature -- Hydra
@@ -4629,6 +4738,24 @@ Creature -- Kithkin Cleric
 Whenever a player casts a white spell, you may pay {1}. If you do,
 you gain 1 life.
 SHM-C
+
+Appeal
+G
+Sorcery
+Until end of turn, target creature gains trample and gets +X/+X,
+where X is the number of creatures you control.
+[This is half of the split card Appeal // Authority.]
+HOU-U
+
+Appeal // Authority
+G // 1W
+Sorcery // Sorcery
+Until end of turn, target creature gains trample and gets +X/+X,
+where X is the number of creatures you control. // Aftermath (Cast
+this spell only from your graveyard. Then exile it.)
+Tap up to two target creatures your opponents control. Creatures you
+control gain vigilance until end of turn.
+HOU-U
 
 Appetite for Brains
 B
@@ -4966,7 +5093,7 @@ Instant
 Counter target spell. Its controller may draw up to two cards at the
 beginning of the next turn's upkeep.
 You draw a card at the beginning of the next turn's upkeep.
-AI-C, C13-C, C16-C, MED-C
+AI-C, C13-C, C16-C, CMA-C, MED-C
 
 Arcane Laboratory
 2U
@@ -5227,7 +5354,7 @@ As Archangel of Strife enters the battlefield, each player chooses
 war or peace.
 Creatures controlled by players who chose war get +3/+0.
 Creatures controlled by players who chose peace get +0/+3.
-CMD-R, V15-M
+CMD-R, CMA-R, V15-M
 
 Archangel of Thune
 3WW
@@ -5368,7 +5495,7 @@ Creature -- Demon
 Flying
 At the beginning of each opponent's end step, that player chooses up
 to two creatures he or she controls, then sacrifices the rest.
-FRF-R
+FRF-R, E01-R
 
 Archfiend of Ifnir
 3BB
@@ -5814,8 +5941,8 @@ Armageddon
 3W
 Sorcery
 Destroy all lands.
-A-R, B-R, U-R, RV-R, 4E-R, 5E-R, P1-R, P2-R, 6E-R, S99-R, VMA-M,
-ME4-R, MED-R, V14-M
+A-R, B-R, U-R, RV-R, 4E-R, 5E-R, P1-R, P2-R, 6E-R, S99-R, MPS_AKH-S,
+VMA-M, ME4-R, MED-R, V14-M
 
 Armageddon Clock
 6
@@ -5884,7 +6011,7 @@ Artifact
 {2}, {T}, Sacrifice Armillary Sphere: Search your library for up to
 two basic land cards, reveal them, and put them into your hand. Then
 shuffle your library.
-CON-C, CMD-C, PC2-C, C13-C, PCA-C, DDG-C, DDI-C
+CON-C, CMD-C, PC2-C, C13-C, PCA-C, CMA-C, DDG-C, DDI-C
 
 Armistice
 2W
@@ -6709,7 +6836,7 @@ At the beginning of each opponent's upkeep, you may have that player
 gain control of equipped creature until end of turn. If you do,
 untap it.
 Equip {3}
-C14-U, C16-U
+C14-U, C16-U, CMA-U
 
 Assault Zeppelid
 2GU
@@ -7388,6 +7515,15 @@ Choose two --
 � Destroy all creatures with converted mana cost 4 or greater.
 LRW-R, CMD-R, MPS_AKH-S
 
+Authority
+1W
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Tap up to two target creatures your opponents control. Creatures you
+control gain vigilance until end of turn.
+[This is half of the split card Appeal // Authority.]
+HOU-U
+
 Authority of the Consuls
 W
 Enchantment
@@ -7592,7 +7728,7 @@ If an opponent controls seven or more lands, Avatar of Fury costs {6}
 less to cast.
 Flying
 {R}: Avatar of Fury gets +1/+0 until end of turn.
-PR-R, CMD-R
+PR-R, CMD-R, E01-R
 
 Avatar of Hope
 6WW
@@ -7629,7 +7765,7 @@ Avatar of Slaughter
 Creature -- Avatar
 8/8
 All creatures have double strike and attack each turn if able.
-CMD-R
+CMD-R, CMA-R
 
 Avatar of Will
 6UU
@@ -7649,7 +7785,7 @@ Avatar of Woe costs {6} less to cast.
 Fear (This creature can't be blocked except by artifact creatures
 and/or black creatures.)
 {T}: Destroy target creature. It can't be regenerated.
-PR-R, TSP-S, ARC-R, CMD-R, CN2-M, PD3-R
+PR-R, TSP-S, ARC-R, CMD-R, CN2-M, MPS_AKH-S, PD3-R
 
 Avatar of the Resolute
 GG
@@ -7819,6 +7955,14 @@ Flying
 or player this turn.
 LGN-C
 
+Aven Reedstalker
+3U
+Creature -- Bird Warrior
+2/3
+Flash
+Flying
+HOU-C
+
 Aven Riftwatcher
 2W
 Creature -- Bird Rebel Soldier
@@ -7956,6 +8100,14 @@ or reach.)
 {1}{U}: Target player reveals the top card of his or her library.
 OD-C, 9ED-C, 10E-C
 
+Aven of Enduring Hope
+4W
+Creature -- Bird Cleric
+3/3
+Flying
+When Aven of Enduring Hope enters the battlefield, you gain 3 life.
+HOU-C
+
 Avenger en-Dal
 1W
 Creature -- Human Spellshaper
@@ -8013,6 +8165,14 @@ Creature -- Dwarf Artificer
 When Aviary Mechanic enters the battlefield, you may return another
 permanent you control to its owner's hand.
 KLD-C
+
+Avid Reclaimer
+2G
+Creature -- Human Druid
+2/2
+{T}: Add {G} or {U} to your mana pool. If you control a Nissa
+planeswalker, you gain 2 life.
+HOU-U
 
 Avizoa
 3U
@@ -8209,7 +8369,7 @@ Azami, Lady of Scrolls
 Legendary Creature -- Human Wizard
 0/2
 Tap an untapped Wizard you control: Draw a card.
-CHK-R, C13-R
+CHK-R, C13-R, CMA-R
 
 Azamuki, Treachery Incarnate
 1RR
@@ -8263,7 +8423,7 @@ Azorius Chancery enters the battlefield tapped.
 When Azorius Chancery enters the battlefield, return a land you
 control to its owner's hand.
 {T}: Add {W}{U} to your mana pool.
-DIS-C, CMD-C, C13-C, MM2-U, C16-U, DDI-C
+DIS-C, CMD-C, C13-C, MM2-U, C16-U, CMA-C, DDI-C
 
 Azorius Charm
 WU
@@ -8293,7 +8453,7 @@ Azorius Guildgate
 Land -- Gate
 Azorius Guildgate enters the battlefield tapped.
 {T}: Add {W} or {U} to your mana pool.
-RTR-C, DGM-C, C13-C, MM3-C
+RTR-C, DGM-C, C13-C, MM3-C, CMA-C
 
 Azorius Guildmage
 (w/u)(w/u)
@@ -8330,7 +8490,7 @@ Artifact
 {T}: Add {W} or {U} to your mana pool.
 {W}{U}: Azorius Keyrune becomes a 2/2 white and blue Bird artifact
 creature with flying until end of turn.
-RTR-U, C13-U
+RTR-U, C13-U, CMA-U
 
 Azorius Ploy
 1WWU
@@ -8714,7 +8874,7 @@ Artifact Creature -- Bird
 1/1
 Flying, deathtouch
 When Baleful Strix enters the battlefield, draw a card.
-PC2-U, C13-U, EMA-R, C16-U, PCA-U, VMA-R
+PC2-U, C13-U, EMA-R, C16-U, PCA-U, E01-U, VMA-R
 
 Ball Lightning
 RRR
@@ -8934,7 +9094,7 @@ Creature -- Elemental
 When Bane of Progress enters the battlefield, destroy all artifacts
 and enchantments. Put a +1/+1 counter on Bane of Progress for each
 permanent destroyed this way.
-C13-R, C15-R
+C13-R, C15-R, CMA-R
 
 Bane of the Living
 2BB
@@ -8976,6 +9136,16 @@ Enchant creature
 When enchanted creature dies, that creature's controller loses life
 equal to its toughness.
 ALA-C
+
+Banewhip Punisher
+2B
+Creature -- Human Warrior
+2/2
+When Banewhip Punisher enters the battlefield, you may put a -1/-1
+counter on target creature.
+{B}, Sacrifice Banewhip Punisher: Destroy target creature that has
+a -1/-1 counter on it.
+HOU-U
 
 Banisher Priest
 1WW
@@ -9041,7 +9211,7 @@ creature that's tapped and attacking that player or a planeswalker
 he or she controls. Exile the tokens at end of combat.)
 Whenever Banshee of the Dread Choir deals combat damage to a player,
 that player discards a card.
-C15-U
+C15-U, CMA-U
 
 Banshee's Blade
 2
@@ -9088,7 +9258,7 @@ Land
 {1}, {T}, Sacrifice Bant Panorama: Search your library for a basic
 Forest, Plains, or Island card and put it onto the battlefield
 tapped. Then shuffle your library.
-ALA-C, C13-C
+ALA-C, C13-C, CMA-C
 
 Bant Sojourners
 1GWU
@@ -9406,7 +9576,7 @@ Land
 Barren Moor enters the battlefield tapped.
 {T}: Add {B} to your mana pool.
 Cycling {B} ({B}, Discard this card: Draw a card.)
-ONS-C, ARC-C, CMD-C, C13-C, C14-C, C15-C, VMA-C, DDC-C, DDJ-C
+ONS-C, ARC-C, CMD-C, C13-C, C14-C, C15-C, CMA-C, VMA-C, DDC-C, DDJ-C
 
 Barrenton Cragtreads
 2(w/u)(w/u)
@@ -9491,7 +9661,7 @@ Barter in Blood
 2BB
 Sorcery
 Each player sacrifices two creatures.
-MRD-U, AVR-U, C15-U, DDC-U, DDQ-U
+MRD-U, AVR-U, C15-U, CMA-U, DDC-U, DDQ-U
 
 Baru, Fist of Krosa
 3GG
@@ -9546,7 +9716,7 @@ Artifact
 Basalt Monolith doesn't untap during your untap step.
 {T}: Add {C}{C}{C} to your mana pool.
 {3}: Untap Basalt Monolith.
-A-U, B-U, U-U, RV-U, C13-U, C15-U, ME4-U
+A-U, B-U, U-U, RV-U, C13-U, C15-U, CMA-U, ME4-U
 
 Basandra, Battle Seraph
 3RW
@@ -9555,7 +9725,7 @@ Legendary Creature -- Angel
 Flying
 Players can't cast spells during combat.
 {R}: Target creature attacks this turn if able.
-CMD-R, CNS-R, VMA-R
+CMD-R, CNS-R, CMA-R, VMA-R
 
 Bash to Bits
 3R
@@ -9649,7 +9819,7 @@ Instant
 Radiance -- Choose a color. Target creature and each other creature
 that shares a color with it gain protection from the chosen color
 until end of turn.
-RAV-U, CMD-U
+RAV-U, CMD-U, CMA-U
 
 Baton of Courage
 3
@@ -9868,7 +10038,7 @@ Creature -- Goblin Shaman
 2/2
 At the beginning of combat on your turn, you may have target creature
 get +2/+0 until end of turn.
-ROE-C, MM3-C
+ROE-C, MM3-C, E01-C
 
 Battlefield Forge
 Land
@@ -9910,8 +10080,8 @@ Creature -- Centaur
 3/3
 Threshold -- Put three cards from your graveyard on the bottom of your
 library: Battlefield Scrounger gets +3/+3 until end of turn. Activate
-this ability only once each turn, and only if seven or more cards
-are in your graveyard.
+this ability only once each turn and only if seven or more cards are
+in your graveyard.
 JUD-C
 
 Battlefield Thaumaturge
@@ -10272,7 +10442,7 @@ Whenever a creature you control attacks, you may put a quest counter
 on Beastmaster Ascension.
 As long as Beastmaster Ascension has seven or more quest counters on
 it, creatures you control get +5/+5.
-ZEN-R, C14-R, C15-R, C16-R
+ZEN-R, C14-R, C15-R, C16-R, CMA-R
 
 Beastmaster's Magemark
 2G
@@ -10291,6 +10461,14 @@ Protection from red
 Beasts of Bogardan gets +1/+1 as long as an opponent controls a
 nontoken white permanent.
 LE-U, CH-U
+
+Because I Have Willed It
+Ongoing Scheme
+(An ongoing scheme remains face up until it's abandoned.)
+Spells you cast cost {1} less to cast.
+At the beginning of your opponents' end step, if they cast four or
+more spells this turn, abandon this scheme.
+E01-C
 
 Beck
 GU
@@ -10404,6 +10582,14 @@ with greater power.)
 {4}{W}: Creatures you control get +1/+1 until end of turn.
 SOI-U
 
+Behold My Grandeur
+Scheme
+When you set this scheme in motion, add {U}{B}{R} to your mana pool.
+When you set this scheme in motion, if you control six or more lands,
+you may search your library for a card with converted mana cost 6 or
+greater, reveal it, put it into your hand, then shuffle your library.
+E01-C
+
 Behold the Beyond
 5BB
 Sorcery
@@ -10448,6 +10634,16 @@ Haunt (When this creature dies, exile it haunting target creature.)
 When Belfry Spirit enters the battlefield or the creature it haunts
 dies, create two 1/1 black Bat creature tokens with flying.
 GPT-U
+
+Believe
+4G
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Look at the top card of your library. You may put it onto the
+battlefield if it's a creature card. If you don't, put it into
+your hand.
+[This is half of the split card Reason // Believe.]
+HOU-R
 
 Belligerent Hatchling
 3(r/w)
@@ -10658,6 +10854,14 @@ piles. For each player, one of his or her piles is chosen by one of
 his or her opponents of his or her choice. Destroy all lands in the
 chosen piles. Tap all lands in the other piles.
 IN-R
+
+Beneath the Sands
+2G
+Sorcery
+Search your library for a basic land card, put it onto the battlefield
+tapped, then shuffle your library.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-C
 
 Benediction of Moons
 W
@@ -11125,6 +11329,13 @@ At the beginning of your upkeep, you lose 1 life and create a 1/1
 black Faerie Rogue creature token with flying.
 MOR-R, MM2-M
 
+Bitterbow Sharpshooters
+4G
+Creature -- Jackal Archer
+4/4
+Vigilance, reach
+HOU-C
+
 Bitterheart Witch
 4B
 Creature -- Human Shaman
@@ -11382,7 +11593,7 @@ Flying
 When Bladewing the Risen enters the battlefield, you may return target
 Dragon permanent card from your graveyard to the battlefield.
 {B}{R}: Dragon creatures get +1/+1 until end of turn.
-SCG-R, CMD-R, DRB-R
+SCG-R, CMD-R, CMA-R, DRB-R
 
 Bladewing's Thrall
 2BB
@@ -12178,7 +12389,7 @@ Blood Bairn
 Creature -- Vampire
 2/2
 Sacrifice another creature: Blood Bairn gets +2/+2 until end of turn.
-M14-C, C15-C
+M14-C, C15-C, CMA-C
 
 Blood Baron of Vizkopa
 3WB
@@ -12287,7 +12498,7 @@ Blood Moon
 2R
 Enchantment
 Nonbasic lands are Mountains.
-DK-R, CH-R, 8ED-R, 9ED-R, MMA-R, MM3-R
+DK-R, CH-R, 8ED-R, 9ED-R, MMA-R, MM3-R, MPS_AKH-S
 
 Blood Oath
 3R
@@ -12306,7 +12517,7 @@ Bloodthirst 1 (If an opponent was dealt damage this turn, this creature
 enters the battlefield with a +1/+1 counter on it.)
 First strike (This creature deals combat damage before creatures
 without first strike.)
-M12-C, MM2-C, DDL-C
+M12-C, MM2-C, E01-C, DDL-C
 
 Blood Pet
 B
@@ -12381,7 +12592,7 @@ At the beginning of your upkeep, each player loses 1 life. Put a
 +1/+1 counter on Blood Tyrant for each 1 life lost this way.
 Whenever a player loses the game, put five +1/+1 counters on Blood
 Tyrant.
-CON-R, C16-R
+CON-R, C16-R, E01-R
 
 Blood Vassal
 2B
@@ -12841,7 +13052,7 @@ many +1/+1 counters on it.)
 Each other creature you control enters the battlefield with an
 additional X +1/+1 counters on it, where X is the number of +1/+1
 counters on Bloodspore Thrinax.
-C15-R
+C15-R, CMA-R
 
 Bloodstained Mire
 Land
@@ -12891,6 +13102,17 @@ Creature -- Vampire
 1/1
 Sacrifice a creature: Bloodthrone Vampire gets +2/+2 until end of turn.
 ROE-C, M11-C, M13-C, MM2-C, DDP-C
+
+Bloodwater Entity
+1UR
+Creature -- Elemental
+2/2
+Flying
+Prowess (Whenever you cast a noncreature spell, this creature gets
++1/+1 until end of turn.)
+When Bloodwater Entity enters the battlefield, you may put target
+instant or sorcery card from your graveyard on top of your library.
+HOU-U
 
 Bloom Tender
 1G
@@ -12973,7 +13195,7 @@ XUUU
 Instant
 Target player draws X cards. Shuffle Blue Sun's Zenith into its
 owner's library.
-MBS-R, C13-R, C15-R
+MBS-R, C13-R, C15-R, CMA-R
 
 Blue Ward
 W
@@ -12997,6 +13219,13 @@ Creature -- Sliver
 Sliver creatures you control have haste. (They can attack and {T}
 as soon as they come under your control.)
 M14-C
+
+Blur of Blades
+1R
+Instant
+Put a -1/-1 counter on target creature. Blur of Blades deals 2 damage
+to that creature's controller.
+HOU-C
 
 Blurred Mongoose
 1G
@@ -13348,7 +13577,7 @@ Boil
 3R
 Instant
 Destroy all Islands.
-TE-U, 6E-U, 7E-U, 8ED-U
+TE-U, 6E-U, 7E-U, 8ED-U, MPS_AKH-S
 
 Boiling Blood
 2R
@@ -13378,7 +13607,7 @@ Bojuka Bog enters the battlefield tapped.
 When Bojuka Bog enters the battlefield, exile all cards from target
 player's graveyard.
 {T}: Add {B} to your mana pool.
-WWK-C, CMD-C, C13-C, C14-C
+WWK-C, CMD-C, C13-C, C14-C, CMA-C
 
 Bojuka Brigand
 1B
@@ -13640,7 +13869,7 @@ Living weapon (When this Equipment enters the battlefield, create a
 Equipped creature gets +X/+X, where X is the number of creature cards
 in all graveyards.
 Equip {2}
-MBS-R, C14-R, C15-R, C16-R
+MBS-R, C14-R, C15-R, C16-R, CMA-R
 
 Boneknitter
 1B
@@ -13718,6 +13947,13 @@ under your control this turn.
 {1}{B}, Sacrifice another creature: Scry 1. Each opponent loses 1
 life and you gain 1 life.
 AKH-M, MPS_AKH-S
+
+Bontu's Last Reckoning
+1BB
+Sorcery
+Destroy all creatures. Lands you control don't untap during your next
+untap step.
+HOU-R
 
 Bontu's Monument
 3
@@ -13987,7 +14223,7 @@ Boros Garrison enters the battlefield tapped.
 When Boros Garrison enters the battlefield, return a land you control
 to its owner's hand.
 {T}: Add {R}{W} to your mana pool.
-RAV-C, HOP-C, CMD-C, C13-C, MM2-U, C15-C, C16-U
+RAV-C, HOP-C, CMD-C, C13-C, MM2-U, C15-C, C16-U, CMA-C
 
 Boros Guildgate
 Land -- Gate
@@ -14001,7 +14237,7 @@ Creature -- Human Wizard
 2/2
 {1}{R}: Target creature gains haste until end of turn.
 {1}{W}: Target creature gains first strike until end of turn.
-RAV-U, HOP-U, CMD-U
+RAV-U, HOP-U, CMD-U, CMA-U
 
 Boros Keyrune
 3
@@ -14043,7 +14279,7 @@ Boros Signet
 2
 Artifact
 {1}, {T}: Add {R}{W} to your mana pool.
-RAV-C, HOP-C, CMD-C, C15-C, MM3-U
+RAV-C, HOP-C, CMD-C, C15-C, MM3-U, CMA-C
 
 Boros Swiftblade
 RW
@@ -14083,7 +14319,7 @@ Borrowing 100,000 Arrows
 2U
 Sorcery
 Draw a card for each tapped creature target opponent controls.
-P3K-U, C13-U, ME3-U
+P3K-U, C13-U, CMA-U, ME3-U
 
 Borrowing the East Wind
 XGG
@@ -14319,6 +14555,17 @@ Attacking creatures you control have deathtouch.
 your library in any order.
 THS-R
 
+Bow to My Command
+Ongoing Scheme
+(An ongoing scheme remains face up until it's abandoned.)
+As you set this scheme in motion, choose an opponent.
+Creatures the chosen player controls can't attack you or planeswalkers
+you control.
+At the beginning of your opponents' end step, they may tap any number
+of untapped creatures they control with total power 8 or greater. If
+they do, abandon this scheme.
+E01-C
+
 Bower Passage
 1G
 Enchantment
@@ -14544,6 +14791,14 @@ Trample
 Tap an untapped creature you control: Bramblesnap gets +1/+1 until
 end of turn.
 ROE-U
+
+Brambleweft Behemoth
+4GG
+Creature -- Elemental
+6/6
+Trample (This creature can deal excess combat damage to defending
+player or planeswalker while attacking.)
+HOU-C
 
 Bramblewood Paragon
 1G
@@ -16057,6 +16312,15 @@ When Burning-Eye Zubera dies, if 4 or more damage was dealt to it this
 turn, Burning-Eye Zubera deals 3 damage to target creature or player.
 SOK-U
 
+Burning-Fist Minotaur
+1R
+Creature -- Minotaur Wizard
+2/1
+First strike
+{1}{R}, Discard a card: Burning-Fist Minotaur gets +2/+0 until end
+of turn.
+HOU-U
+
 Burning-Tree Bloodscale
 2RG
 Creature -- Viashino Berserker
@@ -16227,7 +16491,7 @@ Creature -- Vampire Warrior
 Flying
 Whenever Butcher of Malakir or another creature you control dies,
 each opponent sacrifices a creature.
-WWK-R, CMD-R, C14-R, C15-R, DDK-R, DDP-R
+WWK-R, CMD-R, C14-R, C15-R, CMA-R, DDK-R, DDP-R
 
 Butcher of the Horde
 1RWB
@@ -16791,7 +17055,7 @@ Myriad (Whenever this creature attacks, for each opponent other
 than defending player, you may create a token that's a copy of this
 creature that's tapped and attacking that player or a planeswalker
 he or she controls. Exile the tokens at end of combat.)
-C15-U
+C15-U, CMA-U
 
 Caller of the Untamed
 3G
@@ -17169,7 +17433,7 @@ Instant
 Buyback {3} (You may pay an additional {3} as you cast this spell. If
 you do, put this card into your hand as it resolves.)
 Return target permanent to its owner's hand.
-TE-C
+TE-C, MPS_AKH-S
 
 Captain Sisay
 2GW
@@ -17563,6 +17827,13 @@ Whenever Carrion Rats attacks or blocks, any player may exile a card
 from his or her graveyard. If a player does, Carrion Rats assigns no
 combat damage this turn.
 TOR-C
+
+Carrion Screecher
+3B
+Creature -- Zombie Bird
+3/1
+Flying
+HOU-C
 
 Carrion Thrash
 2BRG
@@ -18550,7 +18821,7 @@ counters on it equal to the number of land cards in all graveyards.
 Whenever a land card is put into a graveyard from anywhere, you may
 pay {G}{G}. If you do, return Centaur Vinecrasher from your graveyard
 to your hand.
-C15-R
+C15-R, CMA-R
 
 Centaur's Herald
 G
@@ -19024,7 +19295,18 @@ Creature -- Skeleton Warrior
 cards from your graveyard to the battlefield.
 {5}{B}{B}: Put Champion of Stray Souls on top of your library from
 your graveyard.
-BNG-M, C15-M
+BNG-M, C15-M, CMA-M
+
+Champion of Wits
+2U
+Creature -- Naga Wizard
+2/1
+When Champion of Wits enters the battlefield, you may draw cards
+equal to its power. If you do, discard two cards.
+Eternalize {5}{U}{U} ({5}{U}{U}, Exile this card from your graveyard:
+Create a token that's a copy of it, except it's a 4/4 black Zombie
+Naga Wizard with no mana cost. Eternalize only as a sorcery.)
+HOU-R
 
 Champion of the Parish
 W
@@ -19059,6 +19341,14 @@ Cast Champion's Victory only during the declare attackers step and
 only if you've been attacked this step.
 Return target attacking creature to its owner's hand.
 P3K-U
+
+Chance
+3R
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Discard any number of cards, then draw that many cards.
+[This is half of the split card Leave // Chance.]
+HOU-R
 
 Chance Encounter
 2RR
@@ -19152,6 +19442,14 @@ Planeswalker -- Chandra
 he or she controls.
 LRW-R, M10-M, M11-M, DD2-M
 
+Chandra's Defeat
+R
+Instant
+Chandra's Defeat deals 5 damage to target red creature or red
+planeswalker. If that permanent is a Chandra planeswalker, you may
+discard a card. If you do, draw a card.
+HOU-U
+
 Chandra's Fury
 4R
 Instant
@@ -19171,7 +19469,7 @@ Chandra's Outrage
 Instant
 Chandra's Outrage deals 4 damage to target creature and 2 damage to
 that creature's controller.
-ARC-C, M11-C, M12-C, M14-C, MM3-C
+ARC-C, M11-C, M12-C, M14-C, MM3-C, E01-C
 
 Chandra's Phoenix
 1RR
@@ -19183,7 +19481,7 @@ your control.)
 Whenever an opponent is dealt damage by a red instant or sorcery spell
 you control or by a red planeswalker you control, return Chandra's
 Phoenix from your graveyard to your hand.
-M12-R, M14-R
+M12-R, M14-R, E01-R
 
 Chandra's Pyrohelix
 1R
@@ -19251,7 +19549,7 @@ can't block this turn.
 [-7]: Exile the top ten cards of your library. Choose an instant or
 sorcery card exiled this way and copy it three times. You may cast
 the copies without paying their mana costs.
-M14-M, M15-M
+M14-M, M15-M, E01-M
 
 Chandra, Roaring Flame
 Planeswalker -- Chandra
@@ -19441,6 +19739,14 @@ Chaos Lord if the number of permanents is even.
 Chaos Lord can attack as though it had haste unless it entered the
 battlefield this turn.
 IA-R
+
+Chaos Maw
+5RR
+Creature -- Hellion
+6/6
+When Chaos Maw enters the battlefield, it deals 3 damage to each
+other creature.
+HOU-R
 
 Chaos Moon
 3R
@@ -20124,7 +20430,7 @@ Choke
 2G
 Enchantment
 Islands don't untap during their controllers' untap steps.
-TE-U, 8ED-U
+TE-U, 8ED-U, MPS_AKH-S
 
 Choked Estuary
 Land
@@ -20178,6 +20484,14 @@ When you set this scheme in motion, target opponent chooses a
 player. Until your next turn, only you and the chosen player can cast
 spells and attack with creatures.
 ARC-C
+
+Choose Your Demise
+Scheme
+When you set this scheme in motion, look at the top four cards of your
+library and separate them into a face-down pile and a face-up pile. An
+opponent chooses one of those piles. Put the cards in that pile into
+your hand and the rest on the bottom of your library in any order.
+E01-C
 
 Chord of Calling
 XGGG
@@ -20441,7 +20755,7 @@ Cinder Barrens
 Land
 Cinder Barrens enters the battlefield tapped.
 {T}: Add {B} or {R} to your mana pool.
-OGW-U, AKH-C
+OGW-U, AKH-C, HOU-C
 
 Cinder Cloud
 3RR
@@ -20829,6 +21143,23 @@ this way, untap Civilized Scholar, then transform it.
 [Front face. Transforms into Homicidal Brute.]
 ISD-U
 
+Claim
+B
+Sorcery
+Return target creature card with converted mana cost 2 or less from
+your graveyard to the battlefield.
+[This is half of the split card Claim // Fame.]
+HOU-U
+
+Claim // Fame
+B // 1R
+Sorcery // Sorcery
+Return target creature card with converted mana cost 2 or less from
+your graveyard to the battlefield. // Aftermath (Cast this spell only
+from your graveyard. Then exile it.)
+Target creature gets +2/+0 and gains haste until end of turn.
+HOU-U
+
 Claim of Erebos
 1B
 Enchantment -- Aura
@@ -20973,7 +21304,7 @@ Cleansing Beam
 Instant
 Radiance -- Cleansing Beam deals 2 damage to target creature and each
 other creature that shares a color with it.
-RAV-U, CMD-U
+RAV-U, CMD-U, CMA-U
 
 Cleansing Meditation
 1WW
@@ -21616,7 +21947,7 @@ When Cloudthresher enters the battlefield, it deals 2 damage to each
 creature with flying and each player.
 Evoke {2}{G}{G} (You may cast this spell for its evoke cost. If you
 do, it's sacrificed when it enters the battlefield.)
-LRW-R, C15-R, DDR-R
+LRW-R, C15-R, CMA-R, DDR-R
 
 Clout of the Dominus
 (u/r)
@@ -22156,7 +22487,7 @@ Collective Unconscious
 4GG
 Sorcery
 Draw a card for each creature you control.
-MM-R, 8ED-R, C14-R
+MM-R, 8ED-R, C14-R, CMA-R
 
 Collective Voyage
 G
@@ -22298,7 +22629,7 @@ as you cast this spell.)
 Choose target creature or player, then choose another target creature
 or player for each time Comet Storm was kicked. Comet Storm deals X
 damage to each of them.
-WWK-M, CMD-M, MM2-M, C15-M
+WWK-M, CMD-M, MM2-M, C15-M, CMA-M
 
 Comeuppance
 3W
@@ -22322,7 +22653,7 @@ Command Tower
 Land
 {T}: Add to your mana pool one mana of any color in your commander's
 color identity.
-CMD-C, C13-C, C15-C, C16-C
+CMD-C, C13-C, C15-C, C16-C, CMA-C
 
 Command of Unsummoning
 2U
@@ -22373,7 +22704,7 @@ Artifact
 {T}: Add to your mana pool one mana of any color in your commander's
 color identity.
 Sacrifice Commander's Sphere: Draw a card.
-C14-C, C16-C
+C14-C, C16-C, CMA-C
 
 Commando Raid
 2R
@@ -22542,7 +22873,7 @@ Compulsive Research
 Sorcery
 Target player draws three cards. Then that player discards two cards
 unless he or she discards a land card.
-RAV-C, CNS-C, C14-C, MM3-U
+RAV-C, CNS-C, C14-C, MM3-U, E01-C
 
 Compulsory Rest
 1W
@@ -22767,7 +23098,7 @@ Congregate
 3W
 Instant
 Target player gains 2 life for each creature on the battlefield.
-US-C, HOP-C, CMD-C, M14-U, M15-U
+US-C, HOP-C, CMD-C, M14-U, M15-U, CMA-C
 
 Congregation at Dawn
 GGW
@@ -22812,7 +23143,7 @@ Conjurer's Closet
 Artifact
 At the beginning of your end step, you may exile target creature you
 control, then return that card to the battlefield under your control.
-AVR-R, C13-R
+AVR-R, C13-R, CMA-R
 
 Conquer
 3RR
@@ -22881,6 +23212,21 @@ Artifact
 {3}, {T}: Prevent the next 2 damage that would be dealt to you
 this turn.
 A-U, B-U, U-U, RV-U, 4E-U
+
+Consign
+1U
+Instant
+Return target nonland permanent to its owner's hand.
+[This is half of the split card Consign // Oblivion.]
+HOU-U
+
+Consign // Oblivion
+1U // 4B
+Instant // Sorcery
+Return target nonland permanent to its owner's hand. // Aftermath
+(Cast this spell only from your graveyard. Then exile it.)
+Target opponent discards two cards.
+HOU-U
 
 Consign to Dream
 2U
@@ -23242,7 +23588,7 @@ Control Magic
 Enchantment -- Aura
 Enchant creature
 You control enchanted creature.
-A-U, B-U, U-U, RV-U, 4E-U, C13-U, EMA-R, VMA-R, DDM-U, ME4-R
+A-U, B-U, U-U, RV-U, 4E-U, C13-U, EMA-R, CMA-U, VMA-R, DDM-U, ME4-R
 
 Control of the Court
 1R
@@ -23350,6 +23696,15 @@ may pay {R} to end this effect.
 Enchanted creature can't block.
 ST-U
 
+Cooperate
+2U
+Instant
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Copy target instant or sorcery spell. You may choose new targets for
+the copy.
+[This is half of the split card Refuse // Cooperate.]
+HOU-R
+
 Cooperation
 2W
 Enchantment -- Aura
@@ -23367,7 +23722,7 @@ R
 Instant
 Up to two target creatures each get +1/+0 and gain first strike until
 end of turn.
-THS-U, CN2-U
+THS-U, CN2-U, E01-U
 
 Coordinated Barrage
 W
@@ -23577,7 +23932,7 @@ Creature -- Zombie Wizard
 4/2
 When Corpse Augur dies, you draw X cards and you lose X life, where
 X is the number of creature cards in target player's graveyard.
-C15-U
+C15-U, CMA-U
 
 Corpse Blockade
 2B
@@ -23957,6 +24312,14 @@ UB
 Instant
 Counter target noncreature spell. Its controller loses 2 life.
 CON-U, DDH-U
+
+Countervailing Winds
+2U
+Instant
+Counter target spell unless its controller pays {1} for each card in
+your graveyard.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-C
 
 Countless Gears Renegade
 1W
@@ -24343,6 +24706,13 @@ Landing deals damage to that creature equal to the number of Forests
 you control.
 GPT-U
 
+Crash Through
+R
+Sorcery
+Creatures you control gain trample until end of turn.
+Draw a card.
+HOU-C
+
 Crash of Rhinos
 6GG
 Creature -- Rhino
@@ -24558,7 +24928,7 @@ Creature -- Plant Elemental
 Trample
 {1}{G}: Until end of turn, target creature you control has base power
 and toughness 5/5 and gains trample.
-C14-R
+C14-R, CMA-R
 
 Creeping Corrosion
 2GG
@@ -24642,6 +25012,15 @@ Haste
 Provoke (Whenever this creature attacks, you may have target creature
 defending player controls untap and block it if able.)
 LGN-C
+
+Crested Sunmare
+3WW
+Creature -- Horse
+5/5
+Other Horses you control have indestructible.
+At the beginning of each end step, if you gained life this turn,
+create a 5/5 white Horse creature token.
+HOU-M
 
 Crevasse
 2R
@@ -24793,6 +25172,13 @@ Legendary Creature -- Illusion
 {R}{W}: Cromat gets +1/+1 until end of turn.
 {G}{U}: Put Cromat on top of its owner's library.
 AP-R
+
+Crook of Condemnation
+2
+Artifact
+{1}, {T}: Exile target card from a graveyard.
+{1}, Exile Crook of Condemnation: Exile all cards from all graveyards.
+HOU-U
 
 Crookclaw Elder
 5U
@@ -25221,7 +25607,7 @@ Sorcery
 Target opponent sacrifices a creature, discards three cards, then loses
 5 life. You return a creature card from your graveyard to your hand,
 draw three cards, then gain 5 life.
-ALA-R, C13-R, MM3-R, DDH-R, V13-M
+ALA-R, C13-R, MM3-R, E01-R, DDH-R, V13-M
 
 Crumble
 G
@@ -25259,7 +25645,7 @@ Crumbling Necropolis
 Land
 Crumbling Necropolis enters the battlefield tapped.
 {T}: Add {U}, {B}, or {R} to your mana pool.
-ALA-U, C13-U, C16-U, MM3-U, DDH-U
+ALA-U, C13-U, C16-U, MM3-U, E01-U, DDH-U
 
 Crumbling Sanctuary
 5
@@ -25470,6 +25856,13 @@ Crypt of Agadeem enters the battlefield tapped.
 your graveyard.
 ZEN-R, C14-R
 
+Crypt of the Eternals
+Land
+When Crypt of the Eternals enters the battlefield, you gain 1 life.
+{T}: Add {C} to your mana pool.
+{1}, {T}: Add {U}, {B}, or {R} to your mana pool.
+HOU-U
+
 Cryptborn Horror
 1(b/r)(b/r)
 Creature -- Horror
@@ -25633,7 +26026,7 @@ Crystal Vein
 Land
 {T}: Add {C} to your mana pool.
 {T}, Sacrifice Crystal Vein: Add {C}{C} to your mana pool.
-MI-U, 6E-U, C14-U, PD3-U
+MI-U, 6E-U, C14-U, CMA-U, PD3-U
 
 Crystalline Crawler
 4
@@ -25759,7 +26152,7 @@ Sorcery
 Search your library for up to two basic land cards, reveal those
 cards, and put one onto the battlefield tapped and the other into
 your hand. Then shuffle your library.
-M11-C, CMD-C, PC2-C, C13-C, C16-C, PCA-C
+M11-C, CMD-C, PC2-C, C13-C, C16-C, PCA-C, E01-C
 
 Cultivator Drone
 2U
@@ -25873,6 +26266,14 @@ Cunning Strike deals 2 damage to target creature and 2 damage to
 target player.
 Draw a card.
 FRF-C
+
+Cunning Survivor
+1U
+Creature -- Human Warrior
+1/3
+Whenever you cycle or discard a card, Cunning Survivor gets +1/+0
+until end of turn and can't be blocked this turn.
+HOU-C
 
 Cunning Wish
 2U
@@ -25992,7 +26393,7 @@ Enchant player
 Whenever a player attacks enchanted player with one or more creatures,
 that attacking player may tap or untap target permanent of his or
 her choice.
-C13-U
+C13-U, CMA-U
 
 Curse of Marit Lage
 3RR
@@ -26025,7 +26426,7 @@ Enchantment -- Aura Curse
 Enchant player
 Whenever a creature attacks enchanted player, put a +1/+1 counter
 on it.
-C13-U
+C13-U, CMA-U
 
 Curse of Shallow Graves
 2B
@@ -26108,7 +26509,7 @@ Enchantment -- Aura Curse
 Enchant player
 Whenever a creature attacks enchanted player, its controller gains
 1 life.
-C13-U
+C13-U, CMA-U
 
 Curse of the Nightly Hunt
 2R
@@ -26557,6 +26958,15 @@ dethrone. (Whenever it attacks the player with the most life or tied
 for most life, put a +1/+1 counter on it.)
 CNS-R, VMA-R
 
+Dagger of the Worthy
+2
+Artifact -- Equipment
+Equipped creature gets +2/+0 and has afflict 1. (Whenever it becomes
+blocked, defending player loses 1 life.)
+Equip {2} ({2}: Attach to target creature you control. Equip only as
+a sorcery.)
+HOU-U
+
 Daggerback Basilisk
 2G
 Creature -- Basilisk
@@ -26696,7 +27106,7 @@ Damnation
 2BB
 Sorcery
 Destroy all creatures. They can't be regenerated.
-PLC-R, MM3-R
+PLC-R, MM3-R, MPS_AKH-S
 
 Dampen Thought
 1U
@@ -27306,7 +27716,7 @@ Darksteel Ingot
 Artifact
 Indestructible
 {T}: Add one mana of any color to your mana pool.
-DST-C, CMD-C, M14-U, C13-U, C15-U, C16-U
+DST-C, CMD-C, M14-U, C13-U, C15-U, C16-U, CMA-U
 
 Darksteel Juggernaut
 5
@@ -27325,7 +27735,7 @@ Enchant creature
 Enchanted creature is an Insect artifact creature with base power and
 toughness 0/1 and has indestructible, and it loses all other abilities,
 card types, and creature types.
-C13-U
+C13-U, CMA-U
 
 Darksteel Myr
 3
@@ -27519,6 +27929,14 @@ Creature -- Human Cleric
 If a source would deal damage to a Cleric creature you control,
 prevent 1 of that damage.
 ONS-C
+
+Dauntless Aven
+2W
+Creature -- Bird Warrior
+2/1
+Flying
+Whenever Dauntless Aven attacks, untap target creature you control.
+HOU-C
 
 Dauntless Cathar
 2W
@@ -27832,8 +28250,8 @@ Legendary Creature -- Human Soldier
 Daxos of Meletis can't be blocked by creatures with power 3 or greater.
 Whenever Daxos of Meletis deals combat damage to a player, exile the
 top card of that player's library. You gain life equal to that card's
-converted mana cost. Until end of turn, you may cast that card and
-you may spend mana as though it were mana of any color to cast it.
+converted mana cost. Until end of turn, you may cast that card and you
+may spend mana as though it were mana of any color to cast that spell.
 THS-R
 
 Daxos the Returned
@@ -28375,7 +28793,7 @@ Death by Dragons
 Sorcery
 Each player other than target player creates a 5/5 red Dragon creature
 token with flying.
-CMD-U
+CMD-U, CMA-U
 
 Death of a Thousand Stings
 4B
@@ -28482,7 +28900,7 @@ Flying
 When Deathbringer Regent enters the battlefield, if you cast it
 from your hand and there are five or more other creatures on the
 battlefield, destroy all other creatures.
-DTK-R
+DTK-R, E01-R
 
 Deathbringer Thoctar
 4BR
@@ -28740,7 +29158,7 @@ Flash (You may cast this spell any time you could cast an instant.)
 When Deceiver Exarch enters the battlefield, choose one --
 � Untap target permanent you control.
 � Tap target permanent an opponent controls.
-NPH-U, C13-U, CN2-U
+NPH-U, C13-U, CN2-U, CMA-U
 
 Deceiver of Form
 6C
@@ -29247,6 +29665,12 @@ Whenever you put one or more -1/-1 counters on Defiant Greatmaw,
 remove a -1/-1 counter from another target creature you control.
 AKH-U
 
+Defiant Khenra
+1R
+Creature -- Jackal Warrior
+2/2
+HOU-C
+
 Defiant Ogre
 5R
 Creature -- Ogre Warrior
@@ -29467,6 +29891,13 @@ cube counter on Delif's Cube.
 {2}, Remove a cube counter from Delif's Cube: Regenerate target
 creature.
 FE-R
+
+Delight in the Hunt
+Scheme
+When you set this scheme in motion, create a 3/3 black Horror creature
+token and prevent all damage that would be dealt to creatures you
+control this turn.
+E01-C
 
 Delirium
 1BR
@@ -29964,7 +30395,7 @@ Whenever Derevi, Empyrial Tactician enters the battlefield or a
 creature you control deals combat damage to a player, you may tap or
 untap target permanent.
 {1}{G}{W}{U}: Put Derevi onto the battlefield from the command zone.
-C13-M
+C13-M, CMA-M
 
 Dermoplasm
 2U
@@ -30117,7 +30548,52 @@ Desert Twister
 4GG
 Sorcery
 Destroy target permanent.
-AN-U, RV-U, 4E-U, 5E-U, MM-U, C14-U, C15-U, VMA-U, ME3-U
+AN-U, RV-U, 4E-U, 5E-U, MM-U, C14-U, C15-U, CMA-U, VMA-U, ME3-U
+
+Desert of the Fervent
+Land -- Desert
+Desert of the Fervent enters the battlefield tapped.
+{T}: Add {R} to your mana pool.
+Cycling {1}{R} ({1}{R}, Discard this card: Draw a card.)
+HOU-C
+
+Desert of the Glorified
+Land -- Desert
+Desert of the Glorified enters the battlefield tapped.
+{T}: Add {B} to your mana pool.
+Cycling {1}{B} ({1}{B}, Discard this card: Draw a card.)
+HOU-C
+
+Desert of the Indomitable
+Land -- Desert
+Desert of the Indomitable enters the battlefield tapped.
+{T}: Add {G} to your mana pool.
+Cycling {1}{G} ({1}{G}, Discard this card: Draw a card.)
+HOU-C
+
+Desert of the Mindful
+Land -- Desert
+Desert of the Mindful enters the battlefield tapped.
+{T}: Add {U} to your mana pool.
+Cycling {1}{U} ({1}{U}, Discard this card: Draw a card.)
+HOU-C
+
+Desert of the True
+Land -- Desert
+Desert of the True enters the battlefield tapped.
+{T}: Add {W} to your mana pool.
+Cycling {1}{W} ({1}{W}, Discard this card: Draw a card.)
+HOU-C
+
+Desert's Hold
+2W
+Enchantment -- Aura
+Enchant creature
+When Desert's Hold enters the battlefield, if you control a Desert
+or there is a Desert card in your graveyard, you gain 3 life.
+Enchanted creature can't attack or block, and its activated abilities
+can't be activated.
+HOU-U
 
 Deserted Temple
 Land
@@ -30172,7 +30648,7 @@ spell.)
 Flying
 When Desolation Angel enters the battlefield, destroy all lands you
 control. If it was kicked, destroy all lands instead.
-AP-R
+AP-R, MPS_AKH-S
 
 Desolation Giant
 2RR
@@ -30192,6 +30668,15 @@ Creature -- Eldrazi
 When you cast Desolation Twin, create a 10/10 colorless Eldrazi
 creature token.
 BFZ-R
+
+Despair
+1B
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Until end of turn, creatures you control gain menace and "Whenever this
+creature deals combat damage to a player, that player discards a card."
+[This is half of the split card Driven // Despair.]
+HOU-R
 
 Desperate Charge
 2B
@@ -30529,6 +31014,13 @@ Bushido 1 (Whenever this creature blocks or becomes blocked, it gets
 +1/+1 until end of turn.)
 CHK-C
 
+Devotee of Strength
+2G
+Creature -- Naga Wizard
+3/2
+{4}{G}: Target creature gets +2/+2 until end of turn.
+HOU-U
+
 Devour Flesh
 1B
 Instant
@@ -30672,7 +31164,7 @@ Diabolic Edict
 1B
 Instant
 Target player sacrifices a creature.
-TE-C
+TE-C, MPS_AKH-S
 
 Diabolic Intent
 1B
@@ -30705,7 +31197,7 @@ When the creature put onto the battlefield with Diabolic Servitude
 dies, exile it and return Diabolic Servitude to its owner's hand.
 When Diabolic Servitude leaves the battlefield, exile the creature
 put onto the battlefield with Diabolic Servitude.
-US-U, C15-U, PD3-U
+US-U, C15-U, CMA-U, PD3-U
 
 Diabolic Tutor
 2BB
@@ -30713,7 +31205,7 @@ Sorcery
 Search your library for a card and put that card into your hand. Then
 shuffle your library.
 OD-U, 8ED-U, 9ED-U, 10E-U, M10-U, M11-U, CMD-U, M12-U, M14-U, CN2-U,
-KLD-U
+KLD-U, CMA-U
 
 Diabolic Vision
 UB
@@ -31569,6 +32061,14 @@ Choose one --
 your opponents control this turn.
 DTK-U
 
+Disposal Mummy
+2W
+Creature -- Zombie Jackal
+2/3
+When Disposal Mummy enters the battlefield, exile target card from
+an opponent's graveyard.
+HOU-C
+
 Dispossess
 2B
 Sorcery
@@ -31893,7 +32393,7 @@ Creature -- Spirit
 2/4
 Whenever Diviner Spirit deals combat damage to a player, you and that
 player each draw that many cards.
-C13-U
+C13-U, CMA-U
 
 Diviner's Wand
 3
@@ -31947,6 +32447,13 @@ Enchant creature you control
 {R}: Enchanted creature deals 1 damage to target creature with flying.
 EX-C
 
+Djeru's Renunciation
+1W
+Instant
+Tap up to two target creatures.
+Cycling {W} ({W}, Discard this card: Draw a card.)
+HOU-C
+
 Djeru's Resolve
 W
 Instant
@@ -31954,6 +32461,18 @@ Untap target creature. Prevent all damage that would be dealt to it
 this turn.
 Cycling {2} ({2}, Discard this card: Draw a card.)
 AKH-C
+
+Djeru, With Eyes Open
+3WW
+Legendary Creature -- Human Warrior
+4/3
+Vigilance
+When Djeru, With Eyes Open enters the battlefield, you may search your
+library for a planeswalker card, reveal it, put it into your hand,
+then shuffle your library.
+If a source would deal damage to a planeswalker you control, prevent
+1 of that damage.
+HOU-R
 
 Djinn Illuminatus
 5(u/r)(u/r)
@@ -31974,7 +32493,7 @@ Creature -- Djinn
 Flying
 {T}: Exchange control of two target nonlegendary creatures. You can't
 activate this ability during combat.
-C13-R
+C13-R, CMA-R
 
 Djinn of Wishes
 3UU
@@ -32160,7 +32679,7 @@ Doom Blade
 1B
 Instant
 Destroy target nonblack creature.
-M10-C, M11-C, CMD-C, M12-C, M14-U, DDR-U
+M10-C, M11-C, CMD-C, M12-C, M14-U, E01-U, DDR-U
 
 Doom Cannon
 6
@@ -32191,7 +32710,16 @@ Creature -- Human Soldier
 1/1
 When Doomed Traveler dies, create a 1/1 white Spirit creature token
 with flying.
-ISD-C, CNS-C, CN2-C, DDK-C, DDQ-C
+ISD-C, CNS-C, CN2-C, E01-C, DDK-C, DDQ-C
+
+Doomfall
+2B
+Sorcery
+Choose one --
+� Target opponent exiles a creature he or she controls.
+� Target opponent reveals his or her hand. You choose a nonland card
+from it. Exile that card.
+HOU-U
 
 Doomgape
 4(b/g)(b/g)(b/g)
@@ -32208,7 +32736,7 @@ Sorcery
 Search your library and graveyard for five cards and exile the
 rest. Put the chosen cards on top of your library in any order. You
 lose half your life, rounded up.
-WL-R, 6E-R
+WL-R, 6E-R, MPS_AKH-S
 
 Doomsday Specter
 2UB
@@ -32763,7 +33291,8 @@ Flying
 {R}: Dragon Whelp gets +1/+0 until end of turn. If this ability has
 been activated four or more times this turn, sacrifice Dragon Whelp
 at the beginning of the next end step.
-A-U, B-U, U-U, RV-U, 4E-U, TSP-S, M10-U, ARC-U, CMD-U, DRB-R, DDG-U
+A-U, B-U, U-U, RV-U, 4E-U, TSP-S, M10-U, ARC-U, CMD-U, CMA-U, DRB-R,
+DDG-U
 
 Dragon Whisperer
 RR
@@ -32968,7 +33497,7 @@ Land
 Dragonskull Summit enters the battlefield tapped unless you control
 a Swamp or a Mountain.
 {T}: Add {B} or {R} to your mana pool.
-M10-R, M11-R, M12-R, M13-R, C16-R
+M10-R, M11-R, M12-R, M13-R, C16-R, E01-R
 
 Dragonsoul Knight
 2R
@@ -33217,7 +33746,7 @@ Creature -- Demon
 When Dread Cacodemon enters the battlefield, if you cast it from
 your hand, destroy all creatures your opponents control, then tap
 all other creatures you control.
-CMD-R
+CMD-R, CMA-R
 
 Dread Charge
 3B
@@ -33299,7 +33828,7 @@ Sorcery
 Each player puts the top X cards of his or her library into his or
 her graveyard. For each creature card put into a graveyard this way,
 you create a tapped 2/2 black Zombie creature token.
-C15-R
+C15-R, CMA-R
 
 Dread Wanderer
 B
@@ -33339,7 +33868,7 @@ Dreadbore
 BR
 Sorcery
 Destroy target creature or planeswalker.
-RTR-R
+RTR-R, E01-R
 
 Dreadbringer Lampads
 4B
@@ -33559,6 +34088,18 @@ Whenever you cast a spell during an opponent's turn, you may have
 target creature get -1/-1 until end of turn.
 LRW-C, MMA-C
 
+Dreamstealer
+2B
+Creature -- Human Wizard
+1/2
+Menace
+Whenever Dreamstealer deals combat damage to a player, that player
+discards that many cards.
+Eternalize {4}{B}{B} ({4}{B}{B}, Exile this card from your graveyard:
+Create a token that's a copy of it, except it's a 4/4 black Zombie
+Human Wizard with no mana cost. Eternalize only as a sorcery.)
+HOU-R
+
 Dreamstone Hedron
 6
 Artifact
@@ -33724,6 +34265,24 @@ Creature -- Zubera Spirit
 When Dripping-Tongue Zubera dies, create a 1/1 colorless Spirit
 creature token for each Zubera that died this turn.
 CHK-C
+
+Driven
+1G
+Sorcery
+Until end of turn, creatures you control gain trample and "Whenever
+this creature deals combat damage to a player, draw a card."
+[This is half of the split card Driven // Despair.]
+HOU-R
+
+Driven // Despair
+1G // 1B
+Sorcery // Sorcery
+Until end of turn, creatures you control gain trample and "Whenever
+this creature deals combat damage to a player, draw a card." //
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Until end of turn, creatures you control gain menace and "Whenever this
+creature deals combat damage to a player, that player discards a card."
+HOU-R
 
 Driver of the Dead
 3B
@@ -33991,7 +34550,7 @@ Creature -- Elf
 Hexproof
 Drove of Elves's power and toughness are each equal to the number of
 green permanents you control.
-SHM-U, C14-U
+SHM-U, C14-U, CMA-U
 
 Drown in Filth
 BG
@@ -34021,7 +34580,7 @@ Land
 Drowned Catacomb enters the battlefield tapped unless you control an
 Island or a Swamp.
 {T}: Add {U} or {B} to your mana pool.
-M10-R, M11-R, M12-R, M13-R
+M10-R, M11-R, M12-R, M13-R, E01-R
 
 Drowned Rusalka
 U
@@ -34282,7 +34841,7 @@ Creature -- Human Wizard
 Flash
 When Dualcaster Mage enters the battlefield, copy target instant or
 sorcery spell. You may choose new targets for the copy.
-C14-R, EMA-R
+C14-R, EMA-R, E01-R
 
 Dubious Challenge
 3G
@@ -34346,7 +34905,7 @@ When Duergar Hedge-Mage enters the battlefield, if you control two
 or more Mountains, you may destroy target artifact.
 When Duergar Hedge-Mage enters the battlefield, if you control two
 or more Plains, you may destroy target enchantment.
-EVE-U, HOP-U, CMD-U
+EVE-U, HOP-U, CMD-U, CMA-U
 
 Duergar Mine-Captain
 2(r/w)
@@ -34401,6 +34960,13 @@ Creature -- Insect
 1/4
 AKH-C
 
+Dune Diviner
+2G
+Creature -- Naga Cleric
+2/3
+{1}, Tap an untapped Desert you control: You gain 1 life.
+HOU-U
+
 Dune-Brood Nephilim
 BRGW
 Creature -- Nephilim
@@ -34424,6 +34990,13 @@ At the beginning of each end step, if Dunerider Outlaw dealt damage
 to an opponent this turn, put a +1/+1 counter on it.
 PLC-U
 
+Dunes of the Dead
+Land -- Desert
+{T}: Add {C} to your mana pool.
+When Dunes of the Dead is put into a graveyard from the battlefield,
+create a 2/2 black Zombie creature token.
+HOU-U
+
 Dungeon Geists
 2UU
 Creature -- Spirit
@@ -34432,7 +35005,7 @@ Flying
 When Dungeon Geists enters the battlefield, tap target creature an
 opponent controls. That creature doesn't untap during its controller's
 untap step for as long as you control Dungeon Geists.
-DKA-R, C13-R
+DKA-R, C13-R, CMA-R
 
 Dungeon Shade
 3B
@@ -34660,6 +35233,14 @@ Whenever Duskworker becomes blocked, regenerate it.
 {3}: Duskworker gets +1/+0 until end of turn.
 MRD-U
 
+Dust
+3W
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Exile any number of target creatures that have -1/-1 counters on them.
+[This is half of the split card Grind // Dust.]
+HOU-R
+
 Dust Bowl
 Land
 {T}: Add {C} to your mana pool.
@@ -34724,6 +35305,12 @@ Sorcery
 Return up to two target creature cards from your graveyard to your
 hand.
 KTK-C, BFZ-C
+
+Dutiful Servants
+3W
+Creature -- Zombie
+2/5
+HOU-C
 
 Dutiful Thrull
 W
@@ -35195,8 +35782,8 @@ XR
 Sorcery
 Earthquake deals X damage to each creature without flying and each
 player.
-A-R, B-R, U-R, RV-R, 4E-R, 5E-R, P1-R, P2-R, 6E-R, 7E-R, M10-R,
-CMD-R, C15-R
+A-R, B-R, U-R, RV-R, 4E-R, 5E-R, P1-R, P2-R, 6E-R, 7E-R, M10-R, CMD-R,
+C15-R, CMA-R
 
 Earthshaker
 4RR
@@ -35205,6 +35792,19 @@ Creature -- Spirit
 Whenever you cast a Spirit or Arcane spell, Earthshaker deals 2 damage
 to each creature without flying.
 CHK-U
+
+Earthshaker Khenra
+1R
+Creature -- Jackal Warrior
+2/1
+Haste
+When Earthshaker Khenra enters the battlefield, target creature with
+power less than or equal to Earthshaker Khenra's power can't block
+this turn.
+Eternalize {4}{R}{R} ({4}{R}{R}, Exile this card from your graveyard:
+Create a token that's a copy of it, except it's a 4/4 black Zombie
+Jackal Warrior with no mana cost. Eternalize only as a sorcery.)
+HOU-R
 
 Earwig Squad
 3BB
@@ -35247,7 +35847,7 @@ Creature -- Demon
 Flying
 {B}, Sacrifice another creature: Regenerate Eater of Hope.
 {2}{B}, Sacrifice two other creatures: Destroy target creature.
-BNG-R, C15-R
+BNG-R, C15-R, CMA-R
 
 Eater of the Dead
 4B
@@ -35842,7 +36442,7 @@ Artifact
 Creatures you control get +1/+1 and have flying and indestructible.
 At the beginning of your upkeep, sacrifice a creature. If you can't,
 sacrifice Eldrazi Monument.
-ZEN-M, C15-M
+ZEN-M, C15-M, CMA-M
 
 Eldrazi Obligator
 2R
@@ -36351,7 +36951,7 @@ Creature -- Elf Druid
 2/2
 Other Elf creatures you control get +1/+1.
 {T}: Add {G} to your mana pool for each Elf you control.
-M10-R, M11-R, M12-R, M13-R, C14-R
+M10-R, M11-R, M12-R, M13-R, C14-R, CMA-R
 
 Elvish Archers
 1G
@@ -36519,7 +37119,7 @@ G
 Creature -- Elf Druid
 1/1
 {T}: Add {G} to your mana pool.
-M14-C, M15-C, C14-C
+M14-C, M15-C, C14-C, CMA-C
 
 Elvish Pathcutter
 3G
@@ -36577,7 +37177,7 @@ G
 Creature -- Elf Warrior
 1/1
 {4}{G}, Sacrifice a creature: Destroy target creature with flying.
-RAV-C, C13-C, C14-C
+RAV-C, C13-C, C14-C, CMA-C
 
 Elvish Soultiller
 3GG
@@ -36607,7 +37207,7 @@ Elvish Visionary
 Creature -- Elf Shaman
 1/1
 When Elvish Visionary enters the battlefield, draw a card.
-ALA-C, M10-C, M13-C, C14-C, ORI-C, C15-C, DDR-C
+ALA-C, M10-C, M13-C, C14-C, ORI-C, C15-C, CMA-C, DDR-C
 
 Elvish Warrior
 GG
@@ -36900,7 +37500,7 @@ Emerald Medallion
 2
 Artifact
 Green spells you cast cost {1} less to cast.
-TE-R, C14-R
+TE-R, C14-R, CMA-R
 
 Emerald Oryx
 3G
@@ -37305,6 +37905,14 @@ At the beginning of your upkeep, create X 2/2 black Zombie creature
 tokens, where X is half the number of Zombies you control, rounded
 down.
 ISD-R
+
+Endless Sands
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{2}, {T}: Exile target creature you control.
+{4}, {T}, Sacrifice Endless Sands: Return each creature card exiled
+with Endless Sands to the battlefield under its owner's control.
+HOU-R
 
 Endless Scream
 XB
@@ -38600,7 +39208,7 @@ G
 Creature -- Elf Shaman
 1/1
 Whenever another creature enters the battlefield, you gain 1 life.
-PLC-C, C14-C, DDH-C
+PLC-C, C14-C, CMA-C, DDH-C
 
 Essence of the Wild
 3GGG
@@ -38707,7 +39315,17 @@ Creature -- Human Shaman
 2/1
 When Eternal Witness enters the battlefield, you may return target
 card from your graveyard to your hand.
-5DN-U, CMD-U, MMA-U, C15-U, DDJ-U
+5DN-U, CMD-U, MMA-U, C15-U, CMA-U, DDJ-U
+
+Eternal of Harsh Truths
+2U
+Creature -- Zombie Cleric
+1/3
+Afflict 2 (Whenever this creature becomes blocked, defending player
+loses 2 life.)
+Whenever Eternal of Harsh Truths attacks and isn't blocked, draw
+a card.
+HOU-U
 
 Eternity Snare
 5U
@@ -39037,6 +39655,12 @@ less from your hand onto the battlefield attached to it. If you don't,
 exile Evershrike.
 EVE-R
 
+Every Dream a Nightmare
+Scheme
+When you set this scheme in motion, each opponent discards a card. You
+draw a card for each land card discarded this way.
+E01-C
+
 Every Hope Shall Vanish
 Scheme
 When you set this scheme in motion, each opponent reveals his or her
@@ -39097,7 +39721,7 @@ Sorcery
 Buyback {3} (You may pay an additional {3} as you cast this spell. If
 you do, put this card into your hand as it resolves.)
 Evincar's Justice deals 2 damage to each creature and each player.
-TE-C, CMD-C
+TE-C, CMD-C, CMA-C
 
 Eviscerator
 3BB
@@ -39145,8 +39769,9 @@ Evolving Wilds
 Land
 {T}, Sacrifice Evolving Wilds: Search your library for a basic land
 card and put it onto the battlefield tapped. Then shuffle your library.
-ROE-C, CMD-C, DKA-C, M13-C, C13-C, M15-C, C14-C, DTK-C, MM2-C, ORI-C,
-BFZ-C, C15-C, CN2-C, C16-C, AKH-C, DDH-C, DDK-C, DDN-C, DDO-C, DDP-C
+ROE-C, CMD-C, DKA-C, M13-C, C13-C, M15-C, C14-C, DTK-C, MM2-C,
+ORI-C, BFZ-C, C15-C, CN2-C, C16-C, AKH-C, CMA-C, DDH-C, DDK-C, DDN-C,
+DDO-C, DDP-C
 
 Exalted Angel
 4WW
@@ -39224,7 +39849,7 @@ Excoriate
 3W
 Sorcery
 Exile target tapped creature.
-BNG-C
+BNG-C, E01-C
 
 Excruciator
 6RR
@@ -39398,7 +40023,7 @@ Creature -- Bird
 Flying
 When Expedition Raptor enters the battlefield, support 2. (Put a
 +1/+1 counter on each of up to two other target creatures.)
-OGW-C
+OGW-C, E01-C
 
 Expendable Troops
 1W
@@ -39457,7 +40082,7 @@ Explore
 Sorcery
 You may play an additional land this turn.
 Draw a card.
-WWK-C, MM3-C, DDO-C
+WWK-C, MM3-C, E01-C, DDO-C
 
 Explorer's Scope
 1
@@ -39619,7 +40244,7 @@ Sorcery
 Each player puts the top two cards of his or her library into his
 or her graveyard. Then put a creature card from a graveyard onto the
 battlefield under your control.
-CNS-U, EMA-U
+CNS-U, EMA-U, E01-U
 
 Extractor Demon
 4BB
@@ -39632,7 +40257,7 @@ graveyard.
 Unearth {2}{B} ({2}{B}: Return this card from your graveyard to the
 battlefield. It gains haste. Exile it at the beginning of the next end
 step or if it would leave the battlefield. Unearth only as a sorcery.)
-CON-R, ARC-R, CMD-R, C15-R, MM3-R
+CON-R, ARC-R, CMD-R, C15-R, MM3-R, CMA-R
 
 Extraplanar Lens
 3
@@ -39883,7 +40508,7 @@ Legendary Creature -- Elf Warrior
 {G}: Regenerate another target Elf.
 {2}{G}{G}{G}: Elf creatures you control get +3/+3 and gain trample
 until end of turn.
-SOM-R, C14-R
+SOM-R, C14-R, CMA-R
 
 Fa'adiyah Seer
 1G
@@ -40023,7 +40648,7 @@ Faerie Conclave enters the battlefield tapped.
 {T}: Add {U} to your mana pool.
 {1}{U}: Faerie Conclave becomes a 2/1 blue Faerie creature with flying
 until end of turn. It's still a land.
-UL-U, 10E-U, C13-U
+UL-U, 10E-U, C13-U, CMA-U
 
 Faerie Dragon
 2GG
@@ -40348,7 +40973,7 @@ Creature -- Angel
 3/3
 Flying
 Sacrifice a creature: Fallen Angel gets +2/+1 until end of turn.
-LE-U, CH-U, 5E-U, 6E-R, 7E-R, 8ED-R, CMD-R, DDC-R
+LE-U, CH-U, 5E-U, 6E-R, 7E-R, 8ED-R, CMD-R, CMA-R, DDC-R
 
 Fallen Angel Avatar
 Vanguard
@@ -40513,6 +41138,14 @@ Falter
 Instant
 Creatures without flying can't block this turn.
 US-C, VMA-C
+
+Fame
+1R
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Target creature gets +2/+0 and gains haste until end of turn.
+[This is half of the split card Claim // Fame.]
+HOU-U
 
 Familiar Ground
 2G
@@ -40708,7 +41341,22 @@ Creature -- Elf Druid
 When Farhaven Elf enters the battlefield, you may search your library
 for a basic land card and put it onto the battlefield tapped. If you
 do, shuffle your library.
-SHM-C, C13-C, C14-C
+SHM-C, C13-C, C14-C, CMA-C
+
+Farm
+2W
+Instant
+Destroy target attacking or blocking creature.
+[This is half of the split card Farm // Market.]
+HOU-U
+
+Farm // Market
+2W // 2U
+Instant // Sorcery
+Destroy target attacking or blocking creature. // Aftermath (Cast
+this spell only from your graveyard. Then exile it.)
+Draw two cards, then discard two cards.
+HOU-U
 
 Farmstead
 WWW
@@ -41443,7 +42091,7 @@ Creature -- Human Soldier
 1/1
 Double strike (This creature deals both first-strike and regular
 combat damage.)
-RTR-U, DDL-U
+RTR-U, E01-U, DDL-U
 
 Fend Off
 1W
@@ -41530,6 +42178,13 @@ Sorcery
 Create three 3/1 red Elemental creature tokens with haste. Exile them
 at the beginning of the next end step.
 SOK-U
+
+Feral Prowler
+1G
+Creature -- Cat
+1/3
+When Feral Prowler dies, draw a card.
+HOU-C
 
 Feral Ridgewolf
 2R
@@ -41639,7 +42294,7 @@ Fertilid enters the battlefield with two +1/+1 counters on it.
 {1}{G}, Remove a +1/+1 counter from Fertilid: Target player searches
 his or her library for a basic land card and puts it onto the
 battlefield tapped. Then that player shuffles his or her library.
-MOR-C, HOP-C, ARC-C, CMD-C, DDR-C
+MOR-C, HOP-C, ARC-C, CMD-C, E01-C, DDR-C
 
 Fervent Cathar
 2R
@@ -41664,6 +42319,16 @@ Counter target spell.
 Flashback {5}{U}{U} (You may cast this card from your graveyard for
 its flashback cost. Then exile it.)
 OD-U
+
+Fervent Paincaster
+2R
+Creature -- Human Wizard
+3/1
+{T}: Fervent Paincaster deals 1 damage to target player.
+{T}, Exert Fervent Paincaster: It deals 1 damage to target
+creature. (An exerted creature won't untap during your next untap
+step.)
+HOU-U
 
 Fervor
 2R
@@ -41947,7 +42612,7 @@ When Fiend Hunter enters the battlefield, you may exile another
 target creature.
 When Fiend Hunter leaves the battlefield, return the exiled card to
 the battlefield under its owner's control.
-ISD-U, C13-U, DDK-U, DDQ-U
+ISD-U, C13-U, CMA-U, DDK-U, DDQ-U
 
 Fiend of the Shadows
 3BB
@@ -41970,7 +42635,7 @@ Lifelink (Damage dealt by this creature also causes you to gain that
 much life.)
 Fiendslayer Paladin can't be the target of black or red spells your
 opponents control.
-M14-R
+M14-R, E01-R
 
 Fierce Empath
 2G
@@ -42021,7 +42686,7 @@ Fiery Fall deals 5 damage to target creature.
 Basic landcycling {1}{R} ({1}{R}, Discard this card: Search your
 library for a basic land card, reveal it, and put it into your
 hand. Then shuffle your library.)
-CON-C, PC2-C, MMA-C, MM2-C, CN2-C, PCA-C, DDG-C, DDN-C
+CON-C, PC2-C, MMA-C, MM2-C, CN2-C, PCA-C, E01-C, DDG-C, DDN-C
 
 Fiery Gambit
 2R
@@ -42472,6 +43137,14 @@ Firebolt deals 2 damage to target creature or player.
 Flashback {4}{R} (You may cast this card from your graveyard for its
 flashback cost. Then exile it.)
 OD-C, EMA-C, DD2-C, DDS-C
+
+Firebrand Archer
+1R
+Creature -- Human Archer
+2/1
+Whenever you cast a noncreature spell, Firebrand Archer deals 1 damage
+to each opponent.
+HOU-C
 
 Firebrand Ranger
 1R
@@ -43164,7 +43837,7 @@ Creature -- Kavu
 4/2
 When Flametongue Kavu enters the battlefield, it deals 4 damage to
 target creature.
-PS-U, HOP-U, CMD-U, C14-U, VMA-U, DD2-U
+PS-U, HOP-U, CMD-U, C14-U, E01-U, VMA-U, DD2-U
 
 Flametongue Kavu Avatar
 Vanguard
@@ -43662,7 +44335,7 @@ the beginning of the next end step, return that card to the battlefield
 under its owner's control. If you do, return the other cards exiled
 this way to the battlefield under their owners' control attached to
 that creature.
-RAV-R, C13-R
+RAV-R, C13-R, CMA-R
 
 Flickering Spirit
 3W
@@ -43691,7 +44364,7 @@ Flying
 When Flickerwisp enters the battlefield, exile another target
 permanent. Return that card to the battlefield under its owner's
 control at the beginning of the next end step.
-EVE-U, MMA-U, C13-U, C14-U, MM3-U
+EVE-U, MMA-U, C13-U, C14-U, MM3-U, CMA-U, E01-U
 
 Flight
 U
@@ -44355,6 +45028,13 @@ battlefield. Sacrifice that creature at the beginning of the next
 end step.
 SOK-U
 
+For Each of You, a Gift
+Scheme
+When you set this scheme in motion, for each opponent, create a 3/3
+black Horror creature token that attacks that player each combat
+if able.
+E01-C
+
 Foratog
 2G
 Creature -- Atog
@@ -44369,7 +45049,7 @@ Buyback--Discard two cards. (You may discard two cards in addition
 to any other costs as you cast this spell. If you do, put this card
 into your hand as it resolves.)
 Counter target spell.
-EX-U
+EX-U, MPS_AKH-S
 
 Forbidden Alchemy
 2U
@@ -44574,8 +45254,8 @@ CHK-L, 9ED-L, RAV-L, TSP-L, 10E-L, LRW-L, SHM-L, ALA-L, M10-L, HOP-L,
 ZEN-L, ROE-L, ARC-L, M11-L, SOM-L, MBS-L, NPH-L, CMD-L, M12-L, ISD-L,
 AVR-L, PC2-L, M13-L, RTR-L, M14-L, THS-L, C13-L, M15-L, KTK-L, C14-L,
 FRF-L, DTK-L, ORI-L, BFZ-L, C15-L, SOI-L, KLD-L, C16-L, PCA-L, AKH-L,
-EVG-L, UG-C, UNH-L, DDD-L, DDE-L, DDG-L, DDH-L, DDJ-L, DDL-L, DDM-L,
-DDO-L, DDP-L, DDR-L, DDS-L, H09-L, ME3-L, MED-L
+CMA-L, E01-L, HOU-L, EVG-L, UG-C, UNH-L, DDD-L, DDE-L, DDG-L, DDH-L,
+DDJ-L, DDL-L, DDM-L, DDO-L, DDP-L, DDR-L, DDS-L, H09-L, ME3-L, MED-L
 
 Forest Bear
 1G
@@ -44648,14 +45328,14 @@ Whenever a player casts a spell, you may put a +1/+1 counter on
 Forgotten Ancient.
 At the beginning of your upkeep, you may move any number of +1/+1
 counters from Forgotten Ancient onto other creatures.
-SCG-R, HOP-R, ARC-R, C15-R, CN2-R, C16-R
+SCG-R, HOP-R, ARC-R, C15-R, CN2-R, C16-R, E01-R
 
 Forgotten Cave
 Land
 Forgotten Cave enters the battlefield tapped.
 {T}: Add {R} to your mana pool.
 Cycling {R} ({R}, Discard this card: Draw a card.)
-ONS-C, CMD-C, C13-C, C14-C, C15-C, EVG-C, VMA-C, DDJ-C
+ONS-C, CMD-C, C13-C, C14-C, C15-C, CMA-C, EVG-C, VMA-C, DDJ-C
 
 Forgotten Creation
 3U
@@ -45205,6 +45885,15 @@ Instant
 Draw two cards, then discard two cards. Untap up to three lands.
 UL-C, VMA-C
 
+Fraying Sanity
+2U
+Enchantment -- Aura Curse
+Enchant player
+At the beginning of each end step, enchanted player puts the top X
+cards of his or her library into his or her graveyard, where X is
+the number of cards put into that graveyard from anywhere this turn.
+HOU-R
+
 Frazzle
 3U
 Instant
@@ -45361,7 +46050,7 @@ Fresh Meat
 Instant
 Create a 3/3 green Beast creature token for each creature put into
 your graveyard from the battlefield this turn.
-NPH-R, C14-R
+NPH-R, C14-R, CMA-R
 
 Fresh Volunteers
 1W
@@ -45421,7 +46110,7 @@ to your mana pool."
 [-2]: Destroy target artifact or enchantment.
 [-6]: Draw a card for each green creature you control.
 Freyalise, Llanowar's Fury can be your commander.
-C14-M
+C14-M, CMA-M
 
 Friendly Fire
 3R
@@ -45466,6 +46155,14 @@ Creature -- Homunculus
 {1}{G}: Frilled Oculus gets +2/+2 until end of turn. Activate this
 ability only once each turn.
 GTC-C
+
+Frilled Sandwalla
+G
+Creature -- Lizard
+1/1
+{1}{G}: Frilled Sandwalla gets +2/+2 until end of turn. Activate this
+ability only once each turn.
+HOU-C
 
 Frog Tongue
 G
@@ -45554,6 +46251,15 @@ to your mana pool.
 under your control, you may have it fight target creature you don't
 control.
 FRF-R
+
+Frontline Devastator
+3R
+Creature -- Zombie Minotaur Warrior
+3/3
+Afflict 2 (Whenever this creature becomes blocked, defending player
+loses 2 life.)
+{1}{R}: Frontline Devastator gets +1/+0 until end of turn.
+HOU-C
 
 Frontline Medic
 2W
@@ -45984,7 +46690,7 @@ Creature -- Dragon
 Flying (This creature can't be blocked except by creatures with flying
 or reach.)
 {R}: Furnace Whelp gets +1/+0 until end of turn.
-5DN-U, 10E-U, ARC-U, CMD-U, M13-U, M15-U, DD2-U
+5DN-U, 10E-U, ARC-U, CMD-U, M13-U, M15-U, CMA-U, DD2-U
 
 Furnace of Rath
 1RRR
@@ -46516,7 +47222,7 @@ Land
 {T}: Add {C} to your mana pool.
 {5}, {T}, Sacrifice Gargoyle Castle: Create a 3/4 colorless Gargoyle
 artifact creature token with flying.
-M10-R, C14-R
+M10-R, C14-R, CMA-R
 
 Gargoyle Sentinel
 3
@@ -47703,7 +48409,7 @@ Land
 {T}, Sacrifice Ghost Quarter: Destroy target land. Its controller
 may search his or her library for a basic land card, put it onto the
 battlefield, then shuffle his or her library.
-DIS-U, ISD-U, C14-U, C15-U
+DIS-U, ISD-U, C14-U, C15-U, CMA-U
 
 Ghost Ship
 2UU
@@ -48263,7 +48969,7 @@ controls attack Gideon Jura if able.
 [0]: Until end of turn, Gideon Jura becomes a 6/6 Human Soldier
 creature that's still a planeswalker. Prevent all damage that would
 be dealt to him this turn.
-ROE-M, M12-M
+ROE-M, M12-M, E01-M
 
 Gideon of the Trials
 1WW
@@ -48287,6 +48993,13 @@ Whenever a creature an opponent controls becomes tapped, put a +1/+1
 counter on Gideon's Avenger.
 M12-R
 
+Gideon's Defeat
+W
+Instant
+Exile target white creature that's attacking or blocking. If it was
+a Gideon planeswalker, you gain 5 life.
+HOU-U
+
 Gideon's Intervention
 2WW
 Enchantment
@@ -48301,7 +49014,7 @@ W
 Creature -- Human Soldier
 1/1
 {W}, {T}: Tap target creature.
-M12-C, MM3-C
+M12-C, MM3-C, E01-C
 
 Gideon's Phalanx
 5WW
@@ -48421,6 +49134,12 @@ Enchanted land has "{T}: Add two mana of any one color to your
 mana pool."
 AKH-C
 
+Gift of Strength
+1G
+Instant
+Target creature gets +3/+3 and gains reach until end of turn.
+HOU-C
+
 Gift of Tusks
 U
 Instant
@@ -48523,6 +49242,14 @@ Exile target creature. Create a colorless artifact token named
 Gold. It has "Sacrifice this artifact: Add one mana of any color to
 your mana pool."
 BNG-R, C15-R
+
+Gilded Cerodon
+4R
+Creature -- Beast
+4/4
+Whenever Gilded Cerodon attacks, if you control a Desert or there is
+a Desert card in your graveyard, target creature can't block this turn.
+HOU-C
 
 Gilded Drake
 1U
@@ -50791,6 +51518,21 @@ pay {2}{W}. If you do, create two 1/1 white Soldier enchantment
 creature tokens.
 BNG-U
 
+God-Pharaoh's Faithful
+W
+Creature -- Human Wizard
+0/4
+Whenever you cast a blue, black, or red spell, you gain 1 life.
+HOU-C
+
+God-Pharaoh's Gift
+7
+Artifact
+At the beginning of combat on your turn, you may exile a creature card
+from your graveyard. If you do, create a token that's a copy of that
+card, except it's a 4/4 black Zombie. It gains haste until end of turn.
+HOU-R
+
 Godhead of Awe
 (w/u)(w/u)(w/u)(w/u)(w/u)
 Creature -- Spirit Avatar
@@ -51079,7 +51821,7 @@ Choose one --
 � All creatures get -1/-1 until end of turn.
 � Destroy target enchantment.
 � Regenerate each creature you control.
-RTR-U, C15-U
+RTR-U, C15-U, CMA-U
 
 Golgari Cluestone
 3
@@ -51123,7 +51865,7 @@ Golgari Guildgate
 Land -- Gate
 Golgari Guildgate enters the battlefield tapped.
 {T}: Add {B} or {G} to your mana pool.
-RTR-C, DGM-C, C13-C, C15-C, MM3-C, DDM-C
+RTR-C, DGM-C, C13-C, C15-C, MM3-C, CMA-C, DDM-C
 
 Golgari Guildmage
 (b/g)(b/g)
@@ -51154,7 +51896,7 @@ Golgari Rot Farm enters the battlefield tapped.
 When Golgari Rot Farm enters the battlefield, return a land you
 control to its owner's hand.
 {T}: Add {B}{G} to your mana pool.
-RAV-C, CMD-C, C13-C, MM2-U, C15-C, C16-U, DDJ-C
+RAV-C, CMD-C, C13-C, MM2-U, C15-C, C16-U, CMA-C, DDJ-C
 
 Golgari Rotwurm
 3BG
@@ -51167,7 +51909,7 @@ Golgari Signet
 2
 Artifact
 {1}, {T}: Add {B}{G} to your mana pool.
-RAV-C, CMD-C, C15-C, C16-C, MM3-U, DDJ-C
+RAV-C, CMD-C, C15-C, C16-C, MM3-U, CMA-C, DDJ-C
 
 Golgari Thug
 1B
@@ -51258,9 +52000,9 @@ Legendary Creature -- Aetherborn Rogue
 Deathtouch
 When Gonti, Lord of Luxury enters the battlefield, look at the top four
 cards of target opponent's library, exile one of them face down, then
-put the rest on the bottom of that library in a random order. For as
-long as that card remains exiled, you may look at it, you may cast it,
-and you may spend mana as though it were mana of any type to cast it.
+put the rest on the bottom of that library in a random order. You may
+look at and cast that card for as long as it remains exiled, and you
+may spend mana as though it were mana of any type to cast that spell.
 KLD-R
 
 Gore Swine
@@ -51291,7 +52033,7 @@ Creature -- Minotaur Warrior
 3/3
 Bloodthirst 2 (If an opponent was dealt damage this turn, this creature
 enters the battlefield with two +1/+1 counters on it.)
-M12-C, MM2-C, DDL-C, DDS-C
+M12-C, MM2-C, E01-C, DDL-C, DDS-C
 
 Goretusk Firebeast
 5R
@@ -51557,7 +52299,7 @@ Creature -- Human Cleric
 2/2
 During your turn, your opponents can't cast spells or activate
 abilities of artifacts, creatures, or enchantments.
-M12-R, C14-R
+M12-R, C14-R, E01-R
 
 Grand Arbiter Augustin IV
 2WU
@@ -51642,6 +52384,14 @@ Artifact
 {3}, {T} or {R}, {T}: Granite Shard deals 1 damage to target creature
 or player.
 MRD-U
+
+Granitic Titan
+4RR
+Creature -- Elemental
+5/4
+Menace
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-C
 
 Granny's Payback
 7G
@@ -51729,7 +52479,7 @@ Enchantment -- Aura
 Enchant creature
 Enchanted creature gets +1/+1 and has "Whenever this creature attacks,
 tap target creature defending player controls."
-ORI-C
+ORI-C, E01-C
 
 Grasping Dunes
 Land -- Desert
@@ -51860,7 +52610,7 @@ Creature -- Elemental Beast
 When Grave Sifter enters the battlefield, each player chooses a
 creature type and returns any number of cards of that type from his
 or her graveyard to his or her hand.
-C14-R
+C14-R, CMA-R
 
 Grave Strength
 1B
@@ -51991,6 +52741,14 @@ Whenever you cast a black spell, Gravelgill Duo gains fear until end
 of turn. (It can't be blocked except by artifact creatures and/or
 black creatures.)
 SHM-C
+
+Graven Abomination
+3
+Artifact Creature -- Horror
+3/1
+Whenever Graven Abomination attacks, exile target card from defending
+player's graveyard.
+HOU-C
 
 Graven Cairns
 Land
@@ -52182,7 +52940,7 @@ Flash (You may cast this spell any time you could cast an instant.)
 Reach
 When Great Oak Guardian enters the battlefield, creatures target
 player controls get +2/+2 until end of turn. Untap them.
-C15-U
+C15-U, CMA-U
 
 Great Sable Stag
 1GG
@@ -52539,7 +53297,7 @@ choose one --
 � Goad target creature that player controls.
 � Exile the top card of that player's library. Until end of turn,
 you may cast that card and you may spend mana as though it were mana
-of any color to cast it.
+of any color to cast that spell.
 CN2-R
 
 Greven il-Vec
@@ -52644,7 +53402,7 @@ Grim Backwoods
 Land
 {T}: Add {C} to your mana pool.
 {2}{B}{G}, {T}, Sacrifice a creature: Draw a card.
-DKA-R, C13-R, C15-R
+DKA-R, C13-R, C15-R, CMA-R
 
 Grim Contest
 1BG
@@ -52686,7 +53444,7 @@ Grim Flowering
 5G
 Sorcery
 Draw a card for each creature card in your graveyard.
-DKA-U, C14-U, DDJ-U
+DKA-U, C14-U, CMA-U, DDJ-U
 
 Grim Guardian
 2B
@@ -52720,7 +53478,7 @@ Creature -- Human Wizard
 1/1
 {R}, {T}, Exile two cards from your graveyard: Grim Lavamancer deals
 2 damage to target creature or player.
-TOR-R, M12-R, PD2-R
+TOR-R, M12-R, E01-R, PD2-R
 
 Grim Monolith
 2
@@ -52820,6 +53578,21 @@ sacrifice it: Put all creature cards from all graveyards onto the
 battlefield under your control. They're black Zombies in addition to
 their other colors and types.
 ISD-M
+
+Grind
+1B
+Sorcery
+Put a -1/-1 counter on each of up to two target creatures.
+[This is half of the split card Grind // Dust.]
+HOU-R
+
+Grind // Dust
+1B // 3W
+Sorcery // Sorcery
+Put a -1/-1 counter on each of up to two target creatures. // Aftermath
+(Cast this spell only from your graveyard. Then exile it.)
+Exile any number of target creatures that have -1/-1 counters on them.
+HOU-R
 
 Grindclock
 2
@@ -52949,7 +53722,7 @@ Instant
 Reveal the top five cards of your library. You may put a creature
 or land card from among them into your hand. Put the rest into your
 graveyard.
-RTR-C, C15-C
+RTR-C, C15-C, CMA-C
 
 Grisly Spectacle
 2BB
@@ -52958,6 +53731,14 @@ Destroy target nonartifact creature. Its controller puts a number
 of cards equal to that creature's power from the top of his or her
 library into his or her graveyard.
 GTC-C, MM3-C, DDM-C
+
+Grisly Survivor
+2B
+Creature -- Minotaur Warrior
+2/3
+Whenever you cycle or discard a card, Grisly Survivor gets +2/+0
+until end of turn.
+HOU-C
 
 Grisly Transformation
 2B
@@ -53035,7 +53816,7 @@ Land
 {1}, {T}, Sacrifice Grixis Panorama: Search your library for a basic
 Island, Swamp, or Mountain card and put it onto the battlefield
 tapped. Then shuffle your library.
-ALA-C, C13-C
+ALA-C, C13-C, E01-C
 
 Grixis Slavedriver
 5B
@@ -53972,7 +54753,7 @@ Creature -- Goblin Shaman
 2/2
 Whenever you cast an instant or sorcery spell, Guttersnipe deals 2
 damage to each opponent.
-RTR-U, C13-U, CN2-U
+RTR-U, C13-U, CN2-U, E01-U
 
 Guttural Response
 (r/g)
@@ -54054,7 +54835,7 @@ When Gwyllion Hedge-Mage enters the battlefield, if you control two or
 more Plains, you may create a 1/1 white Kithkin Soldier creature token.
 When Gwyllion Hedge-Mage enters the battlefield, if you control two
 or more Swamps, you may put a -1/-1 counter on target creature.
-EVE-U, CMD-U
+EVE-U, CMD-U, CMA-U
 
 Gyre Sage
 1G
@@ -54131,7 +54912,7 @@ as a sorcery.)
 {LEVEL 3+} 3/3 Shroud (This creature can't be the target of spells
 or abilities.)
 Hada Spy Patrol can't be blocked.
-ROE-U, C13-U
+ROE-U, C13-U, CMA-U
 
 Hag Hedge-Mage
 2(b/g)
@@ -54438,7 +55219,7 @@ When Hammerhand enters the battlefield, target creature can't block
 this turn.
 Enchanted creature gets +1/+1 and has haste. (It can attack and {T}
 no matter when it came under your control.)
-M15-C
+M15-C, E01-C
 
 Hammerhead Shark
 1U
@@ -54877,13 +55658,19 @@ Flying
 At the beginning of your upkeep, tap target creature.
 GPT-U
 
+Harrier Naga
+2G
+Creature -- Naga Warrior
+3/3
+HOU-C
+
 Harrow
 2G
 Instant
 As an additional cost to cast Harrow, sacrifice a land.
 Search your library for up to two basic land cards and put them onto
 the battlefield. Then shuffle your library.
-TE-U, IN-C, ZEN-C, C14-C, DDE-C, DDP-C
+TE-U, IN-C, ZEN-C, C14-C, CMA-C, DDE-C, DDP-C
 
 Harrowing Journey
 4B
@@ -55028,7 +55815,7 @@ Creature -- Demon
 5/5
 Deathtouch
 Whenever another nontoken creature dies, you may draw a card.
-AVR-R, CN2-R, DDQ-R
+AVR-R, CN2-R, E01-R, DDQ-R
 
 Harvestguard Alseids
 2W
@@ -55038,6 +55825,15 @@ Constellation -- Whenever Harvestguard Alseids or another enchantment
 enters the battlefield under your control, prevent all damage that
 would be dealt to target creature this turn.
 JOU-C
+
+Hashep Oasis
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{T}, Pay 1 life: Add {G} to your mana pool.
+{1}{G}{G}, {T}, Sacrifice a Desert: Target creature gets +3/+3 until
+end of turn. Activate this ability only any time you could cast
+a sorcery.
+HOU-U
 
 Hasran Ogress
 BB
@@ -55133,7 +55929,7 @@ Land
 {T}: Add {C} to your mana pool.
 {3}, {T}, Sacrifice Haunted Fengraf: Return a creature card at random
 from your graveyard to your hand.
-DKA-C, C14-C
+DKA-C, C14-C, CMA-C
 
 Haunted Guardian
 2
@@ -55253,7 +56049,7 @@ Land
 Havenwood Battleground enters the battlefield tapped.
 {T}: Add {G} to your mana pool.
 {T}, Sacrifice Havenwood Battleground: Add {G}{G} to your mana pool.
-FE-U, 5E-U, 6E-U, C14-U, ME2-U
+FE-U, 5E-U, 6E-U, C14-U, CMA-U, ME2-U
 
 Havenwood Wurm
 6G
@@ -55384,6 +56180,15 @@ Red creature spells you cast cost {1} less to cast.
 Whenever you cast a creature spell, you may discard a card. If you do,
 draw a card.
 AKH-U
+
+Hazoret's Undying Fury
+4RR
+Sorcery
+Shuffle your library, then exile the top four cards. You may cast
+any number of nonland cards with converted mana cost 5 or less from
+among them without paying their mana costs. Lands you control don't
+untap during your next untap step.
+HOU-R
 
 Hazy Homunculus
 1U
@@ -57023,7 +57828,7 @@ High Market
 Land
 {T}: Add {C} to your mana pool.
 {T}, Sacrifice a creature: You gain 1 life.
-MM-R, C15-R, V12-M
+MM-R, C15-R, CMA-R, V12-M
 
 High Priest of Penance
 WB
@@ -57544,6 +58349,15 @@ Creature -- Zombie Hound
 Whenever Hollow Dogs attacks, it gets +2/+0 until end of turn.
 US-C, S99-C, 7E-C, 9ED-C
 
+Hollow One
+5
+Artifact Creature -- Golem
+4/4
+Hollow One costs {2} less to cast for each card you've cycled or
+discarded this turn.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-R
+
 Hollow Specter
 1BB
 Creature -- Specter
@@ -57968,6 +58782,15 @@ Choose one --
 � Destroy target Aura.
 VI-C
 
+Hope Tender
+1G
+Creature -- Human Druid
+2/2
+{1}, {T}: Untap target land.
+{1}, {T}, Exert Hope Tender: Untap two target lands. (An exerted
+creature won't untap during your next untap step.)
+HOU-U
+
 Hope and Glory
 1W
 Instant
@@ -58300,6 +59123,13 @@ Creature -- Crab
 {U}: Untap Horseshoe Crab.
 US-C, 10E-C
 
+Hostile Desert
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{2}, Exile a land card from your graveyard: Hostile Desert becomes
+a 3/4 Elemental creature until end of turn. It's still a land.
+HOU-R
+
 Hostile Realm
 2R
 Enchantment -- Aura
@@ -58364,6 +59194,30 @@ or more card types among cards in your graveyard. (A creature with
 menace can't be blocked except by two or more creatures.)
 SOI-C
 
+Hour of Devastation
+3RR
+Sorcery
+All creatures lose indestructible until end of turn. Hour of
+Devastation deals 5 damage to each creature and each non-Bolas
+planeswalker.
+HOU-R
+
+Hour of Eternity
+XXUUU
+Sorcery
+Exile X target creature cards from your graveyard. For each card
+exiled this way, create a token that's a copy of that card, except
+it's a 4/4 black Zombie.
+HOU-R
+
+Hour of Glory
+3B
+Instant
+Exile target creature. If that creature was a God, its controller
+reveals his or her hand and exiles all cards from it with the same
+name as that creature.
+HOU-R
+
 Hour of Need
 2U
 Instant
@@ -58374,6 +59228,14 @@ way, its controller creates a 4/4 blue Sphinx creature token with
 flying.
 JOU-U
 
+Hour of Promise
+4G
+Sorcery
+Search your library for up to two land cards, put them onto the
+battlefield tapped, then shuffle your library. Then if you control
+three or more Deserts, create two 2/2 black Zombie creature tokens.
+HOU-R
+
 Hour of Reckoning
 4WWW
 Sorcery
@@ -58382,6 +59244,14 @@ you tap while casting this spell pays for {1} or one mana of that
 creature's color.)
 Destroy all nontoken creatures.
 RAV-R, CMD-R
+
+Hour of Revelation
+3WWW
+Sorcery
+Hour of Revelation costs {3} less to cast if there are ten or more
+nonland permanents on the battlefield.
+Destroy all nonland permanents.
+HOU-R
 
 Hover Barrier
 2U
@@ -58875,7 +59745,7 @@ Sorcery
 Until end of turn, target creature gets +3/+3 and gains trample and
 "Whenever this creature deals combat damage to a player, draw that
 many cards."
-BNG-R
+BNG-R, E01-R
 
 Hunters' Feast
 3G
@@ -58942,7 +59812,7 @@ Tribal Sorcery -- Elf
 Create three 1/1 green Elf Warrior creature tokens.
 Reinforce 3--{3}{G} ({3}{G}, Discard this card: Put three +1/+1
 counters on target creature.)
-MOR-U, C14-U
+MOR-U, C14-U, CMA-U
 
 Hunting Wilds
 3G
@@ -59502,7 +60372,7 @@ opponent controls. That creature doesn't untap during its controller's
 untap step for as long as you control Icefall Regent.
 Spells your opponents cast that target Icefall Regent cost {2} more
 to cast.
-DTK-R
+DTK-R, E01-R
 
 Icefeather Aven
 GU
@@ -59664,6 +60534,15 @@ Flying
 {G}: Ifh-Biff Efreet deals 1 damage to each creature with flying and
 each player. Any player may activate this ability.
 AN-R, MED-R
+
+Ifnir Deadlands
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{T}, Pay 1 life: Add {B} to your mana pool.
+{2}{B}{B}, {T}, Sacrifice a Desert: Put two -1/-1 counters on target
+creature an opponent controls. Activate this ability only any time
+you could cast a sorcery.
+HOU-U
 
 Igneous Golem
 5
@@ -60032,6 +60911,15 @@ At the beginning of your upkeep, if you have a card in hand, return
 Imaginary Pet to its owner's hand.
 US-R, 9ED-R
 
+Imaginary Threats
+2UU
+Instant
+Creatures target opponent controls attack this turn if able. During
+that player's next untap step, creatures he or she controls don't
+untap.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-U
+
 Imi Statue
 3
 Artifact
@@ -60043,7 +60931,7 @@ Immaculate Magistrate
 Creature -- Elf Shaman
 2/2
 {T}: Put a +1/+1 counter on target creature for each Elf you control.
-LRW-R, C14-R
+LRW-R, C14-R, CMA-R
 
 Immediate Action
 Conspiracy
@@ -60071,6 +60959,15 @@ and/or creatures that share a color with it.)
 Each other creature you control that's a Wolf or a Werewolf gets +1/+1.
 Non-Human Werewolves you control can't transform.
 DKA-U
+
+Imminent Doom
+2R
+Enchantment
+Imminent Doom enters the battlefield with a doom counter on it.
+Whenever you cast a spell with converted mana cost equal to the number
+of doom counters on Imminent Doom, Imminent Doom deals that much damage
+to target creature or player. Then put a doom counter on Imminent Doom.
+HOU-R
 
 Immobilizer Eldrazi
 1R
@@ -60244,7 +61141,7 @@ Creature -- Elf Warrior
 2/2
 Other Elf creatures you control get +1/+1.
 {G}, {T}: Create a 1/1 green Elf Warrior creature token.
-LRW-U, C14-U, EMA-R, EVG-U
+LRW-U, C14-U, EMA-R, CMA-U, EVG-U
 
 Impetuous Devils
 2RR
@@ -60782,7 +61679,7 @@ Creature -- Beast
 4/4
 When Indrik Stomphowler enters the battlefield, destroy target artifact
 or enchantment.
-DIS-U, C15-U, DDD-U
+DIS-U, C15-U, CMA-U, DDD-U
 
 Indrik Umbra
 4GW
@@ -61084,6 +61981,13 @@ Enchanted creature gets +2/+0.
 creature or player.
 M15-C
 
+Inferno Jet
+5R
+Sorcery
+Inferno Jet deals 6 damage to target opponent.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-U
+
 Inferno Titan
 4RR
 Creature -- Giant
@@ -61092,7 +61996,7 @@ Creature -- Giant
 Whenever Inferno Titan enters the battlefield or attacks, it deals 3
 damage divided as you choose among one, two, or three target creatures
 and/or players.
-M11-M, M12-M, C13-M, C15-M
+M11-M, M12-M, C13-M, C15-M, E01-M
 
 Inferno Trap
 3R
@@ -61585,8 +62489,7 @@ TE-U, 6E-U
 Insist
 G
 Sorcery
-The next creature spell you cast this turn can't be countered by
-spells or abilities.
+The next creature spell you cast this turn can't be countered.
 Draw a card.
 TOR-R
 
@@ -62164,7 +63067,15 @@ Landfall -- Whenever a land enters the battlefield under your control,
 you may put a quest counter on Ior Ruin Expedition.
 Remove three quest counters from Ior Ruin Expedition and sacrifice it:
 Draw two cards.
-ZEN-C
+ZEN-C, E01-C
+
+Ipnu Rivulet
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{T}, Pay 1 life: Add {U} to your mana pool.
+{1}{U}, {T}, Sacrifice a Desert: Target player puts the top four
+cards of his or her library into his or her graveyard.
+HOU-U
 
 Ire Shaman
 1R
@@ -62474,8 +63385,8 @@ CHK-L, 9ED-L, RAV-L, TSP-L, 10E-L, LRW-L, SHM-L, ALA-L, M10-L, HOP-L,
 ZEN-L, ROE-L, ARC-L, M11-L, SOM-L, MBS-L, NPH-L, CMD-L, M12-L, ISD-L,
 AVR-L, PC2-L, M13-L, RTR-L, M14-L, THS-L, C13-L, M15-L, KTK-L, C14-L,
 FRF-L, DTK-L, ORI-L, BFZ-L, C15-L, SOI-L, KLD-L, C16-L, PCA-L, AKH-L,
-UG-C, UNH-L, DD2-L, DDE-L, DDF-L, DDH-L, DDI-L, DDJ-L, DDM-L, DDN-L,
-DDO-L, DDQ-L, DDS-L, H09-L, ME3-L, MED-L
+CMA-L, E01-L, HOU-L, UG-C, UNH-L, DD2-L, DDE-L, DDF-L, DDH-L, DDI-L,
+DDJ-L, DDM-L, DDN-L, DDO-L, DDQ-L, DDS-L, H09-L, ME3-L, MED-L
 
 Island Fish Jasconius
 4UUU
@@ -62902,6 +63813,12 @@ Creature -- Vedalken Wizard
 equal to the greatest number of cards a player discarded this way.
 M12-R, C13-R, C15-R
 
+Jace's Defeat
+1U
+Instant
+Counter target blue spell. If it was a Jace planeswalker spell, scry 2.
+HOU-U
+
 Jace's Erasure
 1U
 Enchantment
@@ -63261,7 +64178,7 @@ graveyard.
 to the sacrificed creature's power.
 Sacrifice a Swamp and a Forest: Return Jarad from your graveyard to
 your hand.
-RTR-M, C15-M, DDJ-M
+RTR-M, C15-M, CMA-M, DDJ-M
 
 Jaraku the Interloper
 1UU
@@ -63947,7 +64864,7 @@ Joraga Warcaller enters the battlefield with a +1/+1 counter on it
 for each time it was kicked.
 Other Elf creatures you control get +1/+1 for each +1/+1 counter on
 Joraga Warcaller.
-WWK-R, C14-R
+WWK-R, C14-R, CMA-R
 
 Jori En, Ruin Diver
 1UR
@@ -64192,14 +65109,14 @@ Jungle Basin enters the battlefield tapped.
 When Jungle Basin enters the battlefield, sacrifice it unless you
 return an untapped Forest you control to its owner's hand.
 {T}: Add {C}{G} to your mana pool.
-VI-U, C14-U
+VI-U, C14-U, CMA-U
 
 Jungle Hollow
 Land
 Jungle Hollow enters the battlefield tapped.
 When Jungle Hollow enters the battlefield, you gain 1 life.
 {T}: Add {B} or {G} to your mana pool.
-KTK-C, FRF-C, C15-C, EMA-C, C16-C
+KTK-C, FRF-C, C15-C, EMA-C, C16-C, CMA-C
 
 Jungle Lion
 G
@@ -64420,7 +65337,7 @@ Flying
 Whenever Kaalia of the Vast attacks an opponent, you may put an Angel,
 Demon, or Dragon creature card from your hand onto the battlefield
 tapped and attacking that opponent.
-CMD-M
+CMD-M, CMA-M
 
 Kabira Crossroads
 Land
@@ -64968,7 +65885,7 @@ your control since the beginning of your last upkeep, sacrifice it
 unless you pay its echo cost.)
 When Karmic Guide enters the battlefield, return target creature card
 from your graveyard to the battlefield.
-UL-R, C13-R, EMA-R, VMA-R
+UL-R, C13-R, EMA-R, CMA-R, VMA-R
 
 Karmic Justice
 2W
@@ -65388,7 +66305,7 @@ Level up {1}{G} ({1}{G}: Put a level counter on this. Level up only
 as a sorcery.)
 {LEVEL 2-5} 1/1 {T}: Create a 3/3 green Elephant creature token.
 {LEVEL 6+} 1/1 {T}: Create two 3/3 green Elephant creature tokens.
-ROE-R, C13-R
+ROE-R, C13-R, CMA-R
 
 Kazuul Warlord
 4R
@@ -65629,6 +66546,13 @@ more cards in hand.
 owner's hand.
 AKH-M, MPS_AKH-S
 
+Kefnet's Last Word
+2UU
+Sorcery
+Gain control of target artifact, creature, or enchantment. Lands you
+control don't untap during your next untap step.
+HOU-R
+
 Kefnet's Monument
 3
 Legendary Artifact
@@ -65868,7 +66792,7 @@ Creature -- Human Rogue
 Whenever Kessig Cagebreakers attacks, create a 2/2 green Wolf creature
 token that's tapped and attacking for each creature card in your
 graveyard.
-ISD-R, C15-R
+ISD-R, C15-R, CMA-R
 
 Kessig Dire Swine
 4GG
@@ -65987,7 +66911,7 @@ you may put a quest counter on Khalni Heart Expedition.
 Remove three quest counters from Khalni Heart Expedition and sacrifice
 it: Search your library for up to two basic land cards, put them onto
 the battlefield tapped, then shuffle your library.
-ZEN-C, DDP-C
+ZEN-C, E01-C, DDP-C
 
 Khalni Hydra
 GGGGGGGG
@@ -66016,6 +66940,24 @@ Creature -- Jackal Warrior
 Trample
 Other creatures you control have trample.
 AKH-U
+
+Khenra Eternal
+1B
+Creature -- Zombie Jackal Warrior
+2/2
+Afflict 1 (Whenever this creature becomes blocked, defending player
+loses 1 life.)
+HOU-C
+
+Khenra Scrapper
+2R
+Creature -- Jackal Warrior
+2/3
+Menace
+You may exert Khenra Scrapper as it attacks. When you do, it gets
++2/+0 until end of turn. (An exerted creature won't untap during your
+next untap step.)
+HOU-C
 
 Kher Keep
 Legendary Land
@@ -66234,7 +67176,7 @@ Kindled Fury
 R
 Instant
 Target creature gets +1/+0 and gains first strike until end of turn.
-MOR-C, M10-C, M13-C, DTK-C
+MOR-C, M10-C, M13-C, DTK-C, HOU-C
 
 Kindly Stranger
 2B
@@ -66438,12 +67380,12 @@ Destroy all creatures. They can't be regenerated.
 Threshold -- If seven or more cards are in your graveyard, instead
 destroy all creatures, then create two 1/1 white Spirit creature
 tokens with flying. Creatures destroyed this way can't be regenerated.
-OD-R, C13-R
+OD-R, C13-R, CMA-R
 
 Kismet
 3W
 Enchantment
-Artifacts, creatures, and lands played by your opponents enter the
+Artifacts, creatures, and lands your opponents control enter the
 battlefield tapped.
 LE-U, 4E-U, 5E-U, 6E-U, ME4-R
 
@@ -67136,6 +68078,14 @@ Whenever Knotvine Paladin attacks, it gets +1/+1 until end of turn
 for each untapped creature you control.
 ARB-R, DDG-R
 
+Know Evil
+Scheme
+When you set this scheme in motion, until your next turn, up to one
+target opponent can't attack with creatures, up to one target opponent
+can't cast creature spells, and up to one target opponent can't cast
+noncreature spells. You can't target any player more than once.
+E01-C
+
 Know Naught but Fire
 Scheme
 When you set this scheme in motion, it deals damage to each opponent
@@ -67577,7 +68527,7 @@ of turn. (It can't be blocked except by artifact creatures and/or
 creatures that share a color with it.)
 {2}{B}{G}, Sacrifice a nontoken creature: Create X 1/1 green Saproling
 creature tokens, where X is the sacrificed creature's toughness.
-RTR-U, C15-U, C16-U, DDJ-U
+RTR-U, C15-U, C16-U, CMA-U, DDJ-U
 
 Korozda Monitor
 2GG
@@ -68008,7 +68958,7 @@ Instant
 Split second (As long as this spell is on the stack, players can't
 cast spells or activate abilities that aren't mana abilities.)
 Destroy target artifact or enchantment.
-TSP-U, MMA-U, C13-U, C15-U
+TSP-U, MMA-U, C13-U, C15-U, CMA-U
 
 Krosan Groundshaker
 4GGG
@@ -69533,7 +70483,7 @@ Enchantment -- Aura
 Enchant land
 Enchanted land has "{G}{U}, {T}: Create a 2/2 green and blue Drake
 creature token with flying."
-DIS-U, C13-U
+DIS-U, C13-U, CMA-U
 
 Leap
 U
@@ -69592,6 +70542,21 @@ GGG
 Creature -- Beast
 4/5
 WWK-U
+
+Leave
+1W
+Instant
+Return any number of target permanents you own to your hand.
+[This is half of the split card Leave // Chance.]
+HOU-R
+
+Leave // Chance
+1W // 3R
+Instant // Sorcery
+Return any number of target permanents you own to your hand. //
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Discard any number of cards, then draw that many cards.
+HOU-R
 
 Leave No Trace
 1W
@@ -69780,7 +70745,7 @@ Artifact
 Flash (You may cast this spell any time you could cast an instant.)
 {2}, Sacrifice Leonin Bladetrap: Leonin Bladetrap deals 2 damage to
 each attacking creature without flying.
-MRD-U, C13-U
+MRD-U, C13-U, CMA-U
 
 Leonin Bola
 1
@@ -69921,6 +70886,14 @@ end of turn and put a -0/-1 counter on target creature blocking or
 blocked by Lesser Werewolf. Activate this ability only during the
 declare blockers step.
 LE-U, ME3-C
+
+Lethal Sting
+2B
+Sorcery
+As an additional cost to cast Lethal Sting, put a -1/-1 counter on
+a creature you control.
+Destroy target creature.
+HOU-C
 
 Lethal Vapors
 2BB
@@ -70302,6 +71275,12 @@ Sacrifice a creature: You gain life equal to the sacrificed creature's
 toughness. Activate this ability only during your upkeep.
 LE-U, ME3-R
 
+Life Goes On
+G
+Instant
+You gain 4 life. If a creature died this turn, you gain 8 life instead.
+HOU-C
+
 Life Matrix
 4
 Artifact
@@ -70368,7 +71347,7 @@ Trample
 Lifeblood Hydra enters the battlefield with X +1/+1 counters on it.
 When Lifeblood Hydra dies, you gain life and draw cards equal to
 its power.
-C14-R
+C14-R, CMA-R
 
 Lifecraft Awakening
 XG
@@ -70542,7 +71521,7 @@ as you cast this spell.)
 Flying
 When Lightkeeper of Emeria enters the battlefield, you gain 2 life
 for each time it was kicked.
-WWK-U, CMD-U
+WWK-U, CMD-U, CMA-U
 
 Lightmine Field
 2WW
@@ -70592,7 +71571,7 @@ Lightning Bolt
 R
 Instant
 Lightning Bolt deals 3 damage to target creature or player.
-A-C, B-C, U-C, RV-C, 4E-C, M10-C, M11-C, MM2-U, MED-C, PD2-C
+A-C, B-C, U-C, RV-C, 4E-C, M10-C, M11-C, MM2-U, E01-U, MED-C, PD2-C
 
 Lightning Cloud
 3R
@@ -70664,7 +71643,7 @@ Artifact -- Equipment
 Equipped creature has haste and shroud. (It can't be the target of
 spells or abilities.)
 Equip {0}
-MRD-U, ARC-U, CMD-U, C15-U, MPS_KLD-S, C16-U, DDE-U
+MRD-U, ARC-U, CMD-U, C15-U, MPS_KLD-S, C16-U, CMA-U, DDE-U
 
 Lightning Helix
 RW
@@ -70823,7 +71802,7 @@ First strike (This creature deals combat damage before creatures
 without first strike.)
 Whenever Lightwielder Paladin deals combat damage to a player, you
 may exile target black or red permanent that player controls.
-M10-R
+M10-R, E01-R
 
 Lignify
 1G
@@ -70872,6 +71851,13 @@ Liliana's Caress
 Enchantment
 Whenever an opponent discards a card, that player loses 2 life.
 M11-U
+
+Liliana's Defeat
+B
+Sorcery
+Destroy target black creature or black planeswalker. If that permanent
+was a Liliana planeswalker, her controller loses 3 life.
+HOU-U
 
 Liliana's Elite
 2B
@@ -71471,7 +72457,7 @@ Creature -- Elf Druid
 1/1
 {T}: Add {G} to your mana pool.
 A-C, B-C, U-C, RV-C, 4E-C, 5E-C, 6E-C, S00-C, 7E-C, 9ED-C, 10E-C,
-M10-C, M11-C, M12-C, C14-C, EMA-C, EVG-C
+M10-C, M11-C, M12-C, C14-C, EMA-C, CMA-C, EVG-C
 
 Llanowar Empath
 3G
@@ -71907,7 +72893,7 @@ Creature -- Elemental
 */*
 Lord of Extinction's power and toughness are each equal to the number
 of cards in all graveyards.
-ARB-M
+ARB-M, MPS_AKH-S
 
 Lord of Lineage
 Creature -- Vampire
@@ -72012,7 +72998,7 @@ Loreseeker's Stone
 Artifact
 {3}, {T}: Draw three cards. This ability costs {1} more to activate
 for each card in your hand.
-C14-U
+C14-U, CMA-U
 
 Lorthos, the Tidemaker
 5UUU
@@ -72140,7 +73126,7 @@ Creature -- Zombie Troll
 Trample
 Discard a creature card: Put a +1/+1 counter on Lotleth Troll.
 {B}: Regenerate Lotleth Troll.
-RTR-R, C15-R
+RTR-R, C15-R, CMA-R
 
 Lotus Bloom
 Artifact
@@ -72434,7 +73420,7 @@ Horsemanship (This creature can't be blocked except by creatures
 with horsemanship.)
 Whenever Lu Xun, Scholar General deals damage to an opponent, you
 may draw a card.
-P3K-R, C13-R, ME3-U
+P3K-R, C13-R, CMA-R, ME3-U
 
 Lucent Liminid
 3WW
@@ -72684,6 +73670,13 @@ Lupine Prototype can't attack or block unless a player has no cards
 in hand.
 EMN-R
 
+Lurching Rotbeast
+3B
+Creature -- Zombie Beast
+4/2
+Cycling {B} ({B}, Discard this card: Draw a card.)
+HOU-C
+
 Lure
 1GG
 Enchantment -- Aura
@@ -72881,7 +73874,7 @@ Creature -- Elf Warrior
 3/3
 Whenever you cast an Elf spell, you may create a 1/1 green Elf Warrior
 creature token.
-LRW-C, C14-C, EMA-C, EVG-C
+LRW-C, C14-C, EMA-C, CMA-C, EVG-C
 
 Lys Alana Scarblade
 2B
@@ -73339,6 +74332,15 @@ Magmaquake deals X damage to each creature without flying and each
 planeswalker.
 M13-R, C14-R, C15-R
 
+Magmaroth
+3R
+Creature -- Elemental
+5/5
+At the beginning of your upkeep, put a -1/-1 counter on Magmaroth.
+Whenever you cast a noncreature spell, remove a -1/-1 counter from
+Magmaroth.
+HOU-U
+
 Magmasaur
 3RR
 Creature -- Elemental Lizard
@@ -73627,6 +74629,18 @@ or reach.)
 A-R, B-R, U-R, RV-R, 4E-R, 7E-R, 8ED-R, 9ED-R, 10E-R, M15-R, ORI-R,
 ME4-R
 
+Majestic Myriarch
+4G
+Creature -- Chimera
+*/*
+Majestic Myriarch's power and toughness are each equal to twice the
+number of creatures you control.
+At the beginning of each combat, Majestic Myriarch gains flying
+until end of turn if you control a creature with flying. The same is
+true for first strike, double strike, deathtouch, haste, hexproof,
+indestructible, lifelink, menace, reach, trample, and vigilance.
+HOU-M
+
 Major Teroh
 3W
 Legendary Creature -- Bird Soldier
@@ -73648,6 +74662,13 @@ Make Obsolete
 Instant
 Creatures your opponents control get -1/-1 until end of turn.
 KLD-U
+
+Make Yourself Useful
+Scheme
+When you set this scheme in motion, destroy target creature an opponent
+controls. If a creature is destroyed this way, you gain life equal
+to its toughness.
+E01-C
 
 Make a Stand
 2W
@@ -73799,7 +74820,7 @@ Legendary Creature -- Demon Dragon
 Flying
 When Malfegor enters the battlefield, discard your hand. Each opponent
 sacrifices a creature for each card discarded this way.
-CON-M, CMD-M
+CON-M, CMD-M, CMA-M
 
 Malfegor Avatar
 Vanguard
@@ -74134,7 +75155,7 @@ Join forces -- Whenever Mana-Charged Dragon attacks or blocks, each
 player starting with you may pay any amount of mana. Mana-Charged
 Dragon gets +X/+0 until end of turn, where X is the total amount of
 mana paid this way.
-CMD-R
+CMD-R, CMA-R
 
 Manabarbs
 3R
@@ -74195,7 +75216,7 @@ Manalith
 3
 Artifact
 {T}: Add one mana of any color to your mana pool.
-M12-C
+M12-C, HOU-C
 
 Manamorphose
 1(r/g)
@@ -74356,6 +75377,15 @@ Creature -- Merfolk
 {U}: Manta Riders gains flying until end of turn.
 TE-C
 
+Manticore Eternal
+3RR
+Creature -- Zombie Manticore
+5/4
+Afflict 3 (Whenever this creature becomes blocked, defending player
+loses 3 life.)
+Manticore Eternal attacks each combat if able.
+HOU-U
+
 Manticore of the Gauntlet
 4R
 Creature -- Manticore
@@ -74459,6 +75489,13 @@ Marath, Will of the Wild enters the battlefield with a number of
 � Marath deals X damage to target creature or player. X can't be 0.
 � Create an X/X green Elemental creature token. X can't be 0.
 C13-M
+
+Marauding Boneslasher
+2B
+Creature -- Zombie Minotaur
+3/3
+Marauding Boneslasher can't block unless you control another Zombie.
+HOU-C
 
 Marauding Knight
 2BB
@@ -74860,6 +75897,14 @@ Creature -- Insect
 When Marker Beetles dies, target creature gets +1/+1 until end of turn.
 {2}, Sacrifice Marker Beetles: Draw a card.
 UD-C
+
+Market
+2U
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Draw two cards, then discard two cards.
+[This is half of the split card Farm // Market.]
+HOU-U
 
 Market Festival
 3G
@@ -75298,7 +76343,7 @@ Creature -- Elf Shaman
 When Masked Admirers enters the battlefield, draw a card.
 Whenever you cast a creature spell, you may pay {G}{G}. If you do,
 return Masked Admirers from your graveyard to your hand.
-LRW-R, MMA-U, C14-R
+LRW-R, MMA-U, C14-R, CMA-R
 
 Masked Gorgon
 4B
@@ -75447,7 +76492,7 @@ Cast Master Warcraft only before attackers are declared.
 You choose which creatures attack this turn.
 You choose which creatures block this turn and how those creatures
 block.
-RAV-R, CMD-R
+RAV-R, CMD-R, CMA-R
 
 Master of Arms
 2W
@@ -75905,7 +76950,7 @@ Legendary Creature -- Insect Shaman
 Flying
 Whenever a player sacrifices another permanent, put a +1/+1 counter
 on each creature you control.
-C15-M
+C15-M, CMA-M
 
 Meadowboon
 2WW
@@ -76345,7 +77390,7 @@ Creature -- Human Soldier
 2/2
 Whenever another creature with power 2 or less enters the battlefield
 under your control, you may pay {1}. If you do, draw a card.
-ISD-R, C14-R, C16-R
+ISD-R, C14-R, C16-R, E01-R
 
 Mephidross Vampire
 4BB
@@ -76464,6 +77509,15 @@ X cards of your library. Put one of them into your hand and the rest
 on the bottom of your library in any order.
 AER-R
 
+Merciless Eternal
+2B
+Creature -- Zombie Cleric
+2/2
+Afflict 2 (Whenever this creature becomes blocked, defending player
+loses 2 life.)
+{2}{B}, Discard a card: Merciless Eternal gets +2/+2 until end of turn.
+HOU-U
+
 Merciless Eviction
 4WB
 Sorcery
@@ -76561,7 +77615,7 @@ At the beginning of your end step, choose target creature card in
 your graveyard. If that card's converted mana cost is less than or
 equal to the number of experience counters you have, return it to
 the battlefield. Otherwise, put it into your hand.
-C15-M
+C15-M, CMA-M
 
 Merfolk Assassin
 UU
@@ -78159,6 +79213,13 @@ Return target creature card from your graveyard to the battlefield. Put
 a +1/+1 counter on it.
 VI-U, DDL-U
 
+Mirage Mirror
+3
+Artifact
+{2}: Mirage Mirror becomes a copy of target artifact, creature,
+enchantment, or land until end of turn.
+HOU-R
+
 Mirari
 5
 Legendary Artifact
@@ -78327,7 +79388,7 @@ Creature -- Shapeshifter
 Changeling (This card is every creature type.)
 {X}: Until end of turn, creatures you control have base power and
 toughness X/X and gain all creature types.
-LRW-R, C13-R, MM2-R, C16-R
+LRW-R, C13-R, MM2-R, C16-R, CMA-R
 
 Mirror Entity Avatar
 Vanguard
@@ -78923,7 +79984,7 @@ Creature -- Kithkin Wizard
 1/1
 {2}{W}{U}: Exile target creature. Return that card to the battlefield
 under its owner's control at the beginning of the next end step.
-SHM-U, C13-U, MM3-U, DDI-U
+SHM-U, C13-U, MM3-U, CMA-U, DDI-U
 
 Mistmoon Griffin
 3W
@@ -79078,6 +80139,14 @@ Creature -- Spirit
 2/1
 Flying
 P2-C
+
+Moaning Wall
+2B
+Creature -- Zombie Wall
+0/5
+Defender
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-C
 
 Moat
 2WW
@@ -79541,7 +80610,7 @@ Land
 {1}, {T}: Put a storage counter on Molten Slagheap.
 {1}, Remove X storage counters from Molten Slagheap: Add X mana in
 any combination of {B} and/or {R} to your mana pool.
-TSP-U, CMD-U, C13-U
+TSP-U, CMD-U, C13-U, CMA-U
 
 Molten Vortex
 R
@@ -79599,7 +80668,7 @@ Instant
 Target creature gets +2/+2 and gains lifelink until end of
 turn. (Damage dealt by the creature also causes its controller to
 gain that much life.)
-ISD-C, CNS-C, DDL-C
+ISD-C, CNS-C, E01-C, DDL-C
 
 Moment of Silence
 W
@@ -80325,7 +81394,7 @@ Mortify
 1WB
 Instant
 Destroy target creature or enchantment.
-GPT-U, CMD-U, CNS-U, C16-U, DDK-U
+GPT-U, CMD-U, CNS-U, C16-U, CMA-U, DDK-U
 
 Mortipede
 3B
@@ -80394,7 +81463,7 @@ Moss Diamond
 Artifact
 Moss Diamond enters the battlefield tapped.
 {T}: Add {G} to your mana pool.
-MI-U, 6E-U, 7E-U, C14-U
+MI-U, 6E-U, 7E-U, C14-U, CMA-U
 
 Moss Kami
 5G
@@ -80480,7 +81549,7 @@ Creature -- Human Cleric
 1/1
 {T}: Target creature you control gains protection from the color of
 your choice until end of turn.
-UL-U, CMD-U, EMA-R, DDO-U
+UL-U, CMD-U, EMA-R, CMA-U, DDO-U
 
 Mothrider Samurai
 3W
@@ -80510,8 +81579,9 @@ MRD-L, CHK-L, 9ED-L, RAV-L, TSP-L, 10E-L, LRW-L, SHM-L, ALA-L, M10-L,
 HOP-L, ZEN-L, ROE-L, ARC-L, M11-L, SOM-L, MBS-L, NPH-L, CMD-L, M12-L,
 ISD-L, AVR-L, PC2-L, M13-L, RTR-L, M14-L, THS-L, C13-L, M15-L, KTK-L,
 C14-L, FRF-L, DTK-L, ORI-L, BFZ-L, C15-L, SOI-L, KLD-L, C16-L, PCA-L,
-AKH-L, EVG-L, UG-C, UNH-L, DD2-L, DDE-L, DDG-L, DDH-L, DDI-L, DDJ-L,
-DDK-L, DDL-L, DDN-L, DDP-L, DDS-L, H09-L, ME3-L, MED-L, PD2-L
+AKH-L, CMA-L, E01-L, HOU-L, EVG-L, UG-C, UNH-L, DD2-L, DDE-L, DDG-L,
+DDH-L, DDI-L, DDJ-L, DDK-L, DDL-L, DDN-L, DDP-L, DDS-L, H09-L, ME3-L,
+MED-L, PD2-L
 
 Mountain Bandit
 R
@@ -80837,7 +81907,7 @@ Mulch
 Sorcery
 Reveal the top four cards of your library. Put all land cards revealed
 this way into your hand and the rest into your graveyard.
-ST-C, ISD-C, C15-C
+ST-C, ISD-C, C15-C, CMA-C
 
 Mulldrifter
 4U
@@ -80906,6 +81976,14 @@ Pay {E}: Multiform Wonder gains your choice of flying, vigilance,
 or lifelink until end of turn.
 Pay {E}: Multiform Wonder gets +2/-2 or -2/+2 until end of turn.
 KLD-R
+
+Mummy Paramount
+1W
+Creature -- Zombie
+2/2
+Whenever another Zombie enters the battlefield under your control,
+Mummy Paramount gets +1/+1 until end of turn.
+HOU-C
 
 Munda's Vanguard
 4W
@@ -81079,7 +82157,7 @@ Other green creatures you control get +1/+1.
 Other blue creatures you control get +1/+1.
 Untap all green and/or blue creatures you control during each other
 player's untap step.
-EVE-R, C13-R
+EVE-R, C13-R, CMA-R
 
 Murmuring Bosk
 Land -- Forest
@@ -81243,11 +82321,27 @@ guesses that card's name. You may reveal that card. If you do and
 your opponent guessed wrong, draw a card.
 UNH-U
 
+My Forces Are Innumerable
+Ongoing Scheme
+(An ongoing scheme remains face up until it's abandoned.)
+At the beginning of your end step, create a 3/3 black Horror creature
+token.
+At the beginning of your opponents' end step, they may sacrifice two
+creatures. If they do, abandon this scheme.
+E01-C
+
 My Genius Knows No Bounds
 Scheme
 When you set this scheme in motion, you may pay {X}. If you do,
 you gain X life and draw X cards.
 ARC-C
+
+My Laughter Echoes
+Ongoing Scheme
+(An ongoing scheme remains face up until it's abandoned.)
+Whenever you set a non-ongoing scheme in motion, you may abandon this
+scheme. If you do, set that scheme in motion again.
+E01-C
 
 My Undead Horde Awakens
 Ongoing Scheme
@@ -81292,7 +82386,7 @@ of creatures. This creature enters the battlefield with twice that
 many +1/+1 counters on it.)
 At the beginning of your upkeep, create a 1/1 green Saproling creature
 token for each +1/+1 counter on Mycoloth.
-ALA-R, PC2-R, C15-R, C16-R, PCA-R
+ALA-R, PC2-R, C15-R, C16-R, PCA-R, CMA-R
 
 Mycosynth Fiend
 2G
@@ -81546,7 +82640,7 @@ Myriad Landscape enters the battlefield tapped.
 {2}, {T}, Sacrifice Myriad Landscape: Search your library for up
 to two basic land cards that share a land type, put them onto the
 battlefield tapped, then shuffle your library.
-C14-U, C16-U
+C14-U, C16-U, CMA-U
 
 Myrsmith
 1W
@@ -83070,6 +84164,16 @@ Equip {1}
 [Front face. Transforms into Ashmouth Blade.]
 SOI-U
 
+Neheb, the Eternal
+3RR
+Legendary Creature -- Zombie Minotaur Warrior
+4/6
+Afflict 3 (Whenever this creature becomes blocked, defending player
+loses 3 life.)
+At the beginning of your postcombat main phase, add {R} to your mana
+pool for each 1 life your opponents have lost this turn.
+HOU-M
+
 Neheb, the Worthy
 1BR
 Legendary Creature -- Minotaur Warrior
@@ -83721,6 +84825,19 @@ Whenever Nicol Bolas deals damage to an opponent, that player discards
 his or her hand.
 LE-R, CH-R, TSP-S, DRB-R, ME3-R
 
+Nicol Bolas, God-Pharaoh
+4UBR
+Planeswalker -- Bolas
+7
+[+2]: Target opponent exiles cards from the top of his or her library
+until he or she exiles a nonland card. Until end of turn, you may
+cast that card without paying its mana cost.
+[+1]: Each opponent exiles two cards from his or her hand.
+[-4]: Nicol Bolas, God-Pharaoh deals 7 damage to target opponent or
+creature an opponent controls.
+[-12]: Exile each nonland permanent your opponents control.
+HOU-M
+
 Nicol Bolas, Planeswalker
 4UBBR
 Planeswalker -- Bolas
@@ -83729,7 +84846,18 @@ Planeswalker -- Bolas
 [-2]: Gain control of target creature.
 [-9]: Nicol Bolas, Planeswalker deals 7 damage to target player. That
 player discards seven cards, then sacrifices seven permanents.
-CON-M, M13-M, DDH-M
+CON-M, M13-M, E01-M, DDH-M
+
+Nicol Bolas, the Deceiver
+5UBR
+Planeswalker -- Bolas
+5
+[+3]: Each opponent loses 3 life unless that player sacrifices a
+nonland permanent or discards a card.
+[-3]: Destroy target creature. Draw a card.
+[-11]: Nicol Bolas, the Deceiver deals 7 damage to each opponent. You
+draw seven cards.
+HOU-M
 
 Night
 B
@@ -83955,7 +85083,7 @@ Creature -- Zombie
 1/1
 Blue spells and red spells you cast cost {1} less to cast.
 {1}{B}: Regenerate Nightscape Familiar.
-PS-C, C13-C, VMA-C, DDH-C
+PS-C, C13-C, E01-C, VMA-C, DDH-C
 
 Nightscape Master
 2BB
@@ -84206,6 +85334,17 @@ Threshold -- Nimble Mongoose gets +2/+2 as long as seven or more
 cards are in your graveyard.
 OD-U, EMA-C
 
+Nimble Obstructionist
+2U
+Creature -- Bird Wizard
+3/1
+Flash
+Flying
+Cycling {2}{U} ({2}{U}, Discard this card: Draw a card.)
+When you cycle Nimble Obstructionist, counter target activated or
+triggered ability you don't control.
+HOU-R
+
 Nimble-Blade Khenra
 1R
 Creature -- Jackal Warrior
@@ -84346,6 +85485,21 @@ If Nissa's Chosen would die, put it on the bottom of its owner's
 library instead.
 ZEN-C, DDR-C
 
+Nissa's Defeat
+2G
+Sorcery
+Destroy target Forest, green enchantment, or green planeswalker. If
+that permanent was a Nissa planeswalker, draw a card.
+HOU-U
+
+Nissa's Encouragement
+4G
+Sorcery
+Search your library and graveyard for a card named Forest, a card named
+Brambleweft Behemoth, and a card named Nissa, Genesis Mage. Reveal
+those cards, put them into your hand, then shuffle your library.
+HOU-R
+
 Nissa's Expedition
 4G
 Sorcery
@@ -84390,6 +85544,18 @@ Scry 5, then reveal the top card of your library. If it's a creature
 card, you draw cards equal to its power and you gain life equal to
 its toughness.
 ORI-R
+
+Nissa, Genesis Mage
+5GG
+Planeswalker -- Nissa
+5
+[+2]: Untap up to two target creatures and up to two target lands.
+[-3]: Target creature gets +5/+5 until end of turn.
+[-10]: Look at the top ten cards of your library. You may put
+any number of creature and/or land cards from among them onto the
+battlefield. Put the rest on the bottom of your library in a random
+order.
+HOU-M
 
 Nissa, Nature's Artisan
 4GG
@@ -84473,7 +85639,7 @@ trample. It's still a land.
 [-7]: Search your library for any number of basic land cards, put
 them onto the battlefield, then shuffle your library. Those lands
 become 4/4 Elemental creatures with trample. They're still lands.
-M15-M
+M15-M, E01-M
 
 Niv-Mizzet, Dracogenius
 2UURR
@@ -84557,7 +85723,13 @@ No Mercy
 2BB
 Enchantment
 Whenever a creature deals damage to you, destroy it.
-UL-R
+UL-R, MPS_AKH-S
+
+No One Will Hear Your Cries
+Scheme
+When you set this scheme in motion, each opponent chooses a creature
+he or she controls, then sacrifices the rest.
+E01-C
 
 No Quarter
 3R
@@ -85161,7 +86333,8 @@ Null Chamber
 World Enchantment
 As Null Chamber enters the battlefield, you and an opponent each
 choose a card name other than a basic land card name.
-Spells with the chosen names can't be cast.
+Spells with the chosen names can't be cast and lands with the chosen
+names can't be played.
 MI-R
 
 Null Champion
@@ -85489,6 +86662,15 @@ Land
 this turn.
 AN-U, 4E-U, ME4-C
 
+Oasis Ritualist
+3G
+Creature -- Naga Druid
+2/4
+{T}: Add one mana of any color to your mana pool.
+{T}, Exert Oasis Ritualist: Add two mana of any one color to your mana
+pool. (An exerted creature won't untap during your next untap step.)
+HOU-C
+
 Oath of Ajani
 GW
 Legendary Enchantment
@@ -85673,6 +86855,17 @@ you may have target player lose 3 life. If you do, put three +1/+1
 counters on Ob Nixilis, the Fallen.
 ZEN-M
 
+Obelisk Spider
+1BG
+Creature -- Spider
+1/4
+Reach
+Whenever Obelisk Spider deals combat damage to a creature, put a
+-1/-1 counter on that creature.
+Whenever you put one or more -1/-1 counters on a creature, each
+opponent loses 1 life and you gain 1 life.
+HOU-U
+
 Obelisk of Alara
 6
 Artifact
@@ -85699,7 +86892,7 @@ Obelisk of Grixis
 3
 Artifact
 {T}: Add {U}, {B}, or {R} to your mana pool.
-ALA-C, C13-C, DDH-C
+ALA-C, C13-C, E01-C, DDH-C
 
 Obelisk of Jund
 3
@@ -85743,6 +86936,14 @@ Sorcery
 Obliterate can't be countered.
 Destroy all artifacts, creatures, and lands. They can't be regenerated.
 IN-R, 8ED-R, V16-M
+
+Oblivion
+4B
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Target opponent discards two cards.
+[This is half of the split card Consign // Oblivion.]
+HOU-U
 
 Oblivion Crown
 1B
@@ -85880,7 +87081,7 @@ counter on it. For as long as that land has a blaze counter on it,
 it has "At the beginning of your upkeep, this land deals 1 damage to
 you." (The land continues to burn after Obsidian Fireheart has left
 the battlefield.)
-ZEN-M
+ZEN-M, E01-M
 
 Obsidian Giant
 4R
@@ -85982,7 +87183,7 @@ without first strike.)
 Whenever Odric, Master Tactician and at least three other creatures
 attack, you choose which creatures block this combat and how those
 creatures block.
-M13-R
+M13-R, E01-R
 
 Odunos River Trawler
 2B
@@ -86283,6 +87484,22 @@ Create a token that's a copy of it, except it's a white Zombie Bird
 Soldier with no mana cost. Embalm only as a sorcery.)
 AKH-U
 
+Oketra's Avenger
+1W
+Creature -- Human Warrior
+3/1
+You may exert Oketra's Avenger as it attacks. When you do, prevent
+all combat damage that would be dealt to it this turn. (An exerted
+creature won't untap during your next untap step.)
+HOU-C
+
+Oketra's Last Mercy
+1WW
+Sorcery
+Your life total becomes equal to your starting life total. Lands you
+control don't untap during your next untap step.
+HOU-R
+
 Oketra's Monument
 3
 Legendary Artifact
@@ -86441,6 +87658,15 @@ cards of your library, then put any number of them on the bottom of
 your library and the rest on top in any order.)
 THS-C, CN2-C, DDO-C
 
+Ominous Sphinx
+3UU
+Creature -- Sphinx
+4/4
+Flying
+Whenever you cycle or discard a card, target creature an opponent
+controls gets -2/-0 until end of turn.
+HOU-U
+
 Omnath, Locus of Mana
 2G
 Legendary Creature -- Elemental
@@ -86471,7 +87697,7 @@ Omniscience
 7UUU
 Enchantment
 You may cast spells from your hand without paying their mana costs.
-M13-M
+M13-M, MPS_AKH-S
 
 Onakke Catacomb
 Plane -- Shandalar
@@ -86619,7 +87845,7 @@ Creature -- Demon Spirit
 Haste
 At the beginning of your upkeep, return a red creature you control
 to its owner's hand.
-SOK-U, CMD-U, DDN-U
+SOK-U, CMD-U, CMA-U, DDN-U
 
 Oni of Wild Places Avatar
 Vanguard
@@ -86817,7 +88043,7 @@ commander's color identity. If you spend this mana to cast your
 commander, it enters the battlefield with a number of additional +1/+1
 counters on it equal to the number of times it's been cast from the
 command zone this game.
-C13-C, C16-C
+C13-C, C16-C, CMA-C
 
 Opal Titan
 2WW
@@ -86873,6 +88099,12 @@ Artifact Creature -- Unicorn
 1/2
 {T}: Add one mana of any color to your mana pool.
 THS-C, CN2-C
+
+Open Fire
+2R
+Instant
+Open Fire deals 3 damage to target creature or player.
+HOU-C
 
 Open into Wonder
 XUU
@@ -86941,7 +88173,7 @@ Opposition
 Enchantment
 Tap an untapped creature you control: Tap target artifact, creature,
 or land.
-UD-R, 7E-R
+UD-R, 7E-R, MPS_AKH-S
 
 Oppression
 1BB
@@ -87069,7 +88301,7 @@ Trample
 Landfall -- Whenever a land enters the battlefield under your control,
 put a +1/+1 counter on Oran-Rief Hydra. If that land is a Forest,
 put two +1/+1 counters on Oran-Rief Hydra instead.
-BFZ-R, DDR-R
+BFZ-R, E01-R, DDR-R
 
 Oran-Rief Invoker
 1G
@@ -87104,7 +88336,7 @@ Oran-Rief, the Vastwood enters the battlefield tapped.
 {T}: Add {G} to your mana pool.
 {T}: Put a +1/+1 counter on each green creature that entered the
 battlefield this turn.
-ZEN-R, C14-R, C15-R
+ZEN-R, C14-R, C15-R, CMA-R
 
 Orator of Ojutai
 1W
@@ -87628,7 +88860,7 @@ Kicker {R} (You may pay an additional {R} as you cast this spell.)
 Destroy target artifact or enchantment. If Orim's Thunder was kicked,
 it deals damage equal to that permanent's converted mana cost to
 target creature.
-AP-C, HOP-C, CMD-C, C15-C
+AP-C, HOP-C, CMD-C, C15-C, CMA-C
 
 Orim's Touch
 W
@@ -87759,7 +88991,7 @@ Legendary Creature -- Dragon
 Flying
 Whenever Oros, the Avenger deals combat damage to a player, you may
 pay {2}{W}. If you do, Oros deals 3 damage to each nonwhite creature.
-PLC-R, CMD-R
+PLC-R, CMD-R, CMA-R
 
 Orzhov Advokist
 2W
@@ -87777,7 +89009,7 @@ Orzhov Basilica enters the battlefield tapped.
 When Orzhov Basilica enters the battlefield, return a land you control
 to its owner's hand.
 {T}: Add {W}{B} to your mana pool.
-GPT-C, CMD-C, C13-C, MM2-U, C15-C, C16-U
+GPT-C, CMD-C, C13-C, MM2-U, C15-C, C16-U, CMA-C
 
 Orzhov Charm
 WB
@@ -87818,7 +89050,7 @@ Creature -- Human Wizard
 2/2
 {2}{W}: Target player gains 1 life.
 {2}{B}: Each player loses 1 life.
-GPT-U, CMD-U
+GPT-U, CMD-U, CMA-U
 
 Orzhov Keyrune
 3
@@ -87843,7 +89075,7 @@ Orzhov Signet
 2
 Artifact
 {1}, {T}: Add {W}{B} to your mana pool.
-GPT-C, CMD-C, C15-C, C16-C, MM3-U
+GPT-C, CMD-C, C15-C, C16-C, MM3-U, CMA-C
 
 Orzhova
 Plane -- Ravnica
@@ -88094,6 +89326,12 @@ Whenever a player puts a nontoken creature onto the battlefield,
 that player returns a land he or she controls to its owner's hand.
 PR-R
 
+Overcome
+3GG
+Sorcery
+Creatures you control get +2/+2 and gain trample until end of turn.
+HOU-U
+
 Overeager Apprentice
 2B
 Creature -- Human Minion
@@ -88177,7 +89415,7 @@ Overrun
 Sorcery
 Creatures you control get +3/+3 and gain trample until end of turn.
 TE-U, OD-U, 10E-U, M10-U, M12-U, PC2-U, C14-U, C15-U, CN2-U, PCA-U,
-DDD-U
+CMA-U, DDD-U
 
 Overseer of the Damned
 5BB
@@ -88188,7 +89426,7 @@ When Overseer of the Damned enters the battlefield, you may destroy
 target creature.
 Whenever a nontoken creature an opponent controls dies, create a
 tapped 2/2 black Zombie creature token.
-C14-R
+C14-R, E01-R
 
 Oversold Cemetery
 1B
@@ -88251,12 +89489,22 @@ Counter target creature spell. Draw cards equal to that spell's
 converted mana cost.
 SOK-U, DDJ-U
 
+Overwhelming Splendor
+6WW
+Enchantment -- Aura Curse
+Enchant player
+Creatures enchanted player controls lose all abilities and have base
+power and toughness 1/1.
+Enchanted player can't activate abilities that aren't mana abilities
+or loyalty abilities.
+HOU-M
+
 Overwhelming Stampede
 3GG
 Sorcery
 Until end of turn, creatures you control gain trample and get +X/+X,
 where X is the greatest power among creatures you control.
-M11-R, C14-R, MM2-R, C15-R
+M11-R, C14-R, MM2-R, C15-R, CMA-R
 
 Ovinize
 1U
@@ -89305,7 +90553,7 @@ Instant
 Exile target creature. Its controller may search his or her library
 for a basic land card, put that card onto the battlefield tapped,
 then shuffle his or her library.
-CON-U, ARC-U, CMD-U, MMA-U, MM3-U, DDI-U
+CON-U, ARC-U, CMD-U, MMA-U, MM3-U, CMA-U, DDI-U
 
 Pathbreaker Ibex
 4GG
@@ -89314,7 +90562,7 @@ Creature -- Goat
 Whenever Pathbreaker Ibex attacks, creatures you control gain trample
 and get +X/+X until end of turn, where X is the greatest power among
 creatures you control.
-C15-R
+C15-R, CMA-R
 
 Pathbreaker Wurm
 4GG
@@ -89512,6 +90760,13 @@ W
 Instant
 Prevent all damage a source of your choice would deal this turn.
 TOR-C, M14-C, DDL-C
+
+Pay Tribute to Me
+Scheme
+When you set this scheme in motion, each opponent sacrifices a
+creature. If you control six or more lands, each opponent sacrifices
+another creature.
+E01-C
 
 Peace Strider
 4
@@ -90452,7 +91707,7 @@ Phantom Nantuko enters the battlefield with two +1/+1 counters on it.
 If damage would be dealt to Phantom Nantuko, prevent that
 damage. Remove a +1/+1 counter from Phantom Nantuko.
 {T}: Put a +1/+1 counter on Phantom Nantuko.
-JUD-R, C13-R
+JUD-R, C13-R, CMA-R
 
 Phantom Nishoba
 5GW
@@ -90988,7 +92243,7 @@ Creature -- Carrier
 {T}, Sacrifice Phyrexian Plaguelord: Target creature gets -4/-4 until
 end of turn.
 Sacrifice a creature: Target creature gets -1/-1 until end of turn.
-UL-R, 8ED-R, C15-R, DDE-R
+UL-R, 8ED-R, C15-R, CMA-R, DDE-R
 
 Phyrexian Portal
 3
@@ -91032,7 +92287,7 @@ Creature -- Horror
 2/2
 When Phyrexian Rager enters the battlefield, you draw a card and you
 lose 1 life.
-AP-C, 10E-C, MBS-C, C15-C, EMA-C, DDD-C
+AP-C, 10E-C, MBS-C, C15-C, EMA-C, CMA-C, DDD-C
 
 Phyrexian Reaper
 4B
@@ -91340,7 +92595,7 @@ Flying
 When Pilgrim's Eye enters the battlefield, you may search your library
 for a basic land card, reveal it, put it into your hand, then shuffle
 your library.
-WWK-C, C13-C, C14-C, BFZ-U, EMA-C, DDI-C
+WWK-C, C13-C, C14-C, BFZ-U, EMA-C, CMA-C, DDI-C
 
 Pili-Pala
 2
@@ -91856,8 +93111,8 @@ CHK-L, 9ED-L, RAV-L, TSP-L, 10E-L, LRW-L, SHM-L, ALA-L, M10-L, HOP-L,
 ZEN-L, ROE-L, ARC-L, M11-L, SOM-L, MBS-L, NPH-L, CMD-L, M12-L, ISD-L,
 AVR-L, PC2-L, M13-L, RTR-L, M14-L, THS-L, C13-L, M15-L, KTK-L, C14-L,
 FRF-L, DTK-L, ORI-L, BFZ-L, C15-L, SOI-L, KLD-L, C16-L, PCA-L, AKH-L,
-UG-C, UNH-L, DDC-L, DDE-L, DDF-L, DDG-L, DDH-L, DDI-L, DDK-L, DDL-L,
-DDN-L, DDO-L, DDP-L, DDQ-L, H09-L, ME3-L, MED-L
+CMA-L, E01-L, HOU-L, UG-C, UNH-L, DDC-L, DDE-L, DDF-L, DDG-L, DDH-L,
+DDI-L, DDK-L, DDL-L, DDN-L, DDO-L, DDP-L, DDQ-L, H09-L, ME3-L, MED-L
 
 Planar Birth
 1W
@@ -92351,7 +93606,7 @@ Land
 Polluted Mire enters the battlefield tapped.
 {T}: Add {B} to your mana pool.
 Cycling {2} ({2}, Discard this card: Draw a card.)
-US-C, C14-C, C15-C, DDD-C, PD3-C
+US-C, C14-C, C15-C, CMA-C, DDD-C, PD3-C
 
 Polukranos, World Eater
 2GG
@@ -92731,6 +93986,14 @@ that player loses 2 life unless he or she pays {2}.
 Cycling {2} ({2}, Discard this card: Draw a card.)
 US-C
 
+Power Without Equal
+Scheme
+When you set this scheme in motion, draw three cards. You have no
+maximum hand size until your next turn. If you control six or more
+lands, you may cast up to three nonland cards from your hand without
+paying their mana costs.
+E01-C
+
 Power of Fire
 1R
 Enchantment -- Aura
@@ -92775,7 +94038,7 @@ Praetor's Counsel
 Sorcery
 Return all cards from your graveyard to your hand. Exile Praetor's
 Counsel. You have no maximum hand size for the rest of the game.
-MBS-M, C14-M
+MBS-M, C14-M, CMA-M
 
 Praetor's Grasp
 1BB
@@ -92837,7 +94100,7 @@ Creature -- Human Soldier
 First strike
 Whenever Precinct Captain deals combat damage to a player, create a
 1/1 white Soldier creature token.
-RTR-R, DDO-R
+RTR-R, E01-R, DDO-R
 
 Precise Strike
 R
@@ -92920,7 +94183,7 @@ Predator, Flagship
 Legendary Artifact
 {2}: Target creature gains flying until end of turn.
 {5}, {T}: Destroy target creature with flying.
-NE-R, C14-R, VMA-R
+NE-R, C14-R, CMA-R, VMA-R
 
 Predatory Advantage
 3RG
@@ -93058,7 +94321,7 @@ Enchantment -- Aura
 Enchant creature
 Enchanted creature has "{T}: Create a 1/1 green Elf Warrior creature
 token."
-SHM-C, C13-C
+SHM-C, C13-C, CMA-C
 
 Presence of the Master
 3W
@@ -93094,7 +94357,7 @@ Press the Advantage
 Instant
 Up to two target creatures each get +2/+2 and gain trample until end
 of turn.
-DTK-U
+DTK-U, E01-U
 
 Pressure Point
 1W
@@ -93186,6 +94449,16 @@ Defender
 Whenever Pride Guardian blocks, you gain 3 life.
 M12-C, CNS-C
 
+Pride Sovereign
+2G
+Creature -- Cat
+2/2
+Pride Sovereign gets +1/+1 for each other Cat you control.
+{W}, {T}, Exert Pride Sovereign: Create two 1/1 white Cat creature
+tokens with lifelink. (An exerted creature won't untap during your
+next untap step.)
+HOU-R
+
 Pride of Lions
 3GG
 Creature -- Cat
@@ -93226,7 +94499,7 @@ Priest of Titania
 Creature -- Elf Druid
 1/1
 {T}: Add {G} to your mana pool for each Elf on the battlefield.
-US-C, C14-C
+US-C, C14-C, CMA-C
 
 Priest of Urabrask
 2R
@@ -93350,7 +94623,7 @@ Search your library for a basic land card, put that card onto the
 battlefield, then shuffle your library. If Primal Growth was kicked,
 instead search your library for up to two basic land cards, put them
 onto the battlefield, then shuffle your library.
-PS-C, C15-C
+PS-C, C15-C, CMA-C
 
 Primal Huntbeast
 3G
@@ -93539,7 +94812,7 @@ Primordial Sage
 Creature -- Spirit
 4/5
 Whenever you cast a creature spell, you may draw a card.
-RAV-R, C14-R
+RAV-R, C14-R, CMA-R
 
 Prince of Thralls
 4UBBR
@@ -93908,7 +95181,7 @@ turn. Tap it.
 Whenever Prognostic Sphinx attacks, scry 3. (Look at the top three
 cards of your library, then put any number of them on the bottom of
 your library and the rest on top in any order.)
-THS-R
+THS-R, E01-R
 
 Prohibit
 1U
@@ -94146,6 +95419,15 @@ exile an artifact card from your hand.
 {X}, {T}: Create a token that's a copy of the exiled card. X is the
 converted mana cost of that card.
 SOM-R
+
+Proven Combatant
+U
+Creature -- Human Warrior
+1/1
+Eternalize {4}{U}{U} ({4}{U}{U}, Exile this card from your graveyard:
+Create a token that's a copy of it, except it's a 4/4 black Zombie
+Human Warrior with no mana cost. Eternalize only as a sorcery.)
+HOU-C
 
 Providence
 5WW
@@ -94664,6 +95946,13 @@ Puncture Bolt deals 1 damage to target creature. Put a -1/-1 counter
 on that creature.
 SHM-C
 
+Puncturing Blow
+2RR
+Sorcery
+Puncturing Blow deals 5 damage to target creature. If that creature
+would die this turn, exile it instead.
+HOU-C
+
 Puncturing Light
 1W
 Instant
@@ -94957,7 +96246,7 @@ Putrefy
 1BG
 Instant
 Destroy target artifact or creature. It can't be regenerated.
-RAV-U, DGM-U, C15-U, C16-U, MM3-U, DDJ-U
+RAV-U, DGM-U, C15-U, C16-U, MM3-U, CMA-U, DDJ-U
 
 Putrid Cyclops
 2B
@@ -95213,7 +96502,7 @@ Enchantment
 At the beginning of the end step, if no creatures are on the
 battlefield, sacrifice Pyrohemia.
 {R}: Pyrohemia deals 1 damage to each creature and each player.
-PLC-U, CMD-U
+PLC-U, CMD-U, CMA-U
 
 Pyrokinesis
 4RR
@@ -95445,6 +96734,14 @@ When Quarantine Field enters the battlefield, for each isolation
 counter on it, exile up to one target nonland permanent an opponent
 controls until Quarantine Field leaves the battlefield.
 BFZ-M
+
+Quarry Beetle
+4G
+Creature -- Insect
+4/5
+When Quarry Beetle enters the battlefield, you may return target land
+card from your graveyard to the battlefield.
+HOU-U
 
 Quarry Colossus
 5WW
@@ -96547,7 +97844,7 @@ Rakdos Carnarium enters the battlefield tapped.
 When Rakdos Carnarium enters the battlefield, return a land you
 control to its owner's hand.
 {T}: Add {B}{R} to your mana pool.
-DIS-C, ARC-C, CMD-C, C13-C, MM2-U, C16-U, DDK-C
+DIS-C, ARC-C, CMD-C, C13-C, MM2-U, C16-U, CMA-C, DDK-C
 
 Rakdos Charm
 BR
@@ -96655,7 +97952,7 @@ Rakdos Signet
 2
 Artifact
 {1}, {T}: Add {B}{R} to your mana pool.
-DIS-C, ARC-C, CMD-C, C16-C, MM3-U
+DIS-C, ARC-C, CMD-C, C16-C, MM3-U, CMA-C
 
 Rakdos the Defiler
 2BBRR
@@ -96912,7 +98209,15 @@ Creature -- Beast
 Trample
 Landfall -- Whenever a land enters the battlefield under your control,
 you may create a 4/4 green Beast creature token.
-ZEN-M, C13-M, C14-M
+ZEN-M, C13-M, C14-M, CMA-M, E01-M
+
+Rampaging Hippo
+4GG
+Creature -- Hippo
+5/6
+Trample
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-C
 
 Rampaging Werewolf
 Creature -- Werewolf
@@ -96958,6 +98263,31 @@ Legendary Creature -- Human Assassin
 4/3
 {T}: Destroy target enchanted creature.
 LE-R, ME3-U
+
+Ramunap Excavator
+2G
+Creature -- Naga Cleric
+2/3
+You may play land cards from your graveyard.
+HOU-R
+
+Ramunap Hydra
+3G
+Creature -- Snake Hydra
+3/3
+Vigilance, reach, trample
+Ramunap Hydra gets +1/+1 as long as you control a Desert.
+Ramunap Hydra gets +1/+1 as long as there is a Desert card in your
+graveyard.
+HOU-R
+
+Ramunap Ruins
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{T}, Pay 1 life: Add {R} to your mana pool.
+{2}{R}{R}, {T}, Sacrifice a Desert: Ramunap Ruins deals 2 damage to
+each opponent.
+HOU-U
 
 Rancid Earth
 1BB
@@ -97516,6 +98846,23 @@ or ability an opponent controls, you may draw a card. You may draw
 an additional card if Rayne, Academy Chancellor is enchanted.
 UD-R
 
+Razaketh's Rite
+3BB
+Sorcery
+Search your library for a card and put that card into your hand. Then
+shuffle your library.
+Cycling {B} ({B}, Discard this card: Draw a card.)
+HOU-U
+
+Razaketh, the Foulblooded
+5BBB
+Legendary Creature -- Demon
+8/8
+Flying, trample
+Pay 2 life, Sacrifice another creature: Search your library for a
+card and put that card into your hand. Then shuffle your library.
+HOU-M
+
 Raze
 R
 Sorcery
@@ -97660,7 +99007,7 @@ Razorjaw Oni
 Creature -- Demon Spirit
 4/5
 Black creatures can't block.
-SOK-U, CMD-U
+SOK-U, CMD-U, CMA-U
 
 Razormane Masticore
 5
@@ -98010,6 +99357,23 @@ your hand as it resolves.)
 You gain 2 life.
 EX-C
 
+Reason
+U
+Sorcery
+Scry 3.
+[This is half of the split card Reason // Believe.]
+HOU-R
+
+Reason // Believe
+U // 4G
+Sorcery // Sorcery
+Scry 3. // Aftermath (Cast this spell only from your graveyard. Then
+exile it.)
+Look at the top card of your library. You may put it onto the
+battlefield if it's a creature card. If you don't, put it into
+your hand.
+HOU-R
+
 Reassembling Skeleton
 1B
 Creature -- Skeleton Warrior
@@ -98244,13 +99608,13 @@ Reckless Scholar
 Creature -- Human Wizard
 2/1
 {T}: Target player draws a card, then discards a card.
-ZEN-C, CNS-C, SOI-U
+ZEN-C, CNS-C, SOI-U, E01-U
 
 Reckless Spite
 1BB
 Instant
 Destroy two target nonblack creatures. You lose 5 life.
-TE-U, IN-U, C13-U, CNS-U
+TE-U, IN-U, C13-U, CNS-U, E01-U
 
 Reckless Waif
 R
@@ -98296,7 +99660,7 @@ Creature -- Elf Shaman
 2/1
 When Reclamation Sage enters the battlefield, you may destroy target
 artifact or enchantment.
-M15-U, C14-U
+M15-U, C14-U, CMA-U
 
 Reclusive Artificer
 2UR
@@ -98667,6 +100031,24 @@ Sorcery
 Return target artifact card from your graveyard to the battlefield.
 KLD-U
 
+Refuse
+3R
+Instant
+Refuse deals damage to target spell's controller equal to that spell's
+converted mana cost.
+[This is half of the split card Refuse // Cooperate.]
+HOU-R
+
+Refuse // Cooperate
+3R // 2U
+Instant // Instant
+Refuse deals damage to target spell's controller equal to that spell's
+converted mana cost. // Aftermath (Cast this spell only from your
+graveyard. Then exile it.)
+Copy target instant or sorcery spell. You may choose new targets for
+the copy.
+HOU-R
+
 Regal Behemoth
 4GG
 Creature -- Lizard
@@ -98837,7 +100219,7 @@ Flying
 When Reiver Demon enters the battlefield, if you cast it from your
 hand, destroy all nonartifact, nonblack creatures. They can't be
 regenerated.
-MRD-R, CMD-R, DDC-R
+MRD-R, CMD-R, CMA-R, DDC-R
 
 Rejuvenate
 3G
@@ -99030,7 +100412,7 @@ Creature -- Kor Knight Ally
 3/2
 When Relief Captain enters the battlefield, support 3. (Put a +1/+1
 counter on each of up to three other target creatures.)
-OGW-U
+OGW-U, E01-U
 
 Reliquary Monk
 2W
@@ -99560,6 +100942,18 @@ Search your library for an artifact card with converted mana cost X
 or less and put it onto the battlefield. Then shuffle your library.
 DST-R
 
+Resilient Khenra
+1G
+Creature -- Jackal Wizard
+2/2
+When Resilient Khenra enters the battlefield, you may have target
+creature get +X/+X until end of turn, where X is Resilient Khenra's
+power.
+Eternalize {4}{G}{G} ({4}{G}{G}, Exile this card from your graveyard:
+Create a token that's a copy of it, except it's a 4/4 black Zombie
+Jackal Wizard with no mana cost. Eternalize only as a sorcery.)
+HOU-R
+
 Resilient Wanderer
 2WW
 Creature -- Human Nomad
@@ -99604,6 +100998,16 @@ Rally -- Whenever Resolute Blademaster or another Ally enters the
 battlefield under your control, creatures you control gain double
 strike until end of turn.
 BFZ-U
+
+Resolute Survivors
+1RW
+Creature -- Human Warrior
+3/3
+You may exert Resolute Survivors as it attacks. (It won't untap during
+your next untap step.)
+Whenever you exert a creature, Resolute Survivors deals 1 damage to
+each opponent and you gain 1 life.
+HOU-U
 
 Resounding Roar
 1G
@@ -99762,7 +101166,7 @@ Restore
 Sorcery
 Put target land card from a graveyard onto the battlefield under
 your control.
-C13-U
+C13-U, CMA-U
 
 Restore Balance
 Sorcery
@@ -99903,7 +101307,7 @@ Landfall -- Whenever a land enters the battlefield under your control,
 choose one --
 � Put a +1/+1 counter on target creature.
 � You gain 2 life.
-BFZ-U, DDP-U
+BFZ-U, E01-U, DDP-U
 
 Retreat to Valakut
 2R
@@ -99972,7 +101376,7 @@ Instant
 Exile target artifact or enchantment. If you cast this spell during
 your main phase, you may exile up to one other target artifact or
 enchantment.
-TSP-U, CMD-U, C14-U
+TSP-U, CMD-U, C14-U, CMA-U
 
 Return to the Earth
 3G
@@ -100337,6 +101741,13 @@ another creature with power 4 or greater.
 end of turn.
 AKH-M, MPS_AKH-S
 
+Rhonas's Last Stand
+GG
+Sorcery
+Create a 5/4 green Snake creature token. Lands you control don't
+untap during your next untap step.
+HOU-R
+
 Rhonas's Monument
 3
 Legendary Artifact
@@ -100344,6 +101755,16 @@ Green creature spells you cast cost {1} less to cast.
 Whenever you cast a creature spell, target creature you control gets
 +2/+2 and gains trample until end of turn.
 AKH-U
+
+Rhonas's Stalwart
+1G
+Creature -- Human Warrior
+2/2
+You may exert Rhonas's Stalwart as it attacks. When you do, it gets
++1/+1 until end of turn and can't be blocked by creatures with power
+2 or less this turn. (An exerted creature won't untap during your
+next untap step.)
+HOU-C
 
 Rhox
 4GG
@@ -100586,6 +102007,15 @@ the top three cards of your library, then put any number of them on
 the bottom of your library and the rest on top in any order.)
 FUT-C, JOU-U
 
+Riddleform
+1U
+Enchantment
+Whenever you cast a noncreature spell, you may have Riddleform become a
+3/3 Sphinx creature with flying in addition to its other types until
+end of turn.
+{2}{U}: Scry 1.
+HOU-U
+
 Riddlekeeper
 2U
 Creature -- Homunculus
@@ -100768,7 +102198,7 @@ Righteous Cause
 3WW
 Enchantment
 Whenever a creature attacks, you gain 1 life.
-ONS-U, CMD-U, DDC-U
+ONS-U, CMD-U, CMA-U, DDC-U
 
 Righteous Charge
 1WW
@@ -101229,7 +102659,7 @@ Sorcery
 Put target creature card from a graveyard onto the battlefield under
 your control. That creature is a black Zombie in addition to its
 other colors and types.
-M10-U, M11-U, CMD-U, M13-U, C15-U, EMN-U, DDD-U
+M10-U, M11-U, CMD-U, M13-U, C15-U, EMN-U, CMA-U, DDD-U
 
 Rise from the Tides
 5U
@@ -101610,6 +103040,14 @@ River Delta.
 {T}: Add {U} or {B} to your mana pool. Put a depletion counter on
 River Delta.
 IA-R
+
+River Hoopoe
+GU
+Creature -- Bird
+1/3
+Flying
+{3}{G}{U}: You gain 2 life and draw a card.
+HOU-U
 
 River Kaijin
 2U
@@ -102206,7 +103644,7 @@ Vigilance, trample
 {2}, {T}: Exile another target creature. Return that card to the
 battlefield under its owner's control at the beginning of the next
 end step.
-C13-M
+C13-M, CMA-M
 
 Root Cage
 1G
@@ -102723,7 +104161,7 @@ Legendary Creature -- Faerie
 You may choose not to untap Rubinia Soulsinger during your untap step.
 {T}: Gain control of target creature for as long as you control
 Rubinia and Rubinia remains tapped.
-LE-R, CH-R, C13-R, ME3-R
+LE-R, CH-R, C13-R, CMA-R, ME3-R
 
 Ruby Leech
 1R
@@ -102794,6 +104232,14 @@ Creature -- Eldrazi Processor
 When you cast Ruin Processor, you may put a card an opponent owns
 from exile into that player's graveyard. If you do, you gain 5 life.
 BFZ-C
+
+Ruin Rat
+1B
+Creature -- Rat
+1/1
+Deathtouch
+When Ruin Rat dies, exile target card from an opponent's graveyard.
+HOU-C
 
 Ruin in Their Wake
 1G
@@ -103174,7 +104620,7 @@ Rupture Spire enters the battlefield tapped.
 When Rupture Spire enters the battlefield, sacrifice it unless you
 pay {1}.
 {T}: Add one mana of any color to your mana pool.
-CON-C, CMD-C, PC2-C, C13-C, C16-C, PCA-C, DDH-C, H09-C
+CON-C, CMD-C, PC2-C, C13-C, C16-C, PCA-C, CMA-C, DDH-C, H09-C
 
 Ruric Thar, the Unbowed
 4RG
@@ -104031,7 +105477,7 @@ Creature -- Snake Shaman
 Sacrifice Sakura-Tribe Elder: Search your library for a basic land
 card, put that card onto the battlefield tapped, then shuffle your
 library.
-CHK-C, ARC-C, CMD-C, C13-C, CNS-C, C15-C, C16-C
+CHK-C, ARC-C, CMD-C, C13-C, CNS-C, C15-C, C16-C, CMA-C
 
 Sakura-Tribe Scout
 G
@@ -104112,7 +105558,7 @@ Land
 {1}, {T}: Put a storage counter on Saltcrusted Steppe.
 {1}, Remove X storage counters from Saltcrusted Steppe: Add X mana
 in any combination of {G} and/or {W} to your mana pool.
-TSP-U, C13-U
+TSP-U, C13-U, CMA-U
 
 Saltfield Recluse
 2W
@@ -104289,6 +105735,17 @@ Other creatures you control have haste.
 {W}, {T}: Untap another target creature.
 AKH-M
 
+Samut, the Tested
+2RG
+Planeswalker -- Samut
+4
+[+1]: Up to one target creature gains double strike until end of turn.
+[-2]: Samut, the Tested deals 2 damage divided as you choose among
+one or two target creatures and/or players.
+[-7]: Search your library for up to two creature and/or planeswalker
+cards, put them onto the battlefield, then shuffle your library.
+HOU-M
+
 Sanctified Charge
 4W
 Instant
@@ -104410,6 +105867,15 @@ You may choose not to untap Sand Squid during your untap step.
 controller's untap step for as long as Sand Squid remains tapped.
 MM-R
 
+Sand Strangler
+3R
+Creature -- Beast
+3/3
+When Sand Strangler enters the battlefield, if you control a Desert or
+there is a Desert card in your graveyard, you may have Sand Strangler
+deal 3 damage to target creature.
+HOU-U
+
 Sandals of Abdallah
 4
 Artifact
@@ -104446,7 +105912,7 @@ Sandblast
 2W
 Instant
 Sandblast deals 5 damage to target attacking or blocking creature.
-FRF-C
+FRF-C, HOU-C
 
 Sandcrafter Mage
 2W
@@ -105037,7 +106503,7 @@ Creature -- Satyr
 When Satyr Wayfinder enters the battlefield, reveal the top four
 cards of your library. You may put a land card from among them into
 your hand. Put the rest into your graveyard.
-BNG-C, M15-C, C15-C, C16-C
+BNG-C, M15-C, C15-C, C16-C, CMA-C
 
 Saute
 1RR
@@ -105218,6 +106684,17 @@ damage that would be dealt to target creature this turn.
 Gotcha -- Whenever an opponent says "Save" or "Life," you may say
 "Gotcha!" If you do, return Save Life from your graveyard to your hand.
 UNH-U
+
+Saving Grace
+1W
+Enchantment -- Aura
+Flash
+Enchant creature you control
+When Saving Grace enters the battlefield, all damage that would
+be dealt this turn to you and permanents you control is dealt to
+enchanted creature instead.
+Enchanted creature gets +0/+3.
+HOU-U
 
 Saving Grasp
 U
@@ -105686,6 +107163,12 @@ Creature -- Human
 {G}, {T}, Sacrifice Scavenger Folk: Destroy target artifact.
 DK-C, CH-C, 5E-C, 7E-U, ME4-C
 
+Scavenger Grounds
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{2}, {T}, Sacrifice a Desert: Exile all cards from all graveyards.
+HOU-R
+
 Scavenging Ghoul
 3B
 Creature -- Zombie
@@ -106095,7 +107578,7 @@ Creature -- Zombie Dragon
 Flying
 You may cast Scourge of Nel Toth from your graveyard by paying {B}{B}
 and sacrificing two creatures rather than paying its mana cost.
-C15-R
+C15-R, CMA-R
 
 Scourge of Numai
 3B
@@ -106510,6 +107993,14 @@ Equip {2}
 [Back face. Transforms into Harvest Hand.]
 SOI-U
 
+Scrounger of Souls
+4B
+Creature -- Horror
+3/4
+Lifelink (Damage dealt by this creature also causes you to gain that
+much life.)
+HOU-C
+
 Scrounging Bandar
 1G
 Creature -- Cat Monkey
@@ -106570,7 +108061,7 @@ Creature -- Insect
 1/1
 At the beginning of your upkeep, if you control five or more lands,
 put four +1/+1 counters on Scute Mob.
-ZEN-R, MM2-R, DDP-R
+ZEN-R, MM2-R, E01-R, DDP-R
 
 Scuttlemutt
 3
@@ -107007,7 +108498,7 @@ Searing Spear
 1R
 Instant
 Searing Spear deals 3 damage to target creature or player.
-M13-C
+M13-C, E01-C
 
 Searing Spear Askari
 2R
@@ -107052,7 +108543,7 @@ Seaside Citadel
 Land
 Seaside Citadel enters the battlefield tapped.
 {T}: Add {G}, {W}, or {U} to your mana pool.
-ALA-U, C13-U, C16-U, MM3-U
+ALA-U, C13-U, C16-U, MM3-U, CMA-U
 
 Seaside Haven
 Land
@@ -107122,7 +108613,7 @@ Land
 Secluded Steppe enters the battlefield tapped.
 {T}: Add {W} to your mana pool.
 Cycling {W} ({W}, Discard this card: Draw a card.)
-ONS-C, ARC-C, CMD-C, C13-C, C14-C, C15-C, VMA-C, DDC-C, DDO-C
+ONS-C, ARC-C, CMD-C, C13-C, C14-C, C15-C, CMA-C, VMA-C, DDC-C, DDO-C
 
 Second Chance
 2U
@@ -107464,6 +108955,14 @@ Whenever you cast a noncreature spell, Seeker of the Way gains lifelink
 until end of turn.
 KTK-U
 
+Seer of the Last Tomorrow
+2U
+Creature -- Naga Cleric
+1/4
+{U}, {T}, Discard a card: Target player puts the top three cards of
+his or her library into his or her graveyard.
+HOU-C
+
 Seer's Lantern
 3
 Artifact
@@ -107477,7 +108976,7 @@ Seer's Sundial
 Artifact
 Landfall -- Whenever a land enters the battlefield under your control,
 you may pay {2}. If you do, draw a card.
-WWK-R, C13-R, C14-R, C15-R, DDP-R
+WWK-R, C13-R, C14-R, C15-R, CMA-R, DDP-R
 
 Seer's Vision
 2UB
@@ -107655,7 +109154,7 @@ Land
 Sejiri Refuge enters the battlefield tapped.
 When Sejiri Refuge enters the battlefield, you gain 1 life.
 {T}: Add {W} or {U} to your mana pool.
-ZEN-U, C13-U, DDI-U
+ZEN-U, C13-U, CMA-U, DDI-U
 
 Sejiri Steppe
 Land
@@ -107722,7 +109221,7 @@ Choose one --
 � Target creature gets +2/+2 and gains trample until end of turn.
 � Exile target creature with power 5 or greater.
 � Create a 2/2 white Knight creature token with vigilance.
-RTR-U, C13-U
+RTR-U, C13-U, CMA-U
 
 Selesnya Cluestone
 3
@@ -107743,7 +109242,7 @@ Selesnya Guildgate
 Land -- Gate
 Selesnya Guildgate enters the battlefield tapped.
 {T}: Add {G} or {W} to your mana pool.
-RTR-C, DGM-C, C13-C, MM3-C
+RTR-C, DGM-C, C13-C, MM3-C, CMA-C
 
 Selesnya Guildmage
 (g/w)(g/w)
@@ -107751,7 +109250,7 @@ Creature -- Elf Wizard
 2/2
 {3}{G}: Create a 1/1 green Saproling creature token.
 {3}{W}: Creatures you control get +1/+1 until end of turn.
-RAV-U, ARC-U, CMD-U, C13-U, MM2-U, C16-U
+RAV-U, ARC-U, CMD-U, C13-U, MM2-U, C16-U, CMA-U
 
 Selesnya Keyrune
 3
@@ -107786,7 +109285,7 @@ Selesnya Sanctuary enters the battlefield tapped.
 When Selesnya Sanctuary enters the battlefield, return a land you
 control to its owner's hand.
 {T}: Add {G}{W} to your mana pool.
-RAV-C, CMD-C, PC2-C, C13-C, MM2-U, C16-U, PCA-C, DDG-C
+RAV-C, CMD-C, PC2-C, C13-C, MM2-U, C16-U, PCA-C, CMA-C, DDG-C
 
 Selesnya Sentry
 2W
@@ -107799,7 +109298,7 @@ Selesnya Signet
 2
 Artifact
 {1}, {T}: Add {G}{W} to your mana pool.
-RAV-C, CMD-C, C13-C, MM3-U
+RAV-C, CMD-C, C13-C, MM3-U, CMA-C
 
 Self-Assembler
 5
@@ -108394,8 +109893,8 @@ Flying (This creature can't be blocked except by creatures with flying
 or reach.)
 Vigilance (Attacking doesn't cause this creature to tap.)
 A-U, B-U, U-U, RV-U, 4E-U, 7E-R, 8ED-R, 9ED-R, 10E-R, M10-U, M11-U,
-CMD-U, M12-U, M13-U, M14-U, M15-U, ORI-U, W16-U, EMA-U, W17-U, DDC-R,
-ME4-U, V15-M
+CMD-U, M12-U, M13-U, M14-U, M15-U, ORI-U, W16-U, EMA-U, W17-U, CMA-U,
+DDC-R, ME4-U, V15-M
 
 Serra Angel Avatar
 Vanguard
@@ -108748,7 +110247,7 @@ Exile target creature and all other creatures with the same name as
 that creature.
 Flashback {5}{B}{B} (You may cast this card from your graveyard for
 its flashback cost. Then exile it.)
-ISD-R, C15-R, MM3-R, DDQ-R
+ISD-R, C15-R, MM3-R, CMA-R, DDQ-R
 
 Severed Legion
 1BB
@@ -109449,7 +110948,7 @@ Creature -- Angel
 Flying
 Whenever a land enters the battlefield under an opponent's control,
 you may gain 3 life.
-NPH-U, CMD-U
+NPH-U, CMD-U, CMA-U
 
 Shattered Crypt
 XBB
@@ -109524,7 +111023,7 @@ Shatterstorm
 2RR
 Sorcery
 Destroy all artifacts. They can't be regenerated.
-AQ-R, RV-U, 5E-U, 6E-R, 10E-U
+AQ-R, RV-U, 5E-U, 6E-R, 10E-U, MPS_AKH-S
 
 Shauku's Minion
 1BR
@@ -109559,6 +111058,15 @@ Awaken 3--{5}{W} (If you cast this spell for {5}{W}, also put three
 +1/+1 counters on target land you control and it becomes a 0/0
 Elemental creature with haste. It's still a land.)
 BFZ-C, DDP-C
+
+Shefet Dunes
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{T}, Pay 1 life: Add {W} to your mana pool.
+{2}{W}{W}, {T}, Sacrifice a Desert: Creatures you control get +1/+1
+until end of turn. Activate this ability only any time you could cast
+a sorcery.
+HOU-U
 
 Shefet Monitor
 5G
@@ -110422,7 +111930,7 @@ Shoulder to Shoulder
 Sorcery
 Support 2. (Put a +1/+1 counter on each of up to two target creatures.)
 Draw a card.
-OGW-C
+OGW-C, E01-C
 
 Shoving Match
 2U
@@ -110600,7 +112108,7 @@ When Shriekmaw enters the battlefield, destroy target nonartifact,
 nonblack creature.
 Evoke {1}{B} (You may cast this spell for its evoke cost. If you do,
 it's sacrificed when it enters the battlefield.)
-LRW-U, ARC-U, CMD-U, C14-U, C15-U, DDH-U
+LRW-U, ARC-U, CMD-U, C14-U, C15-U, CMA-U, DDH-U
 
 Shrike Harpy
 3BB
@@ -110944,6 +112452,14 @@ Instant
 You may change any targets of target Arcane spell.
 CHK-U
 
+Sidewinder Naga
+2G
+Creature -- Naga Warrior
+3/2
+As long as you control a Desert or there is a Desert card in your
+graveyard, Sidewinder Naga gets +1/+0 and has trample.
+HOU-C
+
 Sidewinder Sliver
 W
 Creature -- Sliver
@@ -111002,7 +112518,7 @@ Hexproof
 As long as Siege Behemoth is attacking, for each creature you control,
 you may have that creature assign its combat damage as though it
 weren't blocked.
-C14-R
+C14-R, CMA-R
 
 Siege Dragon
 5RR
@@ -111090,6 +112606,16 @@ Reach Through Mists this turn, you may search your library for a
 card named The Unspeakable, put it onto the battlefield, then shuffle
 your library.
 CHK-C, DDS-C
+
+Sifter Wurm
+5GG
+Creature -- Wurm
+7/7
+Trample
+When Sifter Wurm enters the battlefield, scry 3, then reveal the top
+card of your library. You gain life equal to that card's converted
+mana cost.
+HOU-U
 
 Sifter of Skulls
 3B
@@ -111498,7 +113024,7 @@ Creature -- Spider
 2/7
 Reach
 {X}{G}{G}: Silklash Spider deals X damage to each creature with flying.
-ONS-R, 9ED-R, M13-R, C13-R, C14-R
+ONS-R, 9ED-R, M13-R, C13-R, C14-R, CMA-R
 
 Silkweaver Elite
 2G
@@ -111879,7 +113405,7 @@ Simic Guildgate
 Land -- Gate
 Simic Guildgate enters the battlefield tapped.
 {T}: Add {G} or {U} to your mana pool.
-GTC-C, DGM-C, C13-C, C15-C, MM3-C
+GTC-C, DGM-C, C13-C, C15-C, MM3-C, CMA-C
 
 Simic Guildmage
 (g/u)(g/u)
@@ -111933,7 +113459,7 @@ Simic Signet
 2
 Artifact
 {1}, {T}: Add {G}{U} to your mana pool.
-DIS-C, CMD-C, C13-C, C15-C, C16-C, MM3-U
+DIS-C, CMD-C, C13-C, C15-C, C16-C, MM3-U, CMA-C
 
 Simic Sky Swallower
 5GU
@@ -112105,6 +113631,17 @@ Creature -- Eldrazi Werewolf
 Sinuous Predator can't be blocked by more than one creature.
 [Back face. Transforms into Kessig Prowler.]
 EMN-U
+
+Sinuous Striker
+2U
+Creature -- Naga Warrior
+2/2
+{U}: Sinuous Striker gets +1/-1 until end of turn.
+Eternalize--{3}{U}{U}, Discard a card. ({3}{U}{U}, Discard a card,
+Exile this card from your graveyard: Create a token that's a copy
+of it, except it's a 4/4 black Zombie Naga Warrior with no mana
+cost. Eternalize only as a sorcery.)
+HOU-U
 
 Sinuous Vermin
 1B
@@ -112351,7 +113888,7 @@ Flying
 {R}{R}{R}: Return Skarrgan Firebird from your graveyard to your
 hand. Activate this ability only if an opponent was dealt damage
 this turn.
-GPT-R, MM2-U, DDL-R
+GPT-R, MM2-U, E01-U, DDL-R
 
 Skarrgan Pit-Skulk
 G
@@ -112903,7 +114440,7 @@ Artifact -- Equipment
 Equipped creature gets +1/-1.
 Whenever equipped creature dies, draw two cards.
 Equip {1}
-DST-U, CMD-U, C14-U, C15-U, C16-U, VMA-M, V09-M
+DST-U, CMD-U, C14-U, C15-U, C16-U, CMA-U, VMA-M, V09-M
 
 Skullcrack
 1R
@@ -112974,7 +114511,7 @@ to destroy it.)
 When Skullwinder enters the battlefield, return target card from your
 graveyard to your hand, then choose an opponent. That player returns
 a card from his or her graveyard to his or her hand.
-C15-U
+C15-U, CMA-U
 
 Sky Diamond
 2
@@ -113488,7 +115025,7 @@ Creature -- Human Wizard
 Vigilance
 {T}: Reveal the top card of your library. If it's a land card, put
 it onto the battlefield. Otherwise, put it into your hand.
-CON-U, C13-U
+CON-U, C13-U, CMA-U
 
 Skywatcher Adept
 U
@@ -113635,7 +115172,7 @@ Destroy target nonblack creature.
 At the beginning of your next upkeep, pay {2}{B}. If you don't,
 you lose the game.
 [Black color indicator.]
-FUT-R, MMA-R
+FUT-R, MMA-R, MPS_AKH-S
 
 Slaughterhorn
 2G
@@ -113658,7 +115195,7 @@ Slave of Bolas
 Sorcery
 Gain control of target creature. Untap that creature. It gains haste
 until end of turn. Sacrifice it at the beginning of the next end step.
-ARB-U, DDH-U
+ARB-U, E01-U, DDH-U
 
 Slavering Nulls
 1R
@@ -113865,7 +115402,7 @@ Land
 Slippery Karst enters the battlefield tapped.
 {T}: Add {G} to your mana pool.
 Cycling {2} ({2}, Discard this card: Draw a card.)
-US-C, C13-C, C14-C, C15-C, DDD-C
+US-C, C13-C, C14-C, C15-C, CMA-C, DDD-C
 
 Slipstream Eel
 5UU
@@ -114305,7 +115842,7 @@ Smoldering Spires enters the battlefield tapped.
 When Smoldering Spires enters the battlefield, target creature can't
 block this turn.
 {T}: Add {R} to your mana pool.
-WWK-C
+WWK-C, E01-C
 
 Smoldering Tar
 2BR
@@ -114708,7 +116245,7 @@ Sol Ring
 Artifact
 {T}: Add {C}{C} to your mana pool.
 A-U, B-U, U-U, RV-U, CMD-U, C13-U, C14-U, C15-U, MPS_KLD-S, C16-U,
-VMA-M, ME4-R, V10-M
+CMA-U, VMA-M, ME4-R, V10-M
 
 Sol'kanar the Swamp King
 2UBR
@@ -114879,6 +116416,13 @@ tapped, then shuffle your library.
 When Solemn Simulacrum dies, you may draw a card.
 MRD-R, CMD-R, M12-R, C14-R, C15-R, MPS_KLD-S, C16-R
 
+Solemnity
+2W
+Enchantment
+Players can't get counters.
+Counters can't be put on artifacts, creatures, enchantments, or lands.
+HOU-R
+
 Solfatara
 2R
 Instant
@@ -114900,6 +116444,15 @@ target beyond the first.
 Choose any number of target creatures. Double the number of +1/+1
 counters on each of them.
 JOU-U, C16-U
+
+Solitary Camel
+2W
+Creature -- Camel
+3/2
+Solitary Camel has lifelink as long as you control a Desert or there
+is a Desert card in your graveyard. (Damage dealt by this creature
+also causes you to gain that much life.)
+HOU-C
 
 Solitary Confinement
 2W
@@ -115115,7 +116668,7 @@ Song of the Dryads
 Enchantment -- Aura
 Enchant permanent
 Enchanted permanent is a colorless Forest land.
-C14-R
+C14-R, CMA-R
 
 Songs of the Damned
 B
@@ -115551,7 +117104,7 @@ Enchant creature
 You control enchanted creature.
 Discard two cards: Soul Ransom's controller sacrifices it, then draws
 two cards. Only any opponent may activate this ability.
-GTC-R, MM3-U
+GTC-R, MM3-U, E01-U
 
 Soul Reap
 1B
@@ -115623,7 +117176,7 @@ W
 Enchantment
 {W}, Sacrifice Soul Snare: Exile target creature that's attacking
 you or a planeswalker you control.
-CMD-U
+CMD-U, CMA-U
 
 Soul Snuffers
 2BB
@@ -115772,7 +117325,7 @@ Creature -- Elemental
 Trample
 Whenever another nontoken creature enters the battlefield under your
 control, you may draw a card.
-AVR-R, C14-R, W16-R
+AVR-R, C14-R, W16-R, CMA-R
 
 Soul's Attendant
 W
@@ -116769,6 +118322,16 @@ cards. Cast the copies if able without paying their mana costs. Exile
 Spelltwine.
 M13-R, C16-R, DDM-R
 
+Spellweaver Eternal
+1U
+Creature -- Zombie Naga Wizard
+2/1
+Prowess (Whenever you cast a noncreature spell, this creature gets
++1/+1 until end of turn.)
+Afflict 2 (Whenever this creature becomes blocked, defending player
+loses 2 life.)
+HOU-C
+
 Spellweaver Helix
 3
 Artifact
@@ -116894,7 +118457,7 @@ Flying
 Shroud (This creature can't be the target of spells or abilities.)
 You may look at the top card of your library. (You may do this at
 any time.)
-ZEN-R, C14-R
+ZEN-R, C14-R, E01-R
 
 Sphinx of Lost Truths
 3UU
@@ -117010,7 +118573,7 @@ Create a 1/2 green Spider creature token with reach for each creature
 card in your graveyard.
 Flashback {6}{B} (You may cast this card from your graveyard for its
 flashback cost. Then exile it.)
-ISD-U, C15-U
+ISD-U, C15-U, CMA-U
 
 Spider Umbra
 G
@@ -119192,6 +120755,16 @@ Creature -- Human Rebel
 Vigilance (Attacking doesn't cause this creature to tap.)
 MM-C, 10E-C
 
+Steadfast Sentinel
+3W
+Creature -- Human Cleric
+2/3
+Vigilance
+Eternalize {4}{W}{W} ({4}{W}{W}, Exile this card from your graveyard:
+Create a token that's a copy of it, except it's a 4/4 black Zombie
+Human Cleric with no mana cost. Eternalize only as a sorcery.)
+HOU-C
+
 Steadfastness
 1W
 Sorcery
@@ -119558,6 +121131,15 @@ Creature -- Human Wizard
 When Stern Proctor enters the battlefield, return target artifact or
 enchantment to its owner's hand.
 US-U
+
+Steward of Solidarity
+1W
+Creature -- Human Warrior
+2/2
+{T}, Exert Steward of Solidarity: Create a 1/1 white Warrior creature
+token with vigilance. (An exerted creature won't untap during your
+next untap step.)
+HOU-U
 
 Steward of Valeron
 GW
@@ -120030,7 +121612,7 @@ When Stonecloaker enters the battlefield, return a creature you
 control to its owner's hand.
 When Stonecloaker enters the battlefield, exile target card from
 a graveyard.
-PLC-U, C13-U, DDN-U
+PLC-U, C13-U, CMA-U, DDN-U
 
 Stonefare Crocodile
 2G
@@ -120335,7 +121917,7 @@ Bloodthirst 2 (If an opponent was dealt damage this turn, this creature
 enters the battlefield with two +1/+1 counters on it.)
 Menace (This creature can't be blocked except by two or more
 creatures.)
-M12-U, MM2-U
+M12-U, MM2-U, E01-U
 
 Stormbound Geist
 1UU
@@ -120605,7 +122187,7 @@ Enchantment
 Your opponents can't search libraries.
 If an opponent would begin an extra turn, that player skips that
 turn instead.
-CMD-R
+CMD-R, CMA-R
 
 Strangleroot Geist
 GG
@@ -120649,7 +122231,7 @@ Strategic Planning
 Sorcery
 Look at the top three cards of your library. Put one of them into
 your hand and the rest into your graveyard.
-P3K-U, C13-U, ME3-C
+P3K-U, C13-U, HOU-C, ME3-C
 
 Strategy, Schmategy
 1R
@@ -120908,6 +122490,15 @@ Creature -- Bear
 When Striped Bears enters the battlefield, draw a card.
 WL-C
 
+Striped Riverwinder
+6U
+Creature -- Serpent
+5/5
+Hexproof (This creature can't be the target of spells or abilities
+your opponents control.)
+Cycling {U} ({U}, Discard this card: Draw a card.)
+HOU-C
+
 Stroke of Genius
 X2U
 Instant
@@ -121107,6 +122698,23 @@ Sorcery
 Exile target artifact or land. Structural Distortion deals 2 damage
 to that permanent's controller.
 SOI-C
+
+Struggle
+2R
+Instant
+Struggle deals damage to target creature equal to the number of lands
+you control.
+[This is half of the split card Struggle // Survive.]
+HOU-U
+
+Struggle // Survive
+2R // 1G
+Instant // Sorcery
+Struggle deals damage to target creature equal to the number of
+lands you control. // Aftermath (Cast this spell only from your
+graveyard. Then exile it.)
+Each player shuffles his or her graveyard into his or her library.
+HOU-U
 
 Struggle for Sanity
 2BB
@@ -121381,7 +122989,7 @@ XR
 Sorcery
 Choose a color. Sudden Demise deals X damage to each creature of the
 chosen color.
-C13-R
+C13-R, E01-R
 
 Sudden Disappearance
 5W
@@ -121538,7 +123146,7 @@ Instant
 Sulfurous Blast deals 2 damage to each creature and each player. If
 you cast this spell during your main phase, Sulfurous Blast deals 3
 damage to each creature and each player instead.
-TSP-U, CMD-U, CN2-U
+TSP-U, CMD-U, CN2-U, CMA-U
 
 Sulfurous Springs
 Land
@@ -121757,7 +123365,7 @@ Vigilance
 Whenever Sun Titan enters the battlefield or attacks, you may return
 target permanent card with converted mana cost 3 or less from your
 graveyard to the battlefield.
-M11-M, M12-M, C14-M, C15-M, DDL-M
+M11-M, M12-M, C14-M, C15-M, E01-M, DDL-M
 
 Sun's Bounty
 1W
@@ -121832,7 +123440,7 @@ Sunder
 3UU
 Instant
 Return all lands to their owners' hands.
-US-R
+US-R, MPS_AKH-S
 
 Sunder from Within
 2RR
@@ -122070,6 +123678,18 @@ mana cost.
 Destroy all creatures.
 CSP-R
 
+Sunscourge Champion
+2W
+Creature -- Human Wizard
+2/3
+When Sunscourge Champion enters the battlefield, you gain life equal
+to its power.
+Eternalize--{2}{W}{W}, Discard a card. ({2}{W}{W}, Discard a card,
+Exile this card from your graveyard: Create a token that's a copy
+of it, except it's a 4/4 black Zombie Human Wizard with no mana
+cost. Eternalize only as a sorcery.)
+HOU-U
+
 Sunseed Nurturer
 2W
 Creature -- Human Druid Wizard
@@ -122078,6 +123698,14 @@ At the beginning of your end step, if you control a creature with
 power 5 or greater, you may gain 2 life.
 {T}: Add {C} to your mana pool.
 ALA-U
+
+Sunset Pyramid
+2
+Artifact
+Sunset Pyramid enters the battlefield with three brick counters on it.
+{2}, {T}, Remove a brick counter from Sunset Pyramid: Draw a card.
+{2}, {T}: Scry 1.
+HOU-U
 
 Sunspear Shikari
 1W
@@ -122268,6 +123896,15 @@ Sorcery
 Supreme Verdict can't be countered.
 Destroy all creatures.
 RTR-R
+
+Supreme Will
+2U
+Instant
+Choose one --
+� Counter target spell unless its controller pays {3}.
+� Look at the top four cards of your library. Put one of them into
+your hand and the rest on the bottom of your library in any order.
+HOU-U
 
 Suq'Ata Assassin
 1BB
@@ -122517,7 +124154,7 @@ Artifact
 land cards, where X is the number of players who control at least
 two more lands than you. Put those cards onto the battlefield, then
 shuffle your library.
-C13-R
+C13-R, CMA-R
 
 Survival Cache
 2W
@@ -122535,6 +124172,14 @@ Enchantment
 {G}, Discard a creature card: Search your library for a creature card,
 reveal that card, and put it into your hand. Then shuffle your library.
 EX-R, VMA-R
+
+Survive
+1G
+Sorcery
+Aftermath (Cast this spell only from your graveyard. Then exile it.)
+Each player shuffles his or her graveyard into his or her library.
+[This is half of the split card Struggle // Survive.]
+HOU-U
 
 Survive the Night
 2W
@@ -122555,6 +124200,13 @@ cost for each age counter on it.)
 {T}: Draw two cards, then put a card from your hand on top of your
 library.
 CSP-C
+
+Survivors' Encampment
+Land -- Desert
+{T}: Add {C} to your mana pool.
+{T}, Tap an untapped creature you control: Add one mana of any color
+to your mana pool.
+HOU-C
 
 Suspension Field
 1W
@@ -122659,8 +124311,8 @@ CHK-L, 9ED-L, RAV-L, TSP-L, 10E-L, LRW-L, SHM-L, ALA-L, M10-L, HOP-L,
 ZEN-L, ROE-L, ARC-L, M11-L, SOM-L, MBS-L, NPH-L, CMD-L, M12-L, ISD-L,
 AVR-L, PC2-L, M13-L, RTR-L, M14-L, THS-L, C13-L, M15-L, KTK-L, C14-L,
 FRF-L, DTK-L, ORI-L, BFZ-L, C15-L, SOI-L, KLD-L, C16-L, PCA-L, AKH-L,
-UG-C, UNH-L, DDC-L, DDD-L, DDE-L, DDH-L, DDJ-L, DDK-L, DDM-L, DDN-L,
-DDP-L, DDQ-L, DDR-L, H09-L, ME3-L, MED-L, PD3-L
+CMA-L, E01-L, HOU-L, UG-C, UNH-L, DDC-L, DDD-L, DDE-L, DDH-L, DDJ-L,
+DDK-L, DDM-L, DDN-L, DDP-L, DDQ-L, DDR-L, H09-L, ME3-L, MED-L, PD3-L
 
 Swamp Mosquito
 1B
@@ -122688,6 +124340,13 @@ If a source would deal damage to Swans of Bryn Argoll, prevent that
 damage. The source's controller draws cards equal to the damage
 prevented this way.
 SHM-R, MM2-R
+
+Swarm Intelligence
+6U
+Enchantment
+Whenever you cast an instant or sorcery spell, you may copy that
+spell. You may choose new targets for the copy.
+HOU-R
 
 Swarm Surge
 2B
@@ -122866,7 +124525,7 @@ Swiftfoot Boots
 Artifact -- Equipment
 Equipped creature has hexproof and haste.
 Equip {1}
-M12-U, C13-U, C14-U, C15-U, C16-U
+M12-U, C13-U, C14-U, C15-U, C16-U, CMA-U
 
 Swiftwater Cliffs
 Land
@@ -123011,7 +124670,7 @@ Whenever equipped creature attacks, you may search your library for
 a basic land card, put it onto the battlefield tapped, then shuffle
 your library.
 Equip {2}
-ORI-R
+ORI-R, E01-R
 
 Sword of the Chosen
 2
@@ -123038,7 +124697,7 @@ As long as equipped creature is untapped, untapped creatures you
 control get +0/+2.
 {3}: You may tap or untap equipped creature.
 Equip {3}
-GPT-R, C13-R
+GPT-R, C13-R, CMA-R
 
 Swords to Plowshares
 W
@@ -123116,7 +124775,7 @@ Target player gains 8 life.
 Basic landcycling {1}{G} ({1}{G}, Discard this card: Search your
 library for a basic land card, reveal it, and put it into your
 hand. Then shuffle your library.)
-CON-C, MMA-C, MM2-C, CN2-C, DDH-C
+CON-C, MMA-C, MM2-C, CN2-C, E01-C, DDH-C
 
 Sylvan Caryatid
 1G
@@ -123175,7 +124834,7 @@ Choose an opponent. You and that player each create an X/X green
 Treefolk creature token.
 Choose an opponent. You and that player each create X 1/1 green Elf
 Warrior creature tokens.
-C14-R
+C14-R, CMA-R
 
 Sylvan Paradise
 G
@@ -123201,7 +124860,7 @@ Creature -- Elf Scout
 When Sylvan Ranger enters the battlefield, you may search your library
 for a basic land card, reveal it, put it into your hand, then shuffle
 your library.
-M11-C, C14-C, MM3-C, DDH-C
+M11-C, C14-C, MM3-C, CMA-C, DDH-C
 
 Sylvan Reclamation
 3GW
@@ -123218,7 +124877,7 @@ Creature -- Human Wizard
 1/1
 Sacrifice a land: Target creature you control gains shroud until end
 of turn. (It can't be the target of spells or abilities.)
-JUD-R, C14-R
+JUD-R, C14-R, CMA-R
 
 Sylvan Scrying
 1G
@@ -123406,7 +125065,7 @@ Syphon Flesh
 Sorcery
 Each other player sacrifices a creature. You create a 2/2 black Zombie
 creature token for each creature sacrificed this way.
-CMD-U
+CMD-U, CMA-U
 
 Syphon Life
 1BB
@@ -123421,7 +125080,7 @@ Syphon Mind
 Sorcery
 Each other player discards a card. You draw a card for each card
 discarded this way.
-ONS-C, HOP-C, CMD-C, C14-C
+ONS-C, HOP-C, CMD-C, C14-C, CMA-C
 
 Syphon Sliver
 2B
@@ -123637,7 +125296,7 @@ Land
 {T}: Add {C} to your mana pool.
 {T}: Add {B} or {G} to your mana pool. Activate this ability only if
 you control a Swamp.
-TOR-U, C15-U, DDM-U
+TOR-U, C15-U, CMA-U, DDM-U
 
 Taj-Nar Swordsmith
 3W
@@ -123890,7 +125549,7 @@ Artifact
 {T}: Add {C} to your mana pool.
 {T}: Add {U} or {B} to your mana pool. Talisman of Dominance deals
 1 damage to you.
-MRD-U
+MRD-U, E01-U
 
 Talisman of Impulse
 2
@@ -123906,7 +125565,7 @@ Artifact
 {T}: Add {C} to your mana pool.
 {T}: Add {B} or {R} to your mana pool. Talisman of Indulgence deals
 1 damage to you.
-MRD-U
+MRD-U, E01-U
 
 Talisman of Progress
 2
@@ -124293,7 +125952,7 @@ Legendary Creature -- Angel
 Flying, vigilance
 {T}: Choose a creature card at random from target opponent's
 graveyard. Put that card onto the battlefield under your control.
-CMD-M, V15-M
+CMD-M, CMA-M, V15-M
 
 Tariff
 1W
@@ -125167,7 +126826,7 @@ Temple of the False God
 Land
 {T}: Add {C}{C} to your mana pool. Activate this ability only if you
 control five or more lands.
-SCG-U, CMD-U, C13-U, C14-U, C15-U, C16-U, DDO-U
+SCG-U, CMD-U, C13-U, C14-U, C15-U, C16-U, CMA-U, DDO-U
 
 Temporal Adept
 1UU
@@ -125299,7 +126958,7 @@ Tempting offer -- Put a +1/+1 counter on each creature you
 control. Each opponent may put a +1/+1 counter on each creature he
 or she controls. For each opponent who does, put a +1/+1 counter on
 each creature you control.
-C13-R
+C13-R, CMA-R
 
 Tempt with Immortality
 4B
@@ -125430,6 +127089,14 @@ When Tenacious Dead dies, you may pay {1}{B}. If you do, return it
 to the battlefield tapped under its owner's control.
 M14-U
 
+Tenacious Hunter
+2GG
+Creature -- Crocodile
+4/4
+As long as a creature has a -1/-1 counter on it, Tenacious Hunter
+has vigilance and deathtouch.
+HOU-U
+
 Tenacity
 3W
 Instant
@@ -125530,7 +127197,7 @@ Creature -- Elephant
 When Terastodon enters the battlefield, you may destroy up to three
 target noncreature permanents. For each permanent put into a graveyard
 this way, its controller creates a 3/3 green Elephant creature token.
-WWK-R, CNS-R, C14-R, C15-R, PD3-R
+WWK-R, CNS-R, C14-R, C15-R, CMA-R, PD3-R
 
 Teremko Griffin
 3W
@@ -125555,7 +127222,7 @@ Terminate
 BR
 Instant
 Destroy target creature. It can't be regenerated.
-PS-C, ARB-C, ARC-C, CMD-C, C16-C, MM3-U, DDK-C
+PS-C, ARB-C, ARC-C, CMD-C, C16-C, MM3-U, CMA-C, DDK-C
 
 Terminus
 4WW
@@ -125632,7 +127299,7 @@ Land
 land card and put it onto the battlefield tapped. Then shuffle your
 library.
 TSP-C, 10E-C, M10-C, HOP-C, ARC-C, M11-C, CMD-C, PC2-C, MMA-C, C13-C,
-C14-C, C15-C, C16-C, PCA-C, DDE-C, DDH-C, DDN-C, H09-C
+C14-C, C15-C, C16-C, PCA-C, CMA-C, DDE-C, DDH-C, DDN-C, H09-C
 
 Terrarion
 1
@@ -126334,6 +128001,18 @@ Legendary Creature -- Giant
 5/5
 LE-U, ME3-C
 
+The Locust God
+4UR
+Legendary Creature -- God
+4/4
+Flying
+Whenever you draw a card, create a 1/1 blue and red Insect creature
+token with flying and haste.
+{2}{U}{R}: Draw a card, then discard a card.
+When The Locust God dies, return it to its owner's hand at the
+beginning of the next end step.
+MPS_AKH-S, HOU-M
+
 The Maelstrom
 Plane -- Alara
 When you planeswalk to The Maelstrom or at the beginning of your
@@ -126344,6 +128023,12 @@ of your library.
 Whenever you roll {CHAOS}, return target permanent card from your
 graveyard to the battlefield.
 HOP-C, PCA-C
+
+The Mighty Will Fall
+Scheme
+When you set this scheme in motion, choose an opponent with the
+highest life total among your opponents. That player loses 7 life.
+E01-C
 
 The Mimeoplasm
 2GUB
@@ -126382,6 +128067,28 @@ At the beginning of the chosen player's upkeep, The Rack deals X
 damage to that player, where X is 3 minus the number of cards in his
 or her hand.
 AQ-U, RV-U, 4E-U, TSP-S
+
+The Scarab God
+3UB
+Legendary Creature -- God
+5/5
+At the beginning of your upkeep, each opponent loses X life and you
+scry X, where X is the number of Zombies you control.
+{2}{U}{B}: Exile target creature card from a graveyard. Create a
+token that's a copy of it, except it's a 4/4 black Zombie.
+When The Scarab God dies, return it to its owner's hand at the
+beginning of the next end step.
+MPS_AKH-S, HOU-M
+
+The Scorpion God
+3BR
+Legendary Creature -- God
+6/5
+Whenever a creature with a -1/-1 counter on it dies, draw a card.
+{1}{B}{R}: Put a -1/-1 counter on another target creature.
+When The Scorpion God dies, return it to its owner's hand at the
+beginning of the next end step.
+MPS_AKH-S, HOU-M
 
 The Tabernacle at Pendrell Vale
 Legendary Land
@@ -126495,6 +128202,12 @@ Creature -- Insect Monk Cleric
 effect lasts indefinitely.)
 FE-R
 
+There Is No Refuge
+Scheme
+When you set this scheme in motion, it deals 3 damage to up to one
+target creature. Create a 3/3 black Horror creature token.
+E01-C
+
 Thermal Blast
 4R
 Instant
@@ -126595,7 +128308,7 @@ Flying
 As Thief of Blood enters the battlefield, remove all counters from
 all permanents. Thief of Blood enters the battlefield with a +1/+1
 counter on it for each counter removed this way.
-C15-U
+C15-U, CMA-U
 
 Thief of Hope
 2B
@@ -126703,6 +128416,12 @@ At the beginning of your end step, if equipped creature didn't deal
 combat damage to a creature this turn, sacrifice it.
 Equip {2}
 EMN-U
+
+This World Belongs to Me
+Scheme
+When you set this scheme in motion, draw two cards. You may play an
+additional land this turn.
+E01-C
 
 Thistledown Duo
 2(w/u)
@@ -126851,6 +128570,15 @@ Sliver creatures you control have "Whenever this creature attacks,
 it deals 1 damage to target creature or player."
 M14-R
 
+Thorned Moloch
+2R
+Creature -- Lizard
+2/2
+Prowess (Whenever you cast a noncreature spell, this creature gets
++1/+1 until end of turn.)
+Thorned Moloch has first strike as long as it's attacking.
+HOU-C
+
 Thornhide Wolves
 4G
 Creature -- Wolf
@@ -126929,7 +128657,7 @@ Creature -- Elf Archer
 Reach (This creature can block creatures with flying.)
 Deathtouch (Any amount of damage this deals to a creature is enough
 to destroy it.)
-FUT-C, C14-C, EMA-C, DDR-C
+FUT-C, C14-C, EMA-C, CMA-C, DDR-C
 
 Thornwind Faeries
 1UU
@@ -126937,7 +128665,7 @@ Creature -- Faerie
 1/1
 Flying
 {T}: Thornwind Faeries deals 1 damage to target creature or player.
-UL-C, C13-C
+UL-C, C13-C, CMA-C
 
 Thornwood Falls
 Land
@@ -127067,7 +128795,7 @@ Thought Vessel
 Artifact
 You have no maximum hand size.
 {T}: Add {C} to your mana pool.
-C15-C
+C15-C, CMA-C
 
 Thought-Knot Seer
 3C
@@ -127159,7 +128887,7 @@ B
 Sorcery
 Target player reveals his or her hand. You choose a nonland card from
 it. That player discards that card. You lose 2 life.
-LRW-R, THS-R
+LRW-R, THS-R, MPS_AKH-S
 
 Thoughtweft Gambit
 4(w/u)(w/u)
@@ -127196,7 +128924,7 @@ Artifact
 You may activate abilities of creatures you control as though those
 creatures had haste.
 {1}, {T}: Untap target creature.
-LRW-R, C13-R
+LRW-R, C13-R, CMA-R
 
 Thousand-legged Kami
 6GG
@@ -127294,7 +129022,7 @@ Creature -- Beast
 When Thragtusk enters the battlefield, you gain 5 life.
 When Thragtusk leaves the battlefield, create a 3/3 green Beast
 creature token.
-M13-R, MM3-R
+M13-R, MM3-R, E01-R
 
 Thran Dynamo
 4
@@ -127423,7 +129151,7 @@ Threads of Disloyalty
 Enchantment -- Aura
 Enchant creature with converted mana cost 2 or less
 You control enchanted creature.
-BOK-R
+BOK-R, MPS_AKH-S
 
 Threaten
 2R
@@ -127638,7 +129366,7 @@ the next end step.
 Splice onto Arcane {2}{R}{R} (As you cast an Arcane spell, you may
 reveal this card from your hand and pay its splice cost. If you do,
 add this card's effects to that spell.)
-CHK-R
+CHK-R, MPS_AKH-S
 
 Throwing Knife
 2
@@ -127876,7 +129604,7 @@ Creature -- Beast
 Trample
 Lieutenant -- As long as you control your commander, Thunderfoot Baloth
 gets +2/+2 and other creatures you control get +2/+2 and have trample.
-C14-R, C16-R
+C14-R, C16-R, CMA-R
 
 Thunderheads
 2U
@@ -127996,7 +129724,7 @@ Artifact
 As long as Thunderstaff is untapped, if a creature would deal combat
 damage to you, prevent 1 of that damage.
 {2}, {T}: Attacking creatures get +1/+0 until end of turn.
-DST-U, ARC-U, C13-U
+DST-U, ARC-U, C13-U, CMA-U
 
 Thwart
 2UU
@@ -128355,7 +130083,7 @@ Creature -- Elf
 1/2
 {T}: Target creature gets +X/+X until end of turn, where X is the
 number of Elves on the battlefield.
-LGN-C, C14-C, EMA-U, EVG-C
+LGN-C, C14-C, EMA-U, CMA-C, EVG-C
 
 Time Bomb
 4
@@ -128718,7 +130446,7 @@ Creature -- Elf Archer
 1/1
 Whenever a player casts a green spell, put a +1/+1 counter on
 Titania's Chosen.
-US-U, C14-U
+US-U, C14-U, CMA-U
 
 Titania's Song
 3G
@@ -128737,7 +130465,7 @@ When Titania, Protector of Argoth enters the battlefield, return
 target land card from your graveyard to the battlefield.
 Whenever a land you control is put into a graveyard from the
 battlefield, create a 5/3 green Elemental creature token.
-C14-M
+C14-M, CMA-M
 
 Titanic Bulvox
 6GG
@@ -129221,7 +130949,7 @@ Creature -- Shapeshifter
 {R}: Change the target of target spell that targets only Torchling.
 {1}: Torchling gets +1/-1 until end of turn.
 {1}: Torchling gets -1/+1 until end of turn.
-PLC-R, DDI-R
+PLC-R, E01-R, DDI-R
 
 Torii Watchward
 4W
@@ -129238,6 +130966,29 @@ Enchantment -- Aura
 Enchant creature
 Enchanted creature gets -3/-0.
 ST-C
+
+Torment of Hailfire
+XBB
+Sorcery
+Repeat the following process X times. Each opponent loses 3 life
+unless that player sacrifices a nonland permanent or discards a card.
+HOU-R
+
+Torment of Scarabs
+3B
+Enchantment -- Aura Curse
+Enchant player
+At the beginning of enchanted player's upkeep, that player loses 3 life
+unless he or she sacrifices a nonland permanent or discards a card.
+HOU-U
+
+Torment of Venom
+2BB
+Instant
+Put three -1/-1 counters on target creature. Its controller loses 3
+life unless he or she sacrifices another nonland permanent or discards
+a card.
+HOU-C
 
 Tormented Angel
 3W
@@ -129328,7 +131079,7 @@ When Tornado Elemental enters the battlefield, it deals 6 damage to
 each creature with flying.
 You may have Tornado Elemental assign its combat damage as though it
 weren't blocked.
-5DN-R, HOP-R, C14-R
+5DN-R, HOP-R, C14-R, CMA-R
 
 Torpid Moloch
 R
@@ -129862,6 +131613,13 @@ planeswalker. Then each player sacrifices all other nonland permanents
 he or she controls.
 ORI-R
 
+Tragic Lesson
+2U
+Instant
+Draw two cards. Then discard a card unless you return a land you
+control to its owner's hand.
+HOU-C
+
 Tragic Poet
 W
 Creature -- Human
@@ -130084,7 +131842,7 @@ Land
 Tranquil Thicket enters the battlefield tapped.
 {T}: Add {G} to your mana pool.
 Cycling {G} ({G}, Discard this card: Draw a card.)
-ONS-C, ARC-C, CMD-C, C13-C, C14-C, EVG-C, VMA-C, DDJ-C
+ONS-C, ARC-C, CMD-C, C13-C, C14-C, CMA-C, EVG-C, VMA-C, DDJ-C
 
 Tranquility
 2G
@@ -130132,7 +131890,7 @@ Transguild Promenade enters the battlefield tapped.
 When Transguild Promenade enters the battlefield, sacrifice it unless
 you pay {1}.
 {T}: Add one mana of any color to your mana pool.
-RTR-C, C13-C, C16-C
+RTR-C, C13-C, C16-C, CMA-C
 
 Transluminant
 1G
@@ -130264,7 +132022,7 @@ Traveler's Amulet
 Artifact
 {1}, Sacrifice Traveler's Amulet: Search your library for a basic land
 card, reveal it, and put it into your hand. Then shuffle your library.
-ISD-C, THS-C
+ISD-C, THS-C, HOU-C
 
 Traveler's Cloak
 2U
@@ -130836,7 +132594,7 @@ Tribute to the Wild
 1G
 Instant
 Each opponent sacrifices an artifact or enchantment.
-CMD-U, C15-U, VMA-C
+CMD-U, C15-U, CMA-U, VMA-C
 
 Trickbind
 1U
@@ -131605,7 +133363,7 @@ to destroy it.)
 Landfall -- Whenever a land enters the battlefield under your control,
 you may have target creature block Turntimber Basilisk this turn
 if able.
-ZEN-U, DDP-U
+ZEN-U, E01-U, DDP-U
 
 Turntimber Grove
 Land
@@ -132375,6 +134133,14 @@ Flashback {3}{W} (You may cast this card from your graveyard for its
 flashback cost. Then exile it.)
 ISD-U, MM3-U
 
+Uncage the Menagerie
+XGG
+Sorcery
+Search your library for up to X creature cards with different names
+that each have converted mana cost X, reveal them, put them into your
+hand, then shuffle your library.
+HOU-M
+
 Uncaged Fury
 2R
 Instant
@@ -132416,6 +134182,15 @@ Enchantment -- Aura
 Enchant nonbasic land
 When enchanted land becomes tapped, destroy it.
 SCG-C
+
+Unconventional Tactics
+2W
+Sorcery
+Target creature gets +3/+3 and gains flying until end of turn.
+Whenever a Zombie enters the battlefield under your control, you may
+pay {W}. If you do, return Unconventional Tactics from your graveyard
+to your hand.
+HOU-U
 
 Uncovered Clues
 2U
@@ -132716,6 +134491,18 @@ damage equal to the tapped creature's power to target attacking or
 blocking creature with flying.
 MI-U
 
+Unesh, Criosphinx Sovereign
+4UU
+Legendary Creature -- Sphinx
+4/4
+Flying
+Sphinx spells you cast cost {2} less to cast.
+Whenever Unesh, Criosphinx Sovereign or another Sphinx enters the
+battlefield under your control, reveal the top four cards of your
+library. An opponent separates those cards into two piles. Put one
+pile into your hand and the other into your graveyard.
+HOU-M
+
 Unexpected Potential
 Conspiracy
 Hidden agenda (Start the game with this conspiracy face down in
@@ -132739,7 +134526,7 @@ XWW
 Instant
 Put target nonland permanent into its owner's library just beneath
 the top X cards of that library.
-C13-R, EMA-R
+C13-R, EMA-R, CMA-R
 
 Unflinching Courage
 1GW
@@ -132995,6 +134782,16 @@ was spent to cast Unnerving Assault, and creatures you control get
 was spent.)
 EVE-U
 
+Unquenchable Thirst
+1U
+Enchantment -- Aura
+Enchant creature
+When Unquenchable Thirst enters the battlefield, if you control a
+Desert or there is a Desert card in your graveyard, tap enchanted
+creature.
+Enchanted creature doesn't untap during its controller's untap step.
+HOU-C
+
 Unquestioned Authority
 2W
 Enchantment -- Aura
@@ -133009,6 +134806,14 @@ Instant
 Choose target artifact or enchantment. Its owner shuffles it into
 his or her library.
 BNG-U
+
+Unraveling Mummy
+1WB
+Creature -- Zombie
+2/3
+{1}{W}: Target attacking Zombie gains lifelink until end of turn.
+{1}{B}: Target attacking Zombie gains deathtouch until end of turn.
+HOU-U
 
 Unruly Mob
 1W
@@ -133117,7 +134922,7 @@ U
 Instant
 Return target creature to its owner's hand.
 A-C, B-C, U-C, RV-C, 4E-C, 5E-C, 6E-C, 7E-C, 8ED-C, 10E-C, CON-C,
-M10-C, M11-C, M12-C, M13-C
+M10-C, M11-C, M12-C, M13-C, HOU-C
 
 Untaidake, the Cloud Keeper
 Legendary Land
@@ -133908,7 +135713,7 @@ Vampire Nighthawk
 Creature -- Vampire Shaman
 2/3
 Flying, deathtouch, lifelink
-ZEN-U, CMD-U, M13-U, C13-U, MM3-U, DDK-U, DDP-U
+ZEN-U, CMD-U, M13-U, C13-U, MM3-U, E01-U, DDK-U, DDP-U
 
 Vampire Noble
 2B
@@ -134234,7 +136039,7 @@ Enchantment -- Aura
 Enchant land
 Enchanted land is a 6/4 green Elemental creature. It's still a land.
 When enchanted land dies, return that card to its owner's hand.
-WWK-C
+WWK-C, E01-C
 
 Vault Skirge
 1(b/p)
@@ -134931,7 +136736,7 @@ Creature -- Elemental
 7/7
 At the beginning of each upkeep, create a 1/1 green Saproling
 creature token.
-TE-R, 9ED-R, 10E-R, HOP-R, C15-R, PD3-R
+TE-R, 9ED-R, 10E-R, HOP-R, C15-R, CMA-R, PD3-R
 
 Verdant Haven
 2G
@@ -135565,7 +137370,7 @@ Victimize
 Sorcery
 Choose two target creature cards in your graveyard. Sacrifice a
 creature. If you do, return the chosen cards to the battlefield tapped.
-US-U, CNS-U, C14-U, C15-U, EMA-U
+US-U, CNS-U, C14-U, C15-U, EMA-U, CMA-U
 
 Victorious Destruction
 4R
@@ -135764,6 +137569,15 @@ Whenever Vile Deacon attacks, it gets +X/+X until end of turn, where
 X is the number of Clerics on the battlefield.
 LGN-C
 
+Vile Manifestation
+1B
+Creature -- Horror
+0/4
+Vile Manifestation gets +1/+0 for each card with cycling in your
+graveyard.
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-U
+
 Vile Rebirth
 B
 Instant
@@ -135944,7 +137758,7 @@ G
 Instant
 Target creature gets +1/+2 and gains reach until end of turn. Untap
 it. (A creature with reach can block creatures with flying.)
-OGW-C, DDR-C
+OGW-C, E01-C, DDR-C
 
 Vineweft
 G
@@ -136078,7 +137892,7 @@ Creature -- Elf Scout
 When Viridian Emissary dies, you may search your library for a
 basic land card, put it onto the battlefield tapped, then shuffle
 your library.
-MBS-C, PC2-C, C15-C, PCA-C
+MBS-C, PC2-C, C15-C, PCA-C, CMA-C
 
 Viridian Harvest
 G
@@ -136141,7 +137955,7 @@ Creature -- Elf Warrior
 2/1
 {1}{G}, Sacrifice Viridian Zealot: Destroy target artifact or
 enchantment.
-DST-R, C15-R
+DST-R, C15-R, CMA-R
 
 Viridian Zealot Avatar
 Vanguard
@@ -136194,6 +138008,16 @@ Instant
 Put a -1/-1 counter on target creature. When that creature dies this
 turn, its controller gets a poison counter.
 MBS-C
+
+Visage of Bolas
+4
+Artifact
+When Visage of Bolas enters the battlefield, you may search your
+library and/or graveyard for a card named Nicol Bolas, the Deceiver,
+reveal it, and put it into your hand. If you search your library this
+way, shuffle it.
+{T}: Add {U}, {B}, or {R} to your mana pool.
+HOU-R
 
 Visara the Dreadful
 3BBB
@@ -136295,7 +138119,7 @@ Vision Skeins
 1U
 Instant
 Each player draws two cards.
-DIS-C, CMD-C, C13-C
+DIS-C, CMD-C, C13-C, E01-C
 
 Visionary Augmenter
 2WW
@@ -136443,7 +138267,7 @@ on it.
 {T}: Add {G} to your mana pool.
 {T}, Remove a charge counter from Vivid Grove: Add one mana of any
 color to your mana pool.
-LRW-U, CMD-U, MMA-U, C13-U, C15-U, H09-U
+LRW-U, CMD-U, MMA-U, C13-U, C15-U, CMA-U, H09-U
 
 Vivid Marsh
 Land
@@ -136452,7 +138276,7 @@ on it.
 {T}: Add {B} to your mana pool.
 {T}, Remove a charge counter from Vivid Marsh: Add one mana of any
 color to your mana pool.
-LRW-U, CMD-U, MMA-U, C13-U, C15-U
+LRW-U, CMD-U, MMA-U, C13-U, C15-U, CMA-U
 
 Vivid Meadow
 Land
@@ -136461,7 +138285,7 @@ on it.
 {T}: Add {W} to your mana pool.
 {T}, Remove a charge counter from Vivid Meadow: Add one mana of any
 color to your mana pool.
-LRW-U, CMD-U, MMA-U, C15-U
+LRW-U, CMD-U, MMA-U, C15-U, CMA-U
 
 Vivify
 2G
@@ -136517,6 +138341,16 @@ Cycling {1}{U} ({1}{U}, Discard this card: Draw a card.)
 When you cycle Vizier of Tumbling Sands, untap target permanent.
 AKH-U
 
+Vizier of the Anointed
+3U
+Creature -- Human Cleric
+2/4
+When Vizier of the Anointed enters the battlefield, you may search
+your library for a creature card with eternalize or embalm, put that
+card into your graveyard, then shuffle your library.
+Whenever you activate an eternalize or embalm ability, draw a card.
+HOU-U
+
 Vizier of the Menagerie
 3G
 Creature -- Naga Cleric
@@ -136527,6 +138361,16 @@ You may cast the top card of your library if it's a creature card.
 You may spend mana as though it were mana of any type to cast creature
 spells.
 AKH-M
+
+Vizier of the True
+3W
+Creature -- Human Cleric
+3/2
+You may exert Vizier of the True as it attacks. (It won't untap during
+your next untap step.)
+Whenever you exert a creature, tap target creature an opponent
+controls.
+HOU-U
 
 Vizkopa Confessor
 3WB
@@ -136648,7 +138492,7 @@ Creature -- Angel
 Flying
 As Voice of All enters the battlefield, choose a color.
 Voice of All has protection from the chosen color.
-PS-U, 10E-R, CMD-R
+PS-U, 10E-R, CMD-R, CMA-R
 
 Voice of Duty
 3W
@@ -136932,7 +138776,7 @@ Volcanic Geyser
 XRR
 Instant
 Volcanic Geyser deals X damage to target creature or player.
-MI-U, 6E-U, M13-U, M14-U
+MI-U, 6E-U, M13-U, M14-U, E01-U
 
 Volcanic Hammer
 1R
@@ -137352,7 +139196,7 @@ Enchantment -- Aura
 Enchant creature
 Enchanted creature gets +2/+2, has vigilance, and can't attack you
 or a planeswalker you control.
-CMD-U, CNS-U, C15-U
+CMD-U, CNS-U, C15-U, CMA-U
 
 Vow of Flight
 2U
@@ -137368,7 +139212,7 @@ Enchantment -- Aura
 Enchant creature
 Enchanted creature gets +2/+2, has first strike, and can't attack
 you or a planeswalker you control.
-CMD-U
+CMD-U, CMA-U
 
 Vow of Malice
 2B
@@ -137378,7 +139222,7 @@ Enchanted creature gets +2/+2, has intimidate, and can't attack you
 or a planeswalker you control. (A creature with intimidate can't be
 blocked except by artifact creatures and/or creatures that share a
 color with it.)
-CMD-U, C15-U
+CMD-U, C15-U, CMA-U
 
 Vow of Wildness
 2G
@@ -137562,7 +139406,7 @@ Creature -- Plant Zombie
 Flying
 Whenever a card is put into an opponent's graveyard from anywhere,
 put a +1/+1 counter on Vulturous Zombie.
-RAV-R, CMD-R, C15-R, C16-R
+RAV-R, CMD-R, C15-R, C16-R, CMA-R
 
 Wail of the Nim
 2B
@@ -137789,7 +139633,7 @@ Creature -- Plant Wall
 0/4
 Defender
 When Wall of Blossoms enters the battlefield, draw a card.
-ST-U, PC2-U, C15-U, C16-U, PCA-U, V13-M
+ST-U, PC2-U, C15-U, C16-U, PCA-U, CMA-U, V13-M
 
 Wall of Bone
 2B
@@ -137907,6 +139751,16 @@ Creature -- Wall
 Defender (This creature can't attack.)
 {R}: Wall of Fire gets +1/+0 until end of turn.
 A-U, B-U, U-U, RV-U, 4E-U, 5E-U, 6E-U, 7E-U, 10E-U, M10-U, M13-C, M15-C
+
+Wall of Forgotten Pharaohs
+2
+Artifact Creature -- Wall
+0/4
+Defender
+{T}: Wall of Forgotten Pharaohs deals 1 damage to target
+player. Activate this ability only if you control a Desert or there
+is a Desert card in your graveyard.
+HOU-C
 
 Wall of Frost
 1UU
@@ -139010,7 +140864,7 @@ Wash Out
 Sorcery
 Return all permanents of the color of your choice to their owners'
 hands.
-IN-U, C13-U
+IN-U, C13-U, CMA-U
 
 Wasp Lancer
 (u/b)(u/b)(u/b)
@@ -139018,6 +140872,15 @@ Creature -- Faerie Soldier
 3/2
 Flying
 SHM-U
+
+Wasp of the Bitter End
+1B
+Creature -- Insect Horror
+2/1
+Flying
+Whenever you cast a Bolas planeswalker spell, you may sacrifice Wasp
+of the Bitter End. If you do, destroy target creature.
+HOU-U
 
 Waste Away
 4B
@@ -139282,7 +141145,7 @@ lands he or she controls. For each land sacrificed this way, its
 controller may search his or her library for a basic land card and
 put it onto the battlefield tapped. Then each player who searched
 his or her library this way shuffles it.
-C14-R
+C14-R, CMA-R
 
 Wave-Wing Elemental
 5U
@@ -139906,7 +141769,7 @@ Wellwisher
 Creature -- Elf
 1/1
 {T}: You gain 1 life for each Elf on the battlefield.
-ONS-C, C14-C, EVG-C
+ONS-C, C14-C, CMA-C, EVG-C
 
 Werebear
 1G
@@ -140007,6 +141870,12 @@ Destroy target artifact.
 // Why.]
 UNH-R
 
+What's Yours Is Now Mine
+Scheme
+When you set this scheme in motion, gain control of target creature
+an opponent controls and untap it.
+E01-C
+
 Wheel and Deal
 3U
 Instant
@@ -140069,6 +141938,13 @@ Instant
 Target creature gets -X/-X until end of turn, where X is the number
 of times the letter of your choice appears in that creature's name.
 UNH-C
+
+When Will You Learn?
+Scheme
+When you set this scheme in motion, each opponent exiles the top card
+of his or her library. You may cast any number of nonland cards exiled
+this way without paying their mana costs.
+E01-C
 
 Where
 3B
@@ -140364,7 +142240,7 @@ Whirlwind
 2GG
 Sorcery
 Destroy all creatures with flying.
-US-R, S99-R, C14-R
+US-R, S99-R, C14-R, CMA-R
 
 Whirlwind Adept
 4U
@@ -140962,6 +142838,16 @@ Protection from white
 {1}{R}: Wildfire Emissary gets +1/+0 until end of turn.
 MI-U, TSP-S, EMA-C
 
+Wildfire Eternal
+3R
+Creature -- Zombie Jackal Cleric
+1/4
+Afflict 4 (Whenever this creature becomes blocked, defending player
+loses 4 life.)
+Whenever Wildfire Eternal attacks and isn't blocked, you may cast an
+instant or sorcery card from your hand without paying its mana cost.
+HOU-R
+
 Wildheart Invoker
 2GG
 Creature -- Elf Shaman
@@ -141290,7 +143176,7 @@ Creature -- Fish
 Flying
 Landfall -- Whenever a land enters the battlefield under your control,
 Windrider Eel gets +2/+2 until end of turn.
-ZEN-C
+ZEN-C, E01-C
 
 Windrider Patrol
 3UU
@@ -141445,7 +143331,7 @@ Flash (You may cast this spell any time you could cast an instant.)
 Flying
 Deathtouch (Any amount of damage this deals to a creature is enough
 to destroy it.)
-ARB-C, C13-C
+ARB-C, C13-C, CMA-C
 
 Winged Shepherd
 5W
@@ -141900,6 +143786,15 @@ Whenever Witherscale Wurm deals damage to an opponent, remove all
 -1/-1 counters from it.
 SHM-R
 
+Without Weakness
+1B
+Instant
+Target creature you control gains indestructible until end of
+turn. (Damage and effects that say "destroy" don't destroy it. If
+its toughness is 0 or less, it's still put into its owner's graveyard.)
+Cycling {2} ({2}, Discard this card: Draw a card.)
+HOU-C
+
 Withstand
 2W
 Instant
@@ -142077,7 +143972,7 @@ Multikicker {G} (You may pay an additional {G} any number of times
 as you cast this spell.)
 When Wolfbriar Elemental enters the battlefield, create a 2/2 green
 Wolf creature token for each time it was kicked.
-WWK-R, CNS-R, C14-R, MM2-R
+WWK-R, CNS-R, C14-R, MM2-R, CMA-R
 
 Wolfcaller's Howl
 3G
@@ -142085,7 +143980,7 @@ Enchantment
 At the beginning of your upkeep, create X 2/2 green Wolf creature
 tokens, where X is the number of your opponents with four or more
 cards in hand.
-C14-R
+C14-R, CMA-R
 
 Wolfhunter's Quiver
 1
@@ -142139,7 +144034,7 @@ Creature -- Incarnation
 Flying
 As long as Wonder is in your graveyard and you control an Island,
 creatures you control have flying.
-JUD-U, CMD-U, C13-U, EMA-U
+JUD-U, CMD-U, C13-U, EMA-U, CMA-U
 
 Wood Elemental
 3G
@@ -142158,7 +144053,8 @@ Creature -- Elf Scout
 When Wood Elves enters the battlefield, search your library for a
 Forest card and put that card onto the battlefield. Then shuffle
 your library.
-P1-R, EX-C, S99-U, 7E-C, 8ED-C, 9ED-C, C14-C, C15-C, EVG-C, DDR-C
+P1-R, EX-C, S99-U, 7E-C, 8ED-C, 9ED-C, C14-C, C15-C, CMA-C, EVG-C,
+DDR-C
 
 Wood Sage
 GU
@@ -142177,7 +144073,7 @@ As long as you control eight or more lands, Woodborn Behemoth gets
 +4/+4 and has trample. (If this creature would assign enough damage
 to its blockers to destroy them, you may have it assign the rest of
 its damage to defending player or planeswalker.)
-M14-U, DDR-U
+M14-U, E01-U, DDR-U
 
 Woodcloaker
 5G
@@ -142299,7 +144195,7 @@ Woodland Stream
 Land
 Woodland Stream enters the battlefield tapped.
 {T}: Add {G} or {U} to your mana pool.
-SOI-U, KLD-C, AKH-C
+SOI-U, KLD-C, AKH-C, HOU-C
 
 Woodland Wanderer
 3G
@@ -142876,7 +144772,7 @@ Wrecking Ball
 2BR
 Instant
 Destroy target creature or land.
-DIS-C, CMD-C, MM2-U
+DIS-C, CMD-C, MM2-U, CMA-C
 
 Wrecking Ogre
 4R
@@ -142896,7 +144792,7 @@ it unless you exile another Elf you control. When this creature leaves
 the battlefield, that card returns to the battlefield.)
 {2}{G}: Create a 2/2 green Wolf creature token.
 Wolves you control have deathtouch.
-LRW-R, C14-R
+LRW-R, C14-R, CMA-R
 
 Wren's Run Vanquisher
 1G
@@ -142929,6 +144825,14 @@ Destroy target creature if it has the least power or is tied for
 least power among creatures on the battlefield.
 CON-C
 
+Wretched Camel
+1B
+Creature -- Zombie Camel
+2/1
+When Wretched Camel dies, if you control a Desert or there is a Desert
+card in your graveyard, target player discards a card.
+HOU-C
+
 Wretched Confluence
 3BB
 Instant
@@ -142936,7 +144840,7 @@ Choose three. You may choose the same mode more than once.
 � Target player draws a card and loses 1 life.
 � Target creature gets -2/-2 until end of turn.
 � Return target creature card from your graveyard to your hand.
-C15-R
+C15-R, CMA-R
 
 Wretched Gryff
 7
@@ -143665,7 +145569,7 @@ Youthful Knight
 Creature -- Human Knight
 2/1
 First strike
-ST-C, 10E-C, MM3-C
+ST-C, 10E-C, MM3-C, E01-C
 
 Youthful Scholar
 3U
@@ -143780,6 +145684,13 @@ Whenever Zealot il-Vec attacks and isn't blocked, you may have it
 deal 1 damage to target creature. If you do, prevent all combat damage
 Zealot il-Vec would deal this turn.
 TSP-C
+
+Zealot of the God-Pharaoh
+3R
+Creature -- Minotaur Archer
+4/3
+{4}{R}: Zealot of the God-Pharaoh deals 2 damage to target opponent.
+HOU-C
 
 Zealots en-Dal
 3W
@@ -144194,7 +146105,7 @@ Land
 {T}: Add {C} to your mana pool.
 Morph {2} (You may cast this card face down as a 2/2 creature for
 {3}. Turn it face up any time for its morph cost.)
-FUT-U, CMD-U, C14-U, C15-U
+FUT-U, CMD-U, C14-U, C15-U, CMA-U
 
 Zof Shade
 3B
