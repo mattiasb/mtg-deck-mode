@@ -167,6 +167,17 @@
       (switch-to-buffer-other-window (current-buffer)))))
 
 ;;;###autoload
+(defun mtg-deck-sideboard-toggle ()
+  "Toggle the current card or region as a sideboard card."
+  (interactive)
+  (let (beg end)
+    (if (region-active-p)
+        (setq beg (region-beginning) end (region-end))
+      (setq beg (line-beginning-position) end (line-end-position)))
+    (let ((comment-start "SB: "))
+      (comment-or-uncomment-region beg end))))
+
+;;;###autoload
 (defun mtg-deck-show-card-at-point ()
   "Show card at point in a new buffer."
   (interactive)
