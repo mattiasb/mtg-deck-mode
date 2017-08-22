@@ -93,10 +93,10 @@
                                   (mtg-deck--format-filename-prefix format))
                           "\n"))
 
-(defun mtg-deck--cards-in-format (format)
-  "Return a list of all cards in FORMAT."
+(defun mtg-deck--all-cards ()
+  "Return a list of all cards in Magic."
   (mtg-deck--file-to-list (format "%s.cards"
-                                  (mtg-deck--format-filename-prefix format))
+                                  (mtg-deck--format-filename-prefix 'all))
                           "\n\n"))
 
 (defun mtg-deck--name-of-card (card)
@@ -110,7 +110,7 @@
   "Make a hash-table of all cards."
   (let ((card-table (make-hash-table :size mtg-deck--num-cards
                                      :test 'equal))
-        (card-list  (mtg-deck--cards-in-format 'all)))
+        (card-list  (mtg-deck--all-cards)))
     (dolist (card card-list card-table)
       (puthash (mtg-deck--name-of-card card) card card-table))))
 
