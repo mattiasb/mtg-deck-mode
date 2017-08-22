@@ -170,12 +170,11 @@
 (defun mtg-deck-sideboard-toggle ()
   "Toggle the current card or region as a sideboard card."
   (interactive)
-  (let (beg end)
-    (if (region-active-p)
-        (setq beg (region-beginning) end (region-end))
-      (setq beg (line-beginning-position) end (line-end-position)))
-    (let ((comment-start "SB: "))
-      (comment-or-uncomment-region beg end))))
+  (let* ((comment-start "SB: ")
+         (region-active (region-active-p))
+         (beg (if region-active (region-beginning) (line-beginning-position)))
+         (end (if region-active (region-end) (line-end-position))))
+    (comment-or-uncomment-region beg end)))
 
 ;;;###autoload
 (defun mtg-deck-show-card-at-point ()
