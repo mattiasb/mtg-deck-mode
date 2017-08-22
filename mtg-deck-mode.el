@@ -19,10 +19,10 @@
 
 ;; Version: 0.2
 ;; Keywords: data MTG Magic
-;; Package-Requires: ((emacs "24.4"))
+;; Package-Requires: ((emacs "25.1"))
 ;; URL: https://github.com/mattiasb/mtg-deck-mode
 ;; Doc URL: https://github.com/mattiasb/mtg-deck-mode
-;; Compatibility: GNU Emacs: 24.x
+;; Compatibility: GNU Emacs: 25.x
 
 ;;; Commentary:
 
@@ -87,8 +87,24 @@
        (buffer-string))
      sep)))
 
+(defvar mtg-deck--card-names-table nil
+  "A hash-table from format to a list of cards legal in that format.")
+(defvar mtg-deck--num-formats 5
+  "The number of constructed formats mtg-deck-mode knows about.")
+
 (defun mtg-deck--card-names-in-format (format)
   "Return a list of all card names in FORMAT."
+  (unless mtg-deck--card-names-table
+    (setq mtg-deck--card-names-table (make-hash-table :size mtg-deck--num-formats
+                                                      :test 'equal)))
+  (if-let ((names (gethash format mtg-deck--card-names-table)))
+      names
+    (let ((names (mtg-deck--read-card-names-in-format format)))
+      (puthash format names mtg-deck--card-names-table)
+      names)))
+
+(defun mtg-deck--read-card-names-in-format (format)
+  "Read a list of all card names in FORMAT from disk."
   (mtg-deck--file-to-list (format "%s.names"
                                   (mtg-deck--format-filename-prefix format))
                           "\n"))
