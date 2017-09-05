@@ -14,7 +14,7 @@ function add-formats {
     local ARCHIVE
 
     mkdir "${TARGET_DIR}.tmp"
-    cd "${TARGET_DIR}.tmp"
+    cd "${TARGET_DIR}.tmp" || exit 3
 
     echo "Downloading sets..."
     for FORMAT in ${FORMATS}; do
@@ -41,7 +41,7 @@ function add-formats {
     fmt -s -w 72 ./all.cards > all.cards.filled &&
         mv ./all.cards.filled ./all.cards
 
-    cd -
+    cd - >/dev/null || exit 3
 }
 
 function swap-dirs {
