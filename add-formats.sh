@@ -18,11 +18,11 @@ function add-formats {
 
     echo "Downloading sets..."
     for FORMAT in ${FORMATS}; do
-        ARCHIVE="${FORMAT}-${DATE}.zip"
-        echo "${BASE_URL}/${ARCHIVE}"
-        curl "${BASE_URL}/${ARCHIVE}" -o "${ARCHIVE}" > /dev/null
-        unzip "${ARCHIVE}"  > /dev/null
-        rm "${ARCHIVE}"  > /dev/null
+        wget -nv "${BASE_URL}/${FORMAT}-${DATE}.zip"
+    done
+
+    for ARCHIVE in ./*.zip; do
+        unzip "${ARCHIVE}"
     done
 
     for FORMAT in ./*.txt; do
