@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASE_URL="http://www.yawgatog.com/resources/oracle"
-DATE="2017-09-20"
+DATE="2018-01-22"
 FORMATS="All%20Sets Vintage Legacy Modern Standard"
 
 TARGET_DIR="${1}"
