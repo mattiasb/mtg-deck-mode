@@ -208,6 +208,20 @@
     (mtg-deck--card-buffer (completing-read "Card: " cards))))
 
 ;;;###autoload
+(defun mtg-deck-count-cards ()
+  "Count cards both in deck and sideboard."
+  (interactive)
+  (save-excursion
+    (let (deck sideboard)
+      (goto-char (point-min))
+      (while (re-search-forward "^\\([[:digit:]]+\\)[[:space:]]+[[:word:]]+.*$" (point-max) t)
+        (push (string-to-number (match-string-no-properties 1)) deck))
+      (goto-char (point-min))
+      (while (re-search-forward "^SB:[[:space:]]*\\([[:digit:]]+\\)[[:space:]]+[[:word:]]+.*$" (point-max) t)
+        (push (string-to-number (match-string-no-properties 1)) sideboard))
+      (message "Deck: %d, Sideboard: %d " (apply #'+ deck) (apply #'+ sideboard)))))
+
+;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
   "Major mode to edit MTG decks."
   (setq font-lock-defaults '(mtg-deck--font-lock-defaults))
