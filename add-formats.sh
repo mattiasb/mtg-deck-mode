@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Copyright 2023, Mattias Bengtsson <mattias.jc.bengtsson@gmail.com>
+
 BASE_URL="http://www.yawgatog.com/resources/oracle"
 DATE="2018-05-21"
 FORMATS="All%20Sets Vintage Legacy Modern Standard"
