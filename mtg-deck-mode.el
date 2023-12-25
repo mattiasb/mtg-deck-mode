@@ -59,6 +59,13 @@
   (when load-file-name
     (concat (file-name-directory load-file-name) "formats")))
 
+(defun mtg-deck--query (query &optional values)
+  "Run QUERY against the card database, returning the result."
+  (let* ((db (sqlite-open "./AllPrintings.sqlite"))
+         (result (sqlite-select db query values)))
+    (sqlite-close db)
+    result))
+
 (defun mtg-deck--format-filename-prefix (format)
   "Get the path prefix to the card files of FORMAT."
   (expand-file-name (symbol-name format)
@@ -91,9 +98,14 @@
 
 (defun mtg-deck--read-card-names-in-format (format)
   "Read a list of all card names in FORMAT from disk."
-  (mtg-deck--file-to-list (format "%s.names"
-                                  (mtg-deck--format-filename-prefix format))
-                          "\n"))
+  (let ((query (format "SELECT DISTINCT name FROM cards
+                        INNER JOIN cardLegalities ON (
+                            cards.uuid = cardLegalities.uuid
+                            AND
+                            cardLegalities.%s = 'Legal'
+                        )
+                        ORDER BY name ASC" (symbol-name format))))
+    (mapcar #'car (mtg-deck--query query))))
 
 (defun mtg-deck--all-cards ()
   "Return a list of all cards in Magic."
@@ -118,9 +130,11 @@
 
 (defun mtg-deck--get-card-by-name (name)
   "Get card doc info by NAME."
-  (unless mtg-deck--cards-table
-    (setq mtg-deck--cards-table (mtg-deck--make-cards-table)))
-  (gethash name mtg-deck--cards-table))
+  (let* ((query "SELECT DISTINCT name,manaCost,types,text FROM cards
+                 WHERE name=?
+                 ORDER BY name ASC")
+         (result (car (mtg-deck--query query (list name)))))
+    (string-join result "\n")))
 
 (defun mtg-deck--company-doc-buffer (card-name)
   "Produce a `company-doc-buffer' for CARD-NAME in FORMAT."
