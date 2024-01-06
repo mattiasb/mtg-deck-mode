@@ -1,0 +1,2 @@
+; -*- mode: lisp-data -*-
+(setf eldev-files-to-package `(:or ,eldev-files-to-package "/cards.db"))
