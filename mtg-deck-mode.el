@@ -66,11 +66,6 @@
     (sqlite-close db)
     result))
 
-(defvar mtg-deck--card-names-table nil
-  "A hash-table from format to a list of cards legal in that format.")
-(defvar mtg-deck--num-formats 5
-  "The number of constructed formats mtg-deck-mode knows about.")
-
 ;;;###autoload
 (defun mtg-deck-update-card-database ()
   "Update the card database from mtgjson.com."
@@ -80,21 +75,9 @@
                   (re-search-forward "\r?\n\r?\n")
                   (delete-region (point) (point-min))
                   (mm-decompress-buffer "cards.db.xz" t t)
-                  (write-file mtg-deck--database)
-                  (setq mtg-deck--card-names-table nil))))
+                  (write-file mtg-deck--database))))
 
 (defun mtg-deck--card-names-in-format (format)
-  "Return a list of all card names in FORMAT."
-  (unless mtg-deck--card-names-table
-    (setq mtg-deck--card-names-table (make-hash-table :size mtg-deck--num-formats
-                                                      :test 'equal)))
-  (if-let ((names (gethash format mtg-deck--card-names-table)))
-      names
-    (let ((names (mtg-deck--read-card-names-in-format format)))
-      (puthash format names mtg-deck--card-names-table)
-      names)))
-
-(defun mtg-deck--read-card-names-in-format (format)
   "Read a list of all card names in FORMAT from disk."
   (let* ((format-subquery (format "INNER JOIN cardLegalities ON (
                                       cards.uuid = cardLegalities.uuid
