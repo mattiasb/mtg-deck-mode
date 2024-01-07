@@ -55,30 +55,12 @@
                  (const :tag "Legacy"   legacy)
                  (const :tag "Vintage"  vintage)))
 
-(defvar mtg-deck--formats-directory
-  (when load-file-name
-    (concat (file-name-directory load-file-name) "formats")))
-
 (defun mtg-deck--query (query &optional values)
   "Run QUERY against the card database, returning the result."
   (let* ((db (sqlite-open "./AllPrintings.sqlite"))
          (result (sqlite-select db query values)))
     (sqlite-close db)
     result))
-
-(defun mtg-deck--format-filename-prefix (format)
-  "Get the path prefix to the card files of FORMAT."
-  (expand-file-name (symbol-name format)
-                    mtg-deck--formats-directory))
-
-(defun mtg-deck--file-to-list (fname sep)
-  "Return a list of the contents in FNAME, split by SEP."
-  (when (file-exists-p fname)
-    (split-string
-     (with-temp-buffer
-       (insert-file-contents-literally fname)
-       (buffer-string))
-     sep)))
 
 (defvar mtg-deck--card-names-table nil
   "A hash-table from format to a list of cards legal in that format.")
@@ -106,27 +88,6 @@
                         )
                         ORDER BY name ASC" (symbol-name format))))
     (mapcar #'car (mtg-deck--query query))))
-
-(defun mtg-deck--all-cards ()
-  "Return a list of all cards in Magic."
-  (mtg-deck--file-to-list (format "%s.cards"
-                                  (mtg-deck--format-filename-prefix 'all))
-                          "\n\n"))
-
-(defun mtg-deck--name-of-card (card)
-  "Get the card name out of a CARD definition."
-  (car (split-string card "\n")))
-
-(defvar mtg-deck--cards-table nil "A hash-table of all MTG cards.")
-(defvar mtg-deck--num-cards 20000 "The number of available Magic Cards.")
-
-(defun mtg-deck--make-cards-table ()
-  "Make a hash-table of all cards."
-  (let ((card-table (make-hash-table :size mtg-deck--num-cards
-                                     :test 'equal))
-        (card-list  (mtg-deck--all-cards)))
-    (dolist (card card-list card-table)
-      (puthash (mtg-deck--name-of-card card) card card-table))))
 
 (defun mtg-deck--get-card-by-name (name)
   "Get card doc info by NAME."
