@@ -15,9 +15,18 @@
 ;;; Note:
 
 ;;; Code:
+(require 'mtg-deck-mode)
+
+;; (ert-deftest formats-directory ()
+;;   (should (string= mtg-deck--formats-directory
+;;                    "/home/mattiasb/Code/github.com/mattiasb/mtg-deck-mode/formats")))
+
+(ert-deftest database-exists ()
+  (should (string= mtg-deck--database
+                   "/home/mattiasb/Code/github.com/mattiasb/mtg-deck-mode/AllPrintings.sqlite")))
 
 (ert-deftest addition-test ()
-  (should (= (+ 1 2) 4)))
+  (should (= (+ 1 2) 3)))
 
 (provide 'mtg-deck-mode-tests)
 ;;; mtg-deck-mode-tests.el ends here
