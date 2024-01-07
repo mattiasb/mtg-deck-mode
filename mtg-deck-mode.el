@@ -21,6 +21,8 @@
 ;;; Code:
 
 (require 'subr-x)
+(require 'url)
+(require 'mm-util)
 
 (defvar mtg-deck--font-lock-defaults
   '(("^[[:blank:]]*SB:"
@@ -68,6 +70,18 @@
   "A hash-table from format to a list of cards legal in that format.")
 (defvar mtg-deck--num-formats 5
   "The number of constructed formats mtg-deck-mode knows about.")
+
+;;;###autoload
+(defun mtg-deck-update-card-database ()
+  "Update the card database from mtgjson.com."
+  (interactive)
+  (url-retrieve "https://mtgjson.com/api/v5/AllPrintings.sqlite.xz"
+                (lambda (_)
+                  (re-search-forward "\r?\n\r?\n")
+                  (delete-region (point) (point-min))
+                  (mm-decompress-buffer "cards.db.xz" t t)
+                  (write-file mtg-deck--database)
+                  (setq mtg-deck--card-names-table nil))))
 
 (defun mtg-deck--card-names-in-format (format)
   "Return a list of all card names in FORMAT."
