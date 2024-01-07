@@ -82,13 +82,16 @@
 
 (defun mtg-deck--read-card-names-in-format (format)
   "Read a list of all card names in FORMAT from disk."
-  (let ((query (format "SELECT DISTINCT name FROM cards
-                        INNER JOIN cardLegalities ON (
-                            cards.uuid = cardLegalities.uuid
-                            AND
-                            cardLegalities.%s = 'Legal'
-                        )
-                        ORDER BY name ASC" (symbol-name format))))
+  (let* ((format-subquery (format "INNER JOIN cardLegalities ON (
+                                      cards.uuid = cardLegalities.uuid
+                                      AND
+                                      cardLegalities.%s = 'Legal'
+                                  )" (symbol-name format)))
+         (query (format "SELECT DISTINCT name FROM cards
+                        %s
+                        ORDER BY name ASC" (if (eq format 'all)
+                                               ""
+                                             format-subquery))))
     (mapcar #'car (mtg-deck--query query))))
 
 (defun mtg-deck--get-card-by-name (name)
