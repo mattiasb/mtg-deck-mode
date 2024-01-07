@@ -22,8 +22,6 @@
 
 (require 'subr-x)
 
-(declare-function company-doc-buffer "company")
-
 (defvar mtg-deck--font-lock-defaults
   '(("^[[:blank:]]*SB:"
      (0 font-lock-keyword-face))
@@ -97,10 +95,6 @@
          (result (car (mtg-deck--query query (list name)))))
     (string-join result "\n")))
 
-(defun mtg-deck--company-doc-buffer (card-name)
-  "Produce a `company-doc-buffer' for CARD-NAME in FORMAT."
-  (company-doc-buffer (mtg-deck--get-card-by-name card-name)))
-
 (defvar mtg-deck--line-prefix-rx
   (rx bol
       (zero-or-more blank)
@@ -123,7 +117,7 @@
       (list start (point) (mtg-deck--card-names-in-format mtg-deck-format)
             :exclusive 'yes
             :company-docsig #'identity
-            :company-doc-buffer #'mtg-deck--company-doc-buffer))))
+            :company-doc-buffer #'mtg-deck--card-buffer))))
 
 (defun mtg-deck-card-at-point ()
   "The card at point."
@@ -134,14 +128,14 @@
       (string-trim (buffer-substring-no-properties (point)
                                                    (line-end-position))))))
 
-(defun mtg-deck--card-buffer (card)
-  "Show a CARD in a new buffer."
-  (let ((buf-name (format "*MTG Card: %s*" card)))
-    (with-current-buffer (get-buffer-create buf-name)
-      (erase-buffer)
-      (insert (mtg-deck--get-card-by-name card))
-      (view-mode)
-      (switch-to-buffer-other-window (current-buffer)))))
+(defun mtg-deck--card-buffer (card-name)
+  (with-current-buffer (get-buffer-create (format "*MTG Card: %s*" card-name))
+    (fundamental-mode)
+    (erase-buffer)
+    (save-excursion
+      (insert (mtg-deck--get-card-by-name card-name))
+      (view-mode))
+    (current-buffer)))
 
 ;;;###autoload
 (defun mtg-deck-sideboard-toggle ()
@@ -157,16 +151,16 @@
 (defun mtg-deck-show-card-at-point ()
   "Show card at point in a new buffer."
   (interactive)
-  (let ((card (mtg-deck-card-at-point)))
-    (when card
-      (mtg-deck--card-buffer card))))
+  (if-let ((card-name (mtg-deck-card-at-point)))
+      (display-buffer (mtg-deck--card-buffer card-name))))
 
 ;;;###autoload
 (defun mtg-deck-show-card ()
   "Choose and show a card in a new buffer."
   (interactive)
-  (let ((cards (mtg-deck--card-names-in-format mtg-deck-format)))
-    (mtg-deck--card-buffer (completing-read "Card: " cards))))
+  (let* ((cards (mtg-deck--card-names-in-format mtg-deck-format))
+         (card-name (completing-read "Card: " cards)))
+    (display-buffer (mtg-deck--card-buffer card-name))))
 
 ;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
