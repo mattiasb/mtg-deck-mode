@@ -53,9 +53,13 @@
                  (const :tag "Legacy"   legacy)
                  (const :tag "Vintage"  vintage)))
 
+(defvar mtg-deck--database
+  (when load-file-name
+    (file-name-concat (file-name-directory load-file-name) "cards.db")))
+
 (defun mtg-deck--query (query &optional values)
   "Run QUERY against the card database, returning the result."
-  (let* ((db (sqlite-open "./AllPrintings.sqlite"))
+  (let* ((db (sqlite-open mtg-deck--database))
          (result (sqlite-select db query values)))
     (sqlite-close db)
     result))
