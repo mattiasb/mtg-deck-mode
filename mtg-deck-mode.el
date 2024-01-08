@@ -167,7 +167,10 @@
   (setq-local comment-start-skip "//+ *")
   (setq-local completion-ignore-case t)
   (setq-local completion-at-point-functions
-              '(mtg-deck--card-complete-at-point)))
+              '(mtg-deck--card-complete-at-point))
+  (unless (file-exists-p mtg-deck--database)
+    (message
+     "Run `M-x mtg-deck-update-card-database' to retrieve a card database!")))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.(mw)?dec\\'" . mtg-deck-mode))
