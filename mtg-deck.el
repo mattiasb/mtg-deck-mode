@@ -158,12 +158,12 @@
       (display-buffer (mtg-deck--card-buffer card-name))))
 
 ;;;###autoload
-(defun mtg-deck-show-card ()
+(defun mtg-deck-show-card (card-name)
   "Choose and show a card in a new buffer."
-  (interactive)
-  (let* ((cards (mtg-deck--card-names-in-format mtg-deck-format))
-         (card-name (completing-read "Card: " cards)))
-    (display-buffer (mtg-deck--card-buffer card-name))))
+  (interactive
+   (list (completing-read "Card: "
+                          (mtg-deck--card-names-in-format mtg-deck-format))))
+  (display-buffer (mtg-deck--card-buffer card-name)))
 
 ;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
