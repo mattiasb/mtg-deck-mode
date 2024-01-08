@@ -1,4 +1,4 @@
-;;; mtg-deck-mode.el --- Major mode to edit MTG decks -*- lexical-binding: t; -*-
+;;; mtg-deck.el --- Major mode to edit MTG decks -*- lexical-binding: t; -*-
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 ;; Copyright 2023, Mattias Bengtsson <mattias.jc.bengtsson@gmail.com>
@@ -33,11 +33,16 @@
      (0 font-lock-comment-face)))
   "Keyword highlighting specification for `mtg-deck-mode'.")
 
-(defgroup mtg-deck-mode nil
+(defgroup mtg-deck nil
   "Major mode to edit MTG decks."
   :prefix "mtg-deck-"
   :group 'wp
   :link '(url-link "https://github.com/mattiasb/mtg-deck-mode"))
+
+(defcustom mtg-deck-mode-hook nil
+  "Hook called by `mtg-deck-mode'."
+  :type 'hook
+  :group 'mtg-deck-mode)
 
 (defcustom mtg-deck-format 'all
   "Default `mtg-deck-mode' format."
@@ -90,7 +95,7 @@
                  WHERE name=?
                  ORDER BY name ASC")
          (result (car (mtg-deck--query query (list name)))))
-    (string-join result "\n")))
+    (string-replace "\\n" "\n" (string-join result "\n"))))
 
 (defvar mtg-deck--line-prefix-rx
   (rx bol
@@ -175,5 +180,5 @@
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.(mw)?dec\\'" . mtg-deck-mode))
 
-(provide 'mtg-deck-mode)
-;;; mtg-deck-mode.el ends here
+(provide 'mtg-deck)
+;;; mtg-deck.el ends here
