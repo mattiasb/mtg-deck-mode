@@ -1,1 +1,9 @@
 ; -*- mode: lisp-data -*-
+(eldev-use-package-archive 'gnu-elpa)
+(eldev-add-extra-dependencies 'emacs 'compat 'corfu)
+
+(setf eldev-project-main-file "mtg-deck.el")
+
+(setq eldev-emacs-default-command-line
+      (append eldev-emacs-default-command-line
+              '("-l" "eldev-emacs-init.el")))
