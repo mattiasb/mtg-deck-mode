@@ -164,6 +164,7 @@
   "Major mode to edit MTG decks."
   (setq font-lock-defaults '(mtg-deck--font-lock-defaults))
   (setq-local comment-start "// ")
+  (setq-local comment-start-skip "//+ *")
   (setq-local completion-ignore-case t)
   (setq-local completion-at-point-functions
               '(mtg-deck--card-complete-at-point)))
