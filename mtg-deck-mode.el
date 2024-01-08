@@ -39,13 +39,6 @@
   :group 'wp
   :link '(url-link "https://github.com/mattiasb/mtg-deck-mode"))
 
-(defvar mtg-deck-mode-map (make-sparse-keymap))
-
-(defcustom mtg-deck-mode-hook nil
-  "Hook called by `mtg-deck-mode'."
-  :type 'hook
-  :group 'mtg-deck-mode)
-
 (defcustom mtg-deck-format 'all
   "Default `mtg-deck-mode' format."
   :group 'mtg-deck-mode
