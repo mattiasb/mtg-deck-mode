@@ -21,7 +21,7 @@
 ;;; Code:
 
 (require 'subr-x)
-(require 'url)
+(require 'url-handlers)
 (require 'mm-util)
 
 (defvar mtg-deck--font-lock-defaults
@@ -53,6 +53,9 @@
                  (const :tag "Legacy"   legacy)
                  (const :tag "Vintage"  vintage)))
 
+(defvar mtg-deck--database-url
+  "https://mtgjson.com/api/v5/AllPrintings.sqlite.xz")
+
 (defvar mtg-deck--database
   (when load-file-name
     (file-name-concat (file-name-directory load-file-name) "cards.db")))
@@ -68,12 +71,10 @@
 (defun mtg-deck-update-card-database ()
   "Update the card database from mtgjson.com."
   (interactive)
-  (url-retrieve "https://mtgjson.com/api/v5/AllPrintings.sqlite.xz"
-                (lambda (_)
-                  (re-search-forward "\r?\n\r?\n")
-                  (delete-region (point) (point-min))
-                  (mm-decompress-buffer "cards.db.xz" t t)
-                  (write-file mtg-deck--database))))
+  (with-temp-buffer
+    (url-insert-file-contents mtg-deck--database-url)
+    (mm-decompress-buffer "cards.db.xz" t t)
+    (write-file mtg-deck--database)))
 
 (defun mtg-deck--card-names-in-format (format)
   "Read a list of all card names in FORMAT from disk."
