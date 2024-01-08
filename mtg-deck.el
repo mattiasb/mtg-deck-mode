@@ -3,12 +3,12 @@
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 ;; Copyright 2023, Mattias Bengtsson <mattias.jc.bengtsson@gmail.com>
 
-;; Version: 0.3
-;; Keywords: data MTG Magic
-;; Package-Requires: ((emacs "29.1"))
-;; URL: https://github.com/mattiasb/mtg-deck-mode
-;; Doc URL: https://github.com/mattiasb/mtg-deck-mode
-;; Compatibility: GNU Emacs: 29.x
+;; Version          : 0.3
+;; Keywords         : data MTG Magic
+;; Package-Requires : ((emacs "29.1"))
+;; URL              : https://github.com/mattiasb/mtg-deck-mode
+;; Doc URL          : https://github.com/mattiasb/mtg-deck-mode
+;; Compatibility    : GNU Emacs: 29.x
 
 ;;; Commentary:
 
