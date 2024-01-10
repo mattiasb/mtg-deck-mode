@@ -48,6 +48,13 @@
   (declare-function mtg-deck-mode                 "mtg-deck")
   (declare-function mtg-deck-show-card            "mtg-deck")
   (declare-function mtg-deck-update-card-database "mtg-deck")
+  (declare-function mtg-deck-show-card-at-point   "mtg-deck")
+  (defvar mtg-deck-mode-map)
+
+  (define-key mtg-deck-mode-map (kbd "C-<return>")
+              #'mtg-deck-show-card-at-point)
+  (define-key mtg-deck-mode-map (kbd "<tab>")
+              #'completion-at-point)
 
   (mtg-deck-mode)
   (mtg-deck-update-card-database)
