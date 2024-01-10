@@ -31,9 +31,18 @@
 (setq inhibit-startup-buffer-menu       t
       inhibit-startup-echo-area-message "mattiasb"
       inhibit-startup-screen            t
-      initial-scratch-message           "4 Animate Dead\n4 Black Cat\n"
       initial-major-mode                'mtg-deck-mode
-      tab-always-indent                 'complete)
+      tab-always-indent                 'complete
+      text-quoting-style                'grave)
+
+(setq initial-scratch-message
+      (string-join '("4 Animate Dead"
+                     "4 Cryptic Command"
+                     "4 Jace, Vryn's Prodigy // Jace, Telepath Unbound"
+                     "4 Karakas"
+                     "4 Karn, the Great Creator"
+                     "4 Nezumi Graverobber // Nighteyes the Desecrator")
+                   "\n"))
 
 (with-eval-after-load 'mtg-deck
   (declare-function mtg-deck-mode                 "mtg-deck")
