@@ -69,13 +69,16 @@
     result))
 
 ;;;###autoload
-(defun mtg-deck-update-card-database ()
-  "Update the card database from mtgjson.com."
-  (interactive)
-  (with-temp-buffer
-    (url-insert-file-contents mtg-deck--database-url)
-    (mm-decompress-buffer "cards.db.xz" t t)
-    (write-file mtg-deck-database-path)))
+(defun mtg-deck-update-card-database (&optional force)
+  "Update the card database from mtgjson.com if it doesn't exist.
+When called with a prefix argument forcibly update the database."
+  (interactive "P")
+  (when (or force (not (file-exists-p mtg-deck-database-path)))
+    (let ((magic-mode-alist nil))
+      (with-temp-buffer
+        (url-insert-file-contents mtg-deck--database-url)
+        (mm-decompress-buffer "cards.db.xz" t t)
+        (write-file mtg-deck-database-path)))))
 
 (defun mtg-deck--card-names-in-format (format)
   "Read a list of all card names in FORMAT from disk."

@@ -44,8 +44,7 @@
   (declare-function mtg-deck-update-card-database "mtg-deck")
 
   (mtg-deck-mode)
-  (unless (file-exists-p mtg-deck--database)
-    (mtg-deck-update-card-database))
+  (mtg-deck-update-card-database)
   (mtg-deck-show-card "Animate Dead"))
 
 (provide 'eldev-emacs-init)
