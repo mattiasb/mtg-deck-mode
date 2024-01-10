@@ -42,7 +42,6 @@
   (declare-function mtg-deck-mode                 "mtg-deck")
   (declare-function mtg-deck-show-card            "mtg-deck")
   (declare-function mtg-deck-update-card-database "mtg-deck")
-  (defvar mtg-deck--database)
 
   (mtg-deck-mode)
   (unless (file-exists-p mtg-deck--database)

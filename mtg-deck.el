@@ -53,16 +53,17 @@
                  (const :tag "Legacy"   legacy)
                  (const :tag "Vintage"  vintage)))
 
+(defcustom mtg-deck-database-path
+  (file-name-concat user-emacs-directory "mtg-deck-cards.sqlite")
+  "Where to store the card database."
+  :type 'file)
+
 (defvar mtg-deck--database-url
   "https://mtgjson.com/api/v5/AllPrintings.sqlite.xz")
 
-(defvar mtg-deck--database
-  (when load-file-name
-    (file-name-concat (file-name-directory load-file-name) "cards.db")))
-
 (defun mtg-deck--query (query &optional values)
   "Run QUERY against the card database, returning the result."
-  (let* ((db (sqlite-open mtg-deck--database))
+  (let* ((db (sqlite-open mtg-deck-database-path))
          (result (sqlite-select db query values)))
     (sqlite-close db)
     result))
@@ -74,7 +75,7 @@
   (with-temp-buffer
     (url-insert-file-contents mtg-deck--database-url)
     (mm-decompress-buffer "cards.db.xz" t t)
-    (write-file mtg-deck--database)))
+    (write-file mtg-deck-database-path)))
 
 (defun mtg-deck--card-names-in-format (format)
   "Read a list of all card names in FORMAT from disk."
@@ -174,7 +175,7 @@
   (setq-local completion-ignore-case t)
   (setq-local completion-at-point-functions
               '(mtg-deck--card-complete-at-point))
-  (unless (file-exists-p mtg-deck--database)
+  (unless (file-exists-p mtg-deck-database-path)
     (message
      "Run `M-x mtg-deck-update-card-database' to retrieve a card database!")))
 
