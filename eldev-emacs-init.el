@@ -26,16 +26,13 @@
 (windmove-default-keybindings)
 
 (declare-function global-corfu-mode "corfu")
-(use-package corfu
-  :ensure t
-  :config (global-corfu-mode))
+(use-package corfu :config (global-corfu-mode))
 
 (setq inhibit-startup-buffer-menu       t
       inhibit-startup-echo-area-message "mattiasb"
       inhibit-startup-screen            t
       initial-scratch-message           "4 Animate Dead\n4 Black Cat\n"
       initial-major-mode                'mtg-deck-mode
-      package-selected-packages         '(corfu)
       tab-always-indent                 'complete)
 
 (with-eval-after-load 'mtg-deck
