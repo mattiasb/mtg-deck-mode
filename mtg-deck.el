@@ -110,8 +110,10 @@ When called with a prefix argument forcibly update the database."
   (let* ((query "SELECT DISTINCT name,manaCost,types,text FROM cards
                  WHERE name=?
                  ORDER BY name ASC")
-         (result (car (mtg-deck--query query (list name)))))
-    (string-replace "\\n" "\n" (string-join result "\n"))))
+         (result (car (mtg-deck--query query (list name))) ))
+    (string-replace "\\n" "\n"
+                    (string-join (seq-filter #'identity result)
+                                 "\n"))))
 
 (defvar mtg-deck--line-prefix-rx
   (rx bol
