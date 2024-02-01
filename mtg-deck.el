@@ -74,6 +74,12 @@
     result))
 
 ;;;###autoload
+(defun mtg-deck-open-db ()
+  "Open the card database with `sqlite-mode-open-file'."
+  (interactive)
+  (sqlite-mode-open-file mtg-deck-database-path))
+
+;;;###autoload
 (defun mtg-deck-update-card-database (&optional force)
   "Update the card database from mtgjson.com if it doesn't exist.
 When called with a prefix argument forcibly update the database."
