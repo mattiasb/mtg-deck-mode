@@ -27,6 +27,7 @@
 
 (declare-function global-corfu-mode "corfu")
 (use-package corfu :config (global-corfu-mode))
+(use-package visual-fill-column)
 
 (setq inhibit-startup-buffer-menu       t
       inhibit-startup-echo-area-message "mattiasb"
@@ -49,13 +50,14 @@
   (declare-function mtg-deck-show-card            "mtg-deck")
   (declare-function mtg-deck-update-card-database "mtg-deck")
   (declare-function mtg-deck-show-card-at-point   "mtg-deck")
+  (declare-function visual-fill-column-mode       "visual-fill-column")
   (defvar mtg-deck-mode-map)
 
   (define-key mtg-deck-mode-map (kbd "C-<return>")
               #'mtg-deck-show-card-at-point)
   (define-key mtg-deck-mode-map (kbd "<tab>")
               #'completion-at-point)
-
+  (add-hook 'mtg-deck-card-mode-hook #'visual-fill-column-mode)
   (mtg-deck-mode)
   (mtg-deck-update-card-database)
   (mtg-deck-show-card "Animate Dead"))

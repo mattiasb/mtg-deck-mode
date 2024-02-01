@@ -1,6 +1,7 @@
 ; -*- mode: lisp-data -*-
 (eldev-use-package-archive 'gnu-elpa)
-(eldev-add-extra-dependencies 'emacs 'compat 'corfu)
+(eldev-use-package-archive 'melpa)
+(eldev-add-extra-dependencies 'emacs 'compat 'corfu 'visual-fill-column)
 
 (setf eldev-project-main-file "mtg-deck.el")
 
