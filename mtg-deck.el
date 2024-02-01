@@ -44,6 +44,11 @@
   :type 'hook
   :group 'mtg-deck-mode)
 
+(defcustom mtg-deck-card-mode-hook '(view-mode)
+  "Hook called by `mtg-deck-mode'."
+  :type 'hook
+  :group 'mtg-deck-mode)
+
 (defcustom mtg-deck-format 'all
   "Default `mtg-deck-mode' format."
   :group 'mtg-deck-mode
@@ -141,7 +146,7 @@ When called with a prefix argument forcibly update the database."
     (erase-buffer)
     (save-excursion
       (insert (mtg-deck--get-card-by-name card-name))
-      (view-mode))
+      (mtg-deck-card-mode))
     (current-buffer)))
 
 ;;;###autoload
@@ -168,6 +173,9 @@ When called with a prefix argument forcibly update the database."
    (list (completing-read "Card: "
                           (mtg-deck--card-names-in-format mtg-deck-format))))
   (display-buffer (mtg-deck--card-buffer card-name)))
+
+;;;###autoload
+(define-derived-mode mtg-deck-card-mode fundamental-mode "MTG Deck Card")
 
 ;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
