@@ -67,7 +67,9 @@
   "https://mtgjson.com/api/v5/AllPrintings.sqlite.xz")
 
 (defun mtg-deck--query (query &optional values)
-  "Run QUERY against the card database, returning the result."
+  "Run QUERY against the card database, returning the result.
+VALUES (if non-nil) is a list or vector to be interpolated into a
+parameterized statement."
   (let* ((db (sqlite-open mtg-deck-database-path))
          (result (sqlite-select db query values)))
     (sqlite-close db)
@@ -82,7 +84,7 @@
 ;;;###autoload
 (defun mtg-deck-update-card-database (&optional force)
   "Update the card database from mtgjson.com if it doesn't exist.
-When called with a prefix argument forcibly update the database."
+When called with a FORCE prefix argument forcibly update the database."
   (interactive "P")
   (when (or force (not (file-exists-p mtg-deck-database-path)))
     (let ((magic-mode-alist nil))
@@ -149,6 +151,7 @@ When called with a prefix argument forcibly update the database."
                                                    (line-end-position))))))
 
 (defun mtg-deck--card-buffer (card-name)
+  "Create a buffer showing CARD-NAME."
   (with-current-buffer (get-buffer-create (format "*MTG Card: %s*" card-name))
     (fundamental-mode)
     (erase-buffer)
@@ -176,7 +179,7 @@ When called with a prefix argument forcibly update the database."
 
 ;;;###autoload
 (defun mtg-deck-show-card (card-name)
-  "Choose and show a card in a new buffer."
+  "Choose and show CARD-NAME in a new buffer."
   (interactive
    (list (completing-read "Card: "
                           (mtg-deck--card-names-in-format mtg-deck-format))))
