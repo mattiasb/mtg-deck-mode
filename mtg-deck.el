@@ -186,6 +186,12 @@ When called with a FORCE prefix argument forcibly update the database."
   (display-buffer (mtg-deck--card-buffer card-name)))
 
 ;;;###autoload
+(defun mtg-deck-sort-by-name (beg end)
+  "Sort region (BEG to END) by card name."
+  (interactive "r")
+  (sort-fields 2 beg end))
+
+;;;###autoload
 (define-derived-mode mtg-deck-card-mode fundamental-mode "MTG Deck Card")
 
 ;;;###autoload
