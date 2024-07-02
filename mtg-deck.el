@@ -150,6 +150,27 @@ When called with a FORCE prefix argument forcibly update the database."
       (string-trim (buffer-substring-no-properties (point)
                                                    (line-end-position))))))
 
+(defun mtg-deck-num-cards ()
+  "Sum number of cards in region or buffer."
+  (let* ((start        (if (region-active-p) (region-beginning) (point-min)))
+         (end          (if (region-active-p) (region-end)       (point-max)))
+         (tokens       (split-string (buffer-substring start end)))
+         (numbers      (seq-map #'string-to-number tokens)))
+    (seq-reduce #'+ numbers 0)))
+
+(defun mtg-deck-count-cards ()
+  "Count the number of cards in the region from START to END."
+  (interactive)
+  (message (format "%d" (mtg-deck-num-cards))))
+
+(defun mtg-deck-insert-card-count ()
+  "Insert card count for region or buffer."
+  (interactive)
+  (let ((cards (mtg-deck-num-cards)))
+    (save-excursion
+      (goto-char (if (region-active-p) (region-end) (point-max)))
+      (insert (format "// %d" cards)))))
+
 (defun mtg-deck--card-buffer (card-name)
   "Create a buffer showing CARD-NAME."
   (with-current-buffer (get-buffer-create (format "*MTG Card: %s*" card-name))
