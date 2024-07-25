@@ -207,10 +207,14 @@ When called with a FORCE prefix argument forcibly update the database."
   (display-buffer (mtg-deck--card-buffer card-name)))
 
 ;;;###autoload
-(defun mtg-deck-sort-by-name (beg end)
-  "Sort region (BEG to END) by card name."
+(defun mtg-deck-sort-by-name (p1 p2)
+  "Sort region (from P1 to P2) by card name."
   (interactive "r")
-  (sort-fields 2 beg end))
+  (let ((beg (save-excursion (goto-char (min p1 p2))
+                             (line-beginning-position)))
+        (end (save-excursion (goto-char (max p1 p2))
+                             (line-end-position))))
+    (call-process-region beg end "sort" t t nil "-f" "-k2")))
 
 ;;;###autoload
 (define-derived-mode mtg-deck-card-mode fundamental-mode "MTG Deck Card")
