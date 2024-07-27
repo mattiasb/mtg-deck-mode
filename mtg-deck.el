@@ -132,14 +132,20 @@ When called with a FORCE prefix argument forcibly update the database."
     (when (looking-at mtg-deck--line-prefix-rx)
       (goto-char (match-end 0)))))
 
-(defun mtg-deck--card-complete-at-point ()
-  "`completion-at-point-functions' function for MTG cards."
+(defun mtg-deck-completion-at-point ()
+  "CAPF for MTG cards."
   (let ((start (mtg-deck--start-of-card-point)))
     (when start
       (list start (point) (mtg-deck--card-names-in-format mtg-deck-format)
             :exclusive 'yes
             :company-docsig #'identity
-            :company-doc-buffer #'mtg-deck--card-buffer))))
+            :company-doc-buffer #'mtg-deck--card-buffer
+            :exit-function #'mtg-deck--capf-exit-function))))
+
+(defun mtg-deck--capf-exit-function (_ status)
+  "What to do after completion with STATUS.
+See: `completion-extra-properties' for more information."
+  (if  (forward-char) (newline)))
 
 (defun mtg-deck-card-at-point ()
   "The card at point."
@@ -227,7 +233,7 @@ When called with a FORCE prefix argument forcibly update the database."
   (setq-local comment-start-skip "//+ *")
   (setq-local completion-ignore-case t)
   (setq-local completion-at-point-functions
-              '(mtg-deck--card-complete-at-point))
+              '(mtg-deck-completion-at-point))
   (unless (file-exists-p mtg-deck-database-path)
     (message
      "Run `M-x mtg-deck-update-card-database' to retrieve a card database!")))
