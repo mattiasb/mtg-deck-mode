@@ -3,7 +3,7 @@
 (eldev-use-package-archive 'melpa)
 (eldev-add-extra-dependencies 'emacs 'compat 'corfu 'visual-fill-column)
 
-(setf eldev-project-main-file "mtg-deck.el")
+(setf eldev-project-main-file "mtg.el")
 
 (setq eldev-emacs-default-command-line
       (append eldev-emacs-default-command-line

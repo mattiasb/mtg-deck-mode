@@ -59,8 +59,8 @@
               #'completion-at-point)
   (add-hook 'mtg-deck-card-mode-hook #'visual-fill-column-mode)
   (mtg-deck-mode)
-  (mtg-deck-update-card-database)
-  (mtg-deck-show-card "Animate Dead"))
+  (mtg-card-database-update)
+  (mtg-card-show "Animate Dead"))
 
 (provide 'eldev-emacs-init)
 ;;; eldev-emacs-init.el ends here

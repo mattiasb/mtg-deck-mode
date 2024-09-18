@@ -1,20 +1,21 @@
-;;; mtg-deck.el --- Major mode to edit MTG decks -*- lexical-binding: t; -*-
+;;; mtg-deck.el --- Edit Magic: the Gathering decks -*- lexical-binding: t; -*-
 
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 ;; Copyright 2023, Mattias Bengtsson <mattias.jc.bengtsson@gmail.com>
 
+;; Author           : Mattias Bengtsson <mattias.jc.bengtsson@gmail.com>
 ;; Version          : 0.3
 ;; Keywords         : data MTG Magic
-;; Package-Requires : ((emacs "29.1"))
+;; Package-Requires : ((emacs "29.4"))
 ;; URL              : https://github.com/mattiasb/mtg-deck-mode
 ;; Doc URL          : https://github.com/mattiasb/mtg-deck-mode
 ;; Compatibility    : GNU Emacs: 29.x
 
 ;;; Commentary:
 
-;; `mtg-deck-mode' is a major mode for editing Magic: the Gathering decks that
-;; comes with capf-completion, syntax highlighting and a very simple card search
-;; via `mtg-deck-show-card'
+;; This package contains a major mode for editing Magic: the Gathering decks.
+;; `mtg-deck-mode' comes with a completion at point implementation for cards,
+;; syntax highlighting and card search and view via the `mtg-card' package.
 
 ;;; Note:
 
@@ -22,7 +23,8 @@
 
 (require 'subr-x)
 (require 'url-handlers)
-(require 'mm-util)
+
+(require 'mtg-card)
 
 (defvar mtg-deck--font-lock-defaults
   '(("^[[:blank:]]*SB:"
@@ -34,7 +36,7 @@
   "Keyword highlighting specification for `mtg-deck-mode'.")
 
 (defgroup mtg-deck nil
-  "Major mode to edit MTG decks."
+  "Edit Magic: the Gathering decks."
   :prefix "mtg-deck-"
   :group 'wp
   :link '(url-link "https://github.com/mattiasb/mtg-deck-mode"))
@@ -42,80 +44,7 @@
 (defcustom mtg-deck-mode-hook nil
   "Hook called by `mtg-deck-mode'."
   :type 'hook
-  :group 'mtg-deck-mode)
-
-(defcustom mtg-deck-card-mode-hook '(view-mode visual-line-mode)
-  "Hook called by `mtg-deck-mode'."
-  :type 'hook
-  :group 'mtg-deck-mode)
-
-(defcustom mtg-deck-format 'all
-  "Default `mtg-deck-mode' format."
-  :group 'mtg-deck-mode
-  :type '(choice (const :tag "All"      all)
-                 (const :tag "Standard" standard)
-                 (const :tag "Modern"   modern)
-                 (const :tag "Legacy"   legacy)
-                 (const :tag "Vintage"  vintage)))
-
-(defcustom mtg-deck-database-path
-  (file-name-concat user-emacs-directory "mtg-deck-cards.sqlite")
-  "Where to store the card database."
-  :type 'file)
-
-(defvar mtg-deck--database-url
-  "https://mtgjson.com/api/v5/AllPrintings.sqlite.xz")
-
-(defun mtg-deck--query (query &optional values)
-  "Run QUERY against the card database, returning the result.
-VALUES (if non-nil) is a list or vector to be interpolated into a
-parameterized statement."
-  (let* ((db (sqlite-open mtg-deck-database-path))
-         (result (sqlite-select db query values)))
-    (sqlite-close db)
-    result))
-
-;;;###autoload
-(defun mtg-deck-open-db ()
-  "Open the card database with `sqlite-mode-open-file'."
-  (interactive)
-  (sqlite-mode-open-file mtg-deck-database-path))
-
-;;;###autoload
-(defun mtg-deck-update-card-database (&optional force)
-  "Update the card database from mtgjson.com if it doesn't exist.
-When called with a FORCE prefix argument forcibly update the database."
-  (interactive "P")
-  (when (or force (not (file-exists-p mtg-deck-database-path)))
-    (let ((magic-mode-alist nil))
-      (with-temp-buffer
-        (url-insert-file-contents mtg-deck--database-url)
-        (mm-decompress-buffer "cards.db.xz" t t)
-        (write-file mtg-deck-database-path)))))
-
-(defun mtg-deck--card-names-in-format (format)
-  "Read a list of all card names in FORMAT from disk."
-  (let* ((format-subquery (format "INNER JOIN cardLegalities ON (
-                                      cards.uuid = cardLegalities.uuid
-                                      AND
-                                      cardLegalities.%s = 'Legal'
-                                  )" (symbol-name format)))
-         (query (format "SELECT DISTINCT name FROM cards
-                        %s
-                        ORDER BY name ASC" (if (eq format 'all)
-                                               ""
-                                             format-subquery))))
-    (mapcar #'car (mtg-deck--query query))))
-
-(defun mtg-deck--get-card-by-name (name)
-  "Get card doc info by NAME."
-  (let* ((query "SELECT DISTINCT name,manaCost,types,text FROM cards
-                 WHERE name=?
-                 ORDER BY name ASC")
-         (result (car (mtg-deck--query query (list name))) ))
-    (string-replace "\\n" "\n"
-                    (string-join (seq-filter #'identity result)
-                                 "\n"))))
+  :group 'mtg-deck)
 
 (defvar mtg-deck--line-prefix-rx
   (rx bol
@@ -136,10 +65,10 @@ When called with a FORCE prefix argument forcibly update the database."
   "`completion-at-point-functions' function for MTG cards."
   (let ((start (mtg-deck--start-of-card-point)))
     (when start
-      (list start (point) (mtg-deck--card-names-in-format mtg-deck-format)
+      (list start (point) (mtg-card--names-in-format mtg-format)
             :exclusive 'yes
             :company-docsig #'identity
-            :company-doc-buffer #'mtg-deck--card-buffer))))
+            :company-doc-buffer #'mtg-card--create-buffer))))
 
 (defun mtg-deck-card-at-point ()
   "The card at point."
@@ -171,16 +100,6 @@ When called with a FORCE prefix argument forcibly update the database."
       (goto-char (if (region-active-p) (region-end) (point-max)))
       (insert (format "// %d" cards)))))
 
-(defun mtg-deck--card-buffer (card-name)
-  "Create a buffer showing CARD-NAME."
-  (with-current-buffer (get-buffer-create (format "*MTG Card: %s*" card-name))
-    (fundamental-mode)
-    (erase-buffer)
-    (save-excursion
-      (insert (mtg-deck--get-card-by-name card-name))
-      (mtg-deck-card-mode))
-    (current-buffer)))
-
 ;;;###autoload
 (defun mtg-deck-sideboard-toggle ()
   "Toggle the current card or region as a sideboard card."
@@ -196,15 +115,7 @@ When called with a FORCE prefix argument forcibly update the database."
   "Show card at point in a new buffer."
   (interactive)
   (if-let ((card-name (mtg-deck-card-at-point)))
-      (display-buffer (mtg-deck--card-buffer card-name))))
-
-;;;###autoload
-(defun mtg-deck-show-card (card-name)
-  "Choose and show CARD-NAME in a new buffer."
-  (interactive
-   (list (completing-read "Card: "
-                          (mtg-deck--card-names-in-format mtg-deck-format))))
-  (display-buffer (mtg-deck--card-buffer card-name)))
+      (display-buffer (mtg-card--create-buffer card-name))))
 
 ;;;###autoload
 (defun mtg-deck-sort-by-name (p1 p2)
@@ -217,20 +128,16 @@ When called with a FORCE prefix argument forcibly update the database."
     (call-process-region beg end "sort" t t nil "-f" "-k2")))
 
 ;;;###autoload
-(define-derived-mode mtg-deck-card-mode fundamental-mode "MTG Deck Card")
-
-;;;###autoload
 (define-derived-mode mtg-deck-mode fundamental-mode "MTG Deck"
   "Major mode to edit MTG decks."
-  (setq font-lock-defaults '(mtg-deck--font-lock-defaults))
+  (setq-local font-lock-defaults '(mtg-deck--font-lock-defaults))
   (setq-local comment-start "// ")
   (setq-local comment-start-skip "//+ *")
   (setq-local completion-ignore-case t)
   (setq-local completion-at-point-functions
               '(mtg-deck--card-complete-at-point))
-  (unless (file-exists-p mtg-deck-database-path)
-    (message
-     "Run `M-x mtg-deck-update-card-database' to retrieve a card database!")))
+  (unless (file-exists-p mtg-card-database-path)
+    (message "Run `M-x mtg-card-database-update' to get a card database!")))
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.(mw)?dec\\'" . mtg-deck-mode))
