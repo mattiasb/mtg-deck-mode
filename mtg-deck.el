@@ -44,7 +44,7 @@
   :type 'hook
   :group 'mtg-deck-mode)
 
-(defcustom mtg-deck-card-mode-hook '(view-mode visual-line-mode)
+(defcustom mtg-deck-card-mode-hook '(view-mode visual-line-fill-column-mode)
   "Hook called by `mtg-deck-mode'."
   :type 'hook
   :group 'mtg-deck-mode)
