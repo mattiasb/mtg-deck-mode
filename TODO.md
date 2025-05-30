@@ -18,6 +18,8 @@
   - Legality
   - Sets
   - Etc.
+- [ ] Make card database downloads asynchronous.
+  - Maybe try out [PDD][melpa-pdd].
 
 ## Bugs ##
 
@@ -27,3 +29,7 @@
 
 - [ ] The font-lock stuff fails with `goto-address-mode`.
 - [ ] The font-lock stuff sometimes stops marking comments.
+
+<!----------------------------------------------------------------------------->
+
+[melpa-pdd]: https://github.com/lorniu/pdd.el
